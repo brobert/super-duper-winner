@@ -19,8 +19,6 @@
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
-        <link rel="stylesheet" href="/plugins/selectize/css/selectize.css">
-        <link rel="stylesheet" href="/plugins/flot/css/flot.css">
         <!--/ Plugins stylesheet : optional -->
 
         <!-- Application stylesheet : mandatory -->
@@ -88,7 +86,7 @@
                                 <li><a href="#">Third item</a></li>
                             </ul>
                     </li>
-
+                    
                 </ul>
                 <!--/ END Left nav -->
 
@@ -120,7 +118,7 @@
                                 <span class="option text-right"><a href="javascript:void(0);">Clear all</a></span>
                             </div>
                             <div class="dropdown-body slimscroll">
-
+                                
                                 <!-- Message list -->
                                 <div class="media-list">
                                     <a href="javascript:void(0);" class="media read border-dotted">
@@ -134,7 +132,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar1.jpg" class="media-object img-circle" alt="">
@@ -173,7 +171,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar9.jpg" class="media-object img-circle" alt="">
@@ -199,7 +197,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar5.jpg" class="media-object img-circle" alt="">
@@ -212,7 +210,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar3.jpg" class="media-object img-circle" alt="">
@@ -233,7 +231,7 @@
                         <!--/ Dropdown menu -->
                     </li>
                     <!--/ Notification dropdown -->
-
+                    
                     <!-- Profile dropdown -->
                     <li class="dropdown profile">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
@@ -260,7 +258,7 @@
                         </a>
                     </li>
                     <!--/ Offcanvas right -->
-
+                  
                 </ul>
                 <!--/ END Right nav -->
             </div>
@@ -274,7 +272,7 @@
             <section class="content slimscroll">
                 <!-- START Template Navigation/Menu -->
                 <ul class="topmenu topmenu-responsive" data-toggle="menu">
-                    <li class="active">
+                    <li>
                         <a href="/" data-target="#dashboard" data-parent=".topmenu">
                             <span class="figure"><i class="ico-home2"></i></span>
                             <span class="text">Dashboard</span>
@@ -492,14 +490,14 @@
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-                    <li >
+                    <li class="active open" >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#page" data-parent=".topmenu">
                             <span class="figure"><i class="ico-copy4"></i></span>
                             <span class="text">Miscelleneous</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="page" class="submenu collapse ">
+                        <ul id="page" class="submenu collapse in">
                             <li class="submenu-header ellipsis">Miscelleneous</li>
                             <li >
                                 <a href="/page/starter.html">
@@ -525,7 +523,7 @@
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
                             </li>
-                            <li >
+                            <li>
                                 <a href="/page/calendar.html">
                                     <span class="text">Calendar</span>
                                 </a>
@@ -570,7 +568,7 @@
                                     <span class="text">FAQ</span>
                                 </a>
                             </li>
-                            <li >
+                            <li class="active" >
                                 <a href="/page/invoice.html">
                                     <span class="text">Invoice</span>
                                 </a>
@@ -632,7 +630,7 @@
                                     <span class="text">Timeline</span>
                                 </a>
                             </li>
-
+                           
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
@@ -747,7 +745,7 @@
             <!--/ END Sidebar Container -->
         </aside>
         <!--/ END Template Sidebar (Left) -->
-
+        
         <!-- START Template Sidebar (right) -->
         <aside class="sidebar sidebar-right">
             <!-- START Offcanvas -->
@@ -1134,225 +1132,176 @@
                 <!-- Page Header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold"><span class="figure"><i class="ico-home2"></i></span> Dashboards</h4>
+                        <h4 class="title semibold">Invoice</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <a href="/page/invoice/printable.html" target="_new" class="btn btn-primary"><i class="ico-print3"></i> Print</a>
+                            &nbsp;<span class="text-muted semibold">or</span>&nbsp;
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default"><i class="ico-screwdriver2"></i></button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                    <li><a href="javascript:void(0);">Send</a></li>
+                                    <li><a href="javascript:void(0);">Save</a></li>
+                                    <li><a href="javascript:void(0);">Forward</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/ Toolbar -->
                     </div>
                 </div>
                 <!-- Page Header -->
 
+                <!-- START row -->
                 <div class="row">
-                    <!-- START Left Side -->
-                    <div class="col-md-9">
-
-                        <!-- Website States -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <!-- START panel -->
-                                <div class="panel ">
-                                    <!-- panel-toolbar -->
-                                    <div class="panel-heading pt10">
-                                        <div class="panel-toolbar">
-                                            <h5 class="semibold nm ellipsis">Website Stats</h5>
-                                        </div>
-                                    </div>
-                                    <!--/ panel-toolbar -->
-                                    <!-- panel-body -->
-                                    <div class="panel-body pt0">
-                                        <div class="chart mt10" id="chart-audience" style="height:250px;"></div>
-                                    </div>
-                                    <!--/ panel-body -->
-                                    <!-- panel-footer -->
-                                    <div class="panel-footer hidden-xs">
-                                        <ul class="nav nav-section nav-justified">
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">24,548</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Visits</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-danger"><i class="ico-arrow-down4"></i> 32%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">175,132</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Page Views</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 15%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5"><span data-toggle="counterup">89.96</span>%</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Bounce Rate</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 3%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!--/ panel-footer -->
+                    <div class="col-lg-12">
+                        <div class="table-layout">
+                            <!-- Left / Bottom Side -->
+                            <div class="col-lg-12 panel">
+                                <!-- panel body -->
+                                <div class="panel-body text-right">
+                                    <h4 class="semibold nm">John Doe</h4>
+                                    <p class="text-muted nm">ABCD Incorporated</p>
+                                    <p class="text-muted nm">France</p>
                                 </div>
-                                <!--/ END panel -->
-                            </div>
-                        </div>
-                        <!--/ Website States -->
-
-                        <!-- Browser Breakpoint -->
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <!-- START panel -->
-                                <div class="panel panel-default">
-                                    <!-- panel heading/header -->
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title ellipsis"><i class="ico-chrome mr5"></i>Browser Breakpoint</h3>
-                                        <!-- panel toolbar -->
-                                        <div class="panel-toolbar text-right">
-                                            <!-- option -->
-                                            <div class="option">
-                                                <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
-                                                <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
-                                            </div>
-                                            <!--/ option -->
-                                        </div>
-                                        <!--/ panel toolbar -->
-                                    </div>
-                                    <!--/ panel heading/header -->
-                                    <!-- panel body with collapse capabale -->
-                                    <div class="table-responsive panel-collapse pull out">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Browser Name</th>
-                                                    <th>Rendering Engine</th>
-                                                    <th>Platform</th>
-                                                    <th>Activity</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Google Chrome</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,4,1,5,3</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">50.65%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Safari</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">5,2,1,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">20.31%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Mozilla Firefox</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,1,5,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">61.22%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Internet Explorer</span></td>
-                                                    <td>Trident</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">3,1,4,5,2</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">0.65%</span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!--/ panel body with collapse capabale -->
-                                </div>
-                                <!--/ END panel -->
-                            </div>
-                        </div>
-                        <!-- Browser Breakpoint -->
-                    </div>
-                    <!--/ END Left Side -->
-
-                    <!-- START Right Side -->
-                    <div class="col-md-3">
-                        <div class="panel panel-minimal">
-
-                            <div class="panel">
+                                <!-- panel body -->
+                                <hr class="nm">
+                                <!-- panel body -->
                                 <div class="panel-body">
-                                    <h4 class="semibold nm"><i class="ico-dollar mr5"></i>Today Income</h4>
-                                    <h2 class="thin mt5 text-muted">+<span data-toggle="counterup">1120</span></h2>
-                                    <!-- chart -->
-                                    <div class="chart" style="height:120px;" id="stats1"></div>
-                                    <!--/ chart -->
+                                    <ul class="list-table">
+                                        <li class="text-left">
+                                            <h4 class="semibold nm">Invoice / December Period</h4>
+                                            <p class="semibold text-muted nm">December 22nd, 2014 - October 8th, 2014</p>
+                                        </li>
+                                        <li class="text-right">
+                                            <p class="semibold text-primary nm">Invoice ID : #541141</p>
+                                        </li>
+                                    </ul>
                                 </div>
+                                <!-- panel body -->
+                                <!-- panel table -->
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th width="5%"></th>
+                                                <th>Task Description</th>
+                                                <th width="15%" class="text-center">Rate</th>
+                                                <th width="15%" class="text-center">Hours</th>
+                                                <th width="15%" class="text-center">Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="valign-top text-center">1.</td>
+                                                <td>
+                                                    <h5 class="semibold mt0 mb5">Website design &amp; development</h5>
+                                                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</span>
+                                                </td>
+                                                <td class="valign-top text-center"><span class="bold">$50</span></td>
+                                                <td class="valign-top text-center"><span class="bold">50</span></td>
+                                                <td class="valign-top text-center"><span class="text-primary bold">$1500</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="valign-top text-center">2.</td>
+                                                <td>
+                                                    <h5 class="semibold mt0 mb5">Branding</h5>
+                                                    <span class="text-muted">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                                                </td>
+                                                <td class="valign-top text-center"><span class="bold">$50</span></td>
+                                                <td class="valign-top text-center"><span class="bold">20</span></td>
+                                                <td class="valign-top text-center"><span class="text-primary bold">$1000</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="valign-top text-center">3.</td>
+                                                <td>
+                                                    <h5 class="semibold mt0 mb5">Surfboard design</h5>
+                                                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</span>
+                                                </td>
+                                                <td class="valign-top text-center"><span class="bold">$60</span></td>
+                                                <td class="valign-top text-center"><span class="bold">100</span></td>
+                                                <td class="valign-top text-center"><span class="text-primary bold">$6000</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="valign-top text-center">4.</td>
+                                                <td>
+                                                    <h5 class="semibold mt0 mb5">Print design</h5>
+                                                    <span class="text-muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                                                </td>
+                                                <td class="valign-top text-center"><span class="bold">$20</span></td>
+                                                <td class="valign-top text-center"><span class="bold">20</span></td>
+                                                <td class="valign-top text-center"><span class="text-primary bold">$40</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="valign-top text-center">5.</td>
+                                                <td>
+                                                    <h5 class="semibold mt0 mb5">Marketing setup / coaching</h5>
+                                                    <span class="text-muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                                                </td>
+                                                <td class="valign-top text-center"><span class="bold">$80</span></td>
+                                                <td class="valign-top text-center"><span class="bold">20</span></td>
+                                                <td class="valign-top text-center"><span class="text-primary bold">$1600</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--/ panel table -->
+                                <!-- panel footer -->
+                                <div class="panel-footer">
+                                    <ul class="list-table pa10">
+                                        <li>
+                                            <h5 class="semibold nm">SUB TOTAL</h5>
+                                        </li>
+                                        <li class="text-right">
+                                            <h3 class="semibold nm">$10,140.00</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- panel footer -->
+                                <!-- panel footer -->
+                                <div class="panel-footer">
+                                    <ul class="list-table pa10">
+                                        <li>
+                                            <h5 class="semibold nm">TAXES &amp; FEES</h5>
+                                        </li>
+                                        <li class="text-right">
+                                            <h3 class="semibold nm">$60.00</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- panel footer -->
+                                <!-- panel footer -->
+                                <div class="panel-footer">
+                                    <ul class="list-table pa10">
+                                        <li>
+                                            <h5 class="semibold nm">TOTAL PAYABLE</h5>
+                                        </li>
+                                        <li class="text-right">
+                                            <h3 class="semibold nm text-success">$10,200.00</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- panel footer -->
                             </div>
-
-                            <div class="widget panel bgcolor-warning">
-                            <!-- panel body -->
-                            <div class="panel-body">
-                                <div class="clearfix">
-                                    <p class="pull-left semibold">Perth, AU</p>
-                                    <p class="pull-right semibold">
-                                        <span class="mr5">°F</span>
-                                        <span>°C</span>
-                                    </p>
-                                </div>
-                                <div class="text-center mt15 mb15">
-                                    <h1 class="semibold">
-                                        <i class="ico-sun22"></i>
-                                        <span class="">32°</span>
-                                    </h1>
-                                </div>
-                                <div class="clearfix">
-                                    <p class="pull-left semibold nm">
-                                        <i class="ico-arrow-down5"></i> 31°
-                                    </p>
-                                    <p class="pull-right semibold nm">
-                                        <i class="ico-arrow-up5"></i> 37°
-                                    </p>
-                                </div>
-                            </div>
-                            <!--/ panel body -->
-                        </div>
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h5 class="panel-title"><i class="ico-globe mr5"></i>Traffic</h5>
-                            </div>
-                            <ul class="list-group">
-                                <li class="list-group-item">Visits <span class="semibold pull-right">47650</span></li>
-                                <li class="list-group-item">Unique Visits <span class="semibold pull-right">15620</span></li>
-                                <li class="list-group-item">
-                                    <p>Traffic Sources</p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-success"></i>GOOGLE.COM
-                                        <span class="pull-right semibold">15883</span>
-                                    </p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-danger"></i>DIRECT TRAFFIC
-                                        <span class="pull-right semibold">11912</span>
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-
+                            <!--/ Left / Bottom Side -->
                         </div>
                     </div>
-                    <!--/ END Right Side -->
                 </div>
+                <!--/ END row -->
+
+                <hr><!-- horizontal line -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="text-muted text-center mb0"><strong>Note: </strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="text-center"><a href="#" class="text-center">www.site.com</a></p>
+                    </div>
+                </div>
+                <!--/ END row -->
             </div>
             <!--/ END Template Container -->
 
@@ -1371,14 +1320,6 @@
 
         <!-- Plugins and page level script : optional -->
         <script type="text/javascript" src="/javascript/pace.min.js"></script>
-        <script type="text/javascript" src="/plugins/selectize/js/selectize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.resize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.categories.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.time.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.tooltip.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.spline.js"></script>
-        <script type="text/javascript" src="/javascript/backend/pages/dashboard-v1.js"></script>
         <!--/ Plugins and page level script : optional -->
         <!--/ END JAVASCRIPT SECTION -->
     </body>

@@ -30,7 +30,7 @@
         <!--/ Application stylesheet -->
 
         <!-- Theme stylesheet -->
-		<link rel="stylesheet" href="/stylesheet/themes/theme.css">
+        <link rel="stylesheet" href="/stylesheet/themes/theme.css">
         <!--/ Theme stylesheet -->
 
         <!-- modernizr script -->
@@ -47,7 +47,7 @@
             <!-- START navbar header -->
             <div class="navbar-header">
                 <!-- Brand -->
-                <a class="navbar-brand" href="javascript:void(0);">
+                <a class="navbar-brand" href="/">
                     <span class="logo-figure"></span>
                     <span class="logo-text"></span>
                 </a>
@@ -79,16 +79,16 @@
                     </li>
                     <!--/ Offcanvas left -->
 
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-							<ul class="dropdown-menu">
-								<li><a href="#">First item</a></li>
-								<li><a href="#">Second item</a></li>
-								<li class="divider"></li>
-								<li><a href="#">Third item</a></li>
-							</ul>
-					</li>
-					
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">First item</a></li>
+                                <li><a href="#">Second item</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Third item</a></li>
+                            </ul>
+                    </li>
+
                 </ul>
                 <!--/ END Left nav -->
 
@@ -105,7 +105,7 @@
 
                 <!-- START Right nav -->
                 <ul class="nav navbar-nav navbar-right">
-					<!-- Notification dropdown -->
+                    <!-- Notification dropdown -->
                     <li class="dropdown custom" id="header-dd-notification">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
                             <span class="meta">
@@ -120,8 +120,8 @@
                                 <span class="option text-right"><a href="javascript:void(0);">Clear all</a></span>
                             </div>
                             <div class="dropdown-body slimscroll">
-                                
-								<!-- Message list -->
+
+                                <!-- Message list -->
                                 <div class="media-list">
                                     <a href="javascript:void(0);" class="media read border-dotted">
                                         <span class="media-object pull-left">
@@ -134,8 +134,8 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-									
-									<a href="page-message-rich.html" class="media border-dotted read">
+
+                                    <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar1.jpg" class="media-object img-circle" alt="">
                                         </span>
@@ -173,8 +173,8 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-									
-									<a href="page-message-rich.html" class="media border-dotted read">
+
+                                    <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar9.jpg" class="media-object img-circle" alt="">
                                         </span>
@@ -199,8 +199,8 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-									
-									<a href="page-message-rich.html" class="media border-dotted read">
+
+                                    <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar5.jpg" class="media-object img-circle" alt="">
                                         </span>
@@ -212,8 +212,8 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-									
-									<a href="page-message-rich.html" class="media border-dotted read">
+
+                                    <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar3.jpg" class="media-object img-circle" alt="">
                                         </span>
@@ -233,7 +233,7 @@
                         <!--/ Dropdown menu -->
                     </li>
                     <!--/ Notification dropdown -->
-					
+
                     <!-- Profile dropdown -->
                     <li class="dropdown profile">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
@@ -251,7 +251,7 @@
                         </ul>
                     </li>
                     <!-- Profile dropdown -->
-					<!-- Offcanvas right This menu will take position at the top of template header (mobile only). Make sure that only #header have the `position: relative`, or it may cause unwanted behavior -->
+                    <!-- Offcanvas right This menu will take position at the top of template header (mobile only). Make sure that only #header have the `position: relative`, or it may cause unwanted behavior -->
                     <li class="navbar-main">
                         <a href="javascript:void(0);" data-toggle="sidebar" data-direction="rtl" rel="tooltip" title="Feed / contact sidebar">
                             <span class="meta">
@@ -260,7 +260,7 @@
                         </a>
                     </li>
                     <!--/ Offcanvas right -->
-                  
+
                 </ul>
                 <!--/ END Right nav -->
             </div>
@@ -270,9 +270,9 @@
 
         <!-- START Template Sidebar (Left) -->
         <aside class="sidebar sidebar-left sidebar-menu">
-			<!-- START Sidebar Content -->
+            <!-- START Sidebar Content -->
             <section class="content slimscroll">
-				<!-- START Template Navigation/Menu -->
+                <!-- START Template Navigation/Menu -->
                 <ul class="topmenu topmenu-responsive" data-toggle="menu">
                     <li>
                         <a href="/" data-target="#dashboard" data-parent=".topmenu">
@@ -280,7 +280,7 @@
                             <span class="text">Dashboard</span>
                         </a>
                     </li>
-					<li >
+                    <li >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#layout" data-parent=".topmenu">
                             <span class="figure"><i class="ico-grid"></i></span>
                             <span class="text">Layouts</span>
@@ -290,45 +290,45 @@
                         <ul id="layout" class="submenu collapse ">
                             <li class="submenu-header ellipsis">Page Layout</li>
                             <li >
-                                <a href="layout-default.html">
+                                <a href="/layout/default.html">
                                     <span class="text">Default</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="layout-with-footer.html">
+                                <a href="/layout/with/footer.html">
                                     <span class="text">With footer</span>
                                     <span class="number"><span class="label label-success">N</span></span>
                                 </a>
                             </li>
                             <li >
-                                <a href="layout-reveal-header.html">
+                                <a href="/layout/reveal/header.html">
                                     <span class="text">Reveal header</span>
                                     <span class="number"><span class="label label-success">N</span></span>
                                 </a>
                             </li>
                             <li >
-                                <a href="layout-fixed-header.html">
+                                <a href="/layout/fixed/header.html">
                                     <span class="text">Fixed header</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="layout-fixed-sidebar.html">
+                                <a href="/layout/fixed/sidebar.html">
                                     <span class="text">Fixed sidebar</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="layout-navbar-collapse.html">
+                                <a href="/layout/navbar/collapse.html">
                                     <span class="text">Navbar Collapse</span>
                                 </a>
                             </li>
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-					<li class="active">
-                        <a href="widget.html" data-parent=".topmenu">
+                    <li class="active">
+                        <a href="/widget.html" data-parent=".topmenu">
                             <span class="figure"><i class="ico-tasks"></i></span>
                             <span class="text">Stats & Widgets</span>
-							<span class="number"><span class="label label-danger">6</span></span>
+                            <span class="number"><span class="label label-danger">6</span></span>
                         </a>
                     </li>
                     <li >
@@ -341,74 +341,74 @@
                         <ul id="components" class="submenu collapse ">
                             <li class="submenu-header ellipsis">Components</li>
                             <li >
-                                <a href="component-animation.html">
+                                <a href="/component/animation.html">
                                     <span class="text">Animation</span>
                                 </a>
                             </li>
-							<li >
-                                <a href="component-button.html">
+                            <li >
+                                <a href="/component/button.html">
                                     <span class="text">Button</span>
                                     <span class="number"><span class="label label-info">U</span></span>
                                 </a>
                             </li>
                             <li >
-                                <a href="component-carousel.html">
+                                <a href="/component/carousel.html">
                                     <span class="text">Carousel</span>
                                 </a>
                             </li>
-							<li >
-                                <a href="component-grid.html">
+                            <li >
+                                <a href="/component/grid.html">
                                     <span class="text">Grid</span>
                                 </a>
                             </li>
-							<li >
-                                <a href="component-icon.html">
+                            <li >
+                                <a href="/component/icon.html">
                                     <span class="text">Icon</span>
                                 </a>
                             </li>
-							<li >
-                                <a href="component-loading.html">
+                            <li >
+                                <a href="/component/loading.html">
                                     <span class="text">Loading indicator</span>
                                 </a>
                             </li>
-							<li >
-                                <a href="component-notification.html">
+                            <li >
+                                <a href="/component/notification.html">
                                     <span class="text">Notification</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="component-panel.html">
+                                <a href="/component/panel.html">
                                     <span class="text">Panel</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="component-pricing.html">
+                                <a href="/component/pricing.html">
                                     <span class="text">Pricing table / box</span>
                                 </a>
                             </li>
-							<li >
-                                <a href="component-slider.html">
+                            <li >
+                                <a href="/component/slider.html">
                                     <span class="text">Slider</span>
                                 </a>
                             </li>
-							<li >
-                                <a href="component-sortable.html">
+                            <li >
+                                <a href="/component/sortable.html">
                                     <span class="text">Sortable</span>
                                     <span class="number"><span class="label label-success">N</span></span>
                                 </a>
                             </li>
                             <li >
-                                <a href="component-tabsaccordion.html">
+                                <a href="/component/tabsaccordion.html">
                                     <span class="text">Tabs &amp; accordion</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="component-typography.html">
+                                <a href="/component/typography.html">
                                     <span class="text">Typography</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="component-others.html">
+                                <a href="/component/others.html">
                                     <span class="text">Miscelleneous</span>
                                 </a>
                             </li>
@@ -425,44 +425,44 @@
                         <ul id="form" class="submenu collapse ">
                             <li class="submenu-header ellipsis">Forms</li>
                             <li >
-                                <a href="form-element.html">
+                                <a href="/form/element.html">
                                     <span class="text">Element</span>
                                     <span class="number"><span class="label label-info">U</span></span>
                                 </a>
                             </li>
                             <li >
-                                <a href="form-layout.html">
+                                <a href="/form/layout.html">
                                     <span class="text">Layout</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="form-validation.html">
+                                <a href="/form/validation.html">
                                     <span class="text">Validation</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="form-wizard.html">
+                                <a href="/form/wizard.html">
                                     <span class="text">Wizard</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="form-wysiwyg.html">
+                                <a href="/form/wysiwyg.html">
                                     <span class="text">WYSIWYG Editor</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="form-xeditable.html">
+                                <a href="/form/xeditable.html">
                                     <span class="text">X-editable</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="form-fileupload.html">
+                                <a href="/form/fileupload.html">
                                     <span class="text">File Upload</span>
                                     <span class="number"><span class="label label-success">N</span></span>
                                 </a>
                             </li>
                             <li >
-                                <a href="form-imagecrop.html">
+                                <a href="/form/imagecrop.html">
                                     <span class="text">Image Crop</span>
                                     <span class="number"><span class="label label-success">N</span></span>
                                 </a>
@@ -480,12 +480,12 @@
                         <ul id="table" class="submenu collapse ">
                             <li class="submenu-header ellipsis">Tables</li>
                             <li >
-                                <a href="table-default.html">
+                                <a href="/table/default.html">
                                     <span class="text">Basic Tables</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="table-datatable.html">
+                                <a href="/table/datatable.html">
                                     <span class="text">Data Tables</span>
                                 </a>
                             </li>
@@ -502,11 +502,11 @@
                         <ul id="page" class="submenu collapse ">
                             <li class="submenu-header ellipsis">Miscelleneous</li>
                             <li >
-                                <a href="page-starter.html">
+                                <a href="/page/starter.html">
                                     <span class="text">Blank </span>
                                 </a>
                             </li>
-							<li >
+                            <li >
                                 <a href="javascript:void(0);" data-toggle="submenu" data-target="#blog" data-parent="#page">
                                     <span class="text">Blog page</span>
                                     <span class="arrow"></span>
@@ -514,19 +514,19 @@
                                 <!-- START 2nd Level Menu -->
                                 <ul id="blog" class="submenu collapse ">
                                     <li >
-                                        <a href="page-blog-default.html"><span class="text">Blog default</span></a>
+                                        <a href="/page/blog/default.html"><span class="text">Blog default</span></a>
                                     </li>
                                     <li >
-                                        <a href="page-blog-grid.html"><span class="text">Blog grid</span></a>
+                                        <a href="/page/blog/grid.html"><span class="text">Blog grid</span></a>
                                     </li>
                                     <li >
-                                        <a href="page-blog-single.html"><span class="text">Single post</span></a>
+                                        <a href="/page/blog/single.html"><span class="text">Single post</span></a>
                                     </li>
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
                             </li>
-							<li >
-                                <a href="page-calendar.html">
+                            <li >
+                                <a href="/page/calendar.html">
                                     <span class="text">Calendar</span>
                                 </a>
                             </li>
@@ -538,10 +538,10 @@
                                 <!-- START 2nd Level Menu -->
                                 <ul id="email" class="submenu collapse ">
                                     <li >
-                                        <a href="page-email-inbox.html"><span class="text">Inbox</span></a>
+                                        <a href="/page/email/inbox.html"><span class="text">Inbox</span></a>
                                     </li>
                                     <li >
-                                        <a href="page-email-view.html"><span class="text">View</span></a>
+                                        <a href="/page/email/view.html"><span class="text">View</span></a>
                                     </li>
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
@@ -554,44 +554,44 @@
                                 <!-- START 2nd Level Menu -->
                                 <ul id="error" class="submenu collapse ">
                                     <li >
-                                        <a href="page-error-404.html"><span class="text">Not Found (404)</span></a>
+                                        <a href="/page/error/404.html"><span class="text">Not Found (404)</span></a>
                                     </li>
                                     <li >
-                                        <a href="page-error-403.html"><span class="text">Forbidden (403)</span></a>
+                                        <a href="/page/error/403.html"><span class="text">Forbidden (403)</span></a>
                                     </li>
                                     <li >
-                                        <a href="page-error-500.html"><span class="text">Server Error (500)</span></a>
+                                        <a href="/page/error/500.html"><span class="text">Server Error (500)</span></a>
                                     </li>
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
                             </li>
-							<li >
-                                <a href="page-faq.html">
+                            <li >
+                                <a href="/page/faq.html">
                                     <span class="text">FAQ</span>
                                 </a>
                             </li>
-							<li >
-                                <a href="page-invoice.html">
+                            <li >
+                                <a href="/page/invoice.html">
                                     <span class="text">Invoice</span>
                                 </a>
                             </li>
-							<li >
-                                <a href="page-profile.html">
+                            <li >
+                                <a href="/page/profile.html">
                                     <span class="text">Profile</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="page-login.html">
+                                <a href="/page/login.html">
                                     <span class="text">Login</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="page-login-returned.html">
+                                <a href="/page/login/returned.html">
                                     <span class="text">Lock Screen</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="page-register.html">
+                                <a href="/page/register.html">
                                     <span class="text">Register</span>
                                 </a>
                             </li>
@@ -603,10 +603,10 @@
                                 <!-- START 2nd Level Menu -->
                                 <ul id="media" class="submenu collapse ">
                                     <li >
-                                        <a href="page-media-album.html"><span class="text">Media album</span></a>
+                                        <a href="/page/media/album.html"><span class="text">Media album</span></a>
                                     </li>
                                     <li >
-                                        <a href="page-media-gallery.html"><span class="text">Media gallery</span></a>
+                                        <a href="/page/media/gallery.html"><span class="text">Media gallery</span></a>
                                     </li>
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
@@ -619,28 +619,28 @@
                                 <!-- START 2nd Level Menu -->
                                 <ul id="message" class="submenu collapse ">
                                     <li >
-                                        <a href="page-message-bubble.html"><span class="text">Bubble message</span></a>
+                                        <a href="/page/message/bubble.html"><span class="text">Bubble message</span></a>
                                     </li>
                                     <li >
-                                        <a href="page-message-rich.html"><span class="text">Rich message</span></a>
+                                        <a href="/page/message/rich.html"><span class="text">Rich message</span></a>
                                     </li>
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
                             </li>
                             <li >
-                                <a href="page-timeline-v2.html">
+                                <a href="/page/timeline/v2.html">
                                     <span class="text">Timeline</span>
                                 </a>
                             </li>
-                           
+
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
                     <li >
-                        <a href="chart-flot.html">
+                        <a href="/chart/flot.html">
                             <span class="figure"><i class="ico-stats-up"></i></span>
                             <span class="text">Charts</span>
-							<span class="number"><span class="label label-success">11</span></span>
+                            <span class="number"><span class="label label-success">11</span></span>
                         </a>
                     </li>
                     <li >
@@ -655,20 +655,20 @@
                         <ul id="maps" class="submenu collapse ">
                             <li class="submenu-header ellipsis">Maps</li>
                             <li >
-                                <a href="maps-vector.html">
+                                <a href="/maps/vector.html">
                                     <span class="text">Vector</span>
                                     <span class="number"><span class="label label-info">U</span></span>
                                 </a>
                             </li>
                             <li >
-                                <a href="maps-google.html">
+                                <a href="/maps/google.html">
                                     <span class="text">Google</span>
                                 </a>
                             </li>
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-					<li >
+                    <li >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#submenu1" data-parent=".topmenu">
                             <span class="figure">
                                 <i class="ico-sitemap"></i>
@@ -682,32 +682,32 @@
                             <li >
                                 <a href="javascript:void(0);" data-toggle="submenu" data-target="#submenu2" data-parent="#submenu">
                                     <span class="text">Menu Level 1.1</span>
-									<span class="arrow"></span>
+                                    <span class="arrow"></span>
                                 </a>
-								<ul id="submenu2" class="submenu collapse ">
-									<li class="submenu-header ellipsis">Menu Levels 1.1</li>
-									<li >
-										<a href="javascript:void(0);" data-toggle="submenu" data-target="#submenu3" data-parent="#submenu2">
-											<span class="text">Menu Level 2.1</span>
-											<span class="arrow"></span>
-										</a>
-										<ul id="submenu3" class="submenu collapse ">
-											<li class="submenu-header ellipsis">Menu Levels 2.1</li>
-											<li >
-												<a href="#">
-													<span class="text">Menu Level 3.1</span>
-												</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
+                                <ul id="submenu2" class="submenu collapse ">
+                                    <li class="submenu-header ellipsis">Menu Levels 1.1</li>
+                                    <li >
+                                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#submenu3" data-parent="#submenu2">
+                                            <span class="text">Menu Level 2.1</span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                        <ul id="submenu3" class="submenu collapse ">
+                                            <li class="submenu-header ellipsis">Menu Levels 2.1</li>
+                                            <li >
+                                                <a href="#">
+                                                    <span class="text">Menu Level 3.1</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-				</ul>
+                </ul>
                 <!--/ END Template Navigation/Menu -->
-				<!-- START Sidebar summary -->
+                <!-- START Sidebar summary -->
                 <!-- Summary -->
                 <h5 class="heading">Summary</h5>
                 <div class="wrapper">
@@ -747,8 +747,8 @@
             <!--/ END Sidebar Container -->
         </aside>
         <!--/ END Template Sidebar (Left) -->
-		
-		<!-- START Template Sidebar (right) -->
+
+        <!-- START Template Sidebar (right) -->
         <aside class="sidebar sidebar-right">
             <!-- START Offcanvas -->
             <div class="offcanvas-container" data-toggle="offcanvas" data-options='{"openerClass":"offcanvas-opener", "closerClass":"offcanvas-closer"}'>
@@ -1539,7 +1539,7 @@
                                     <!-- indicator -->
                                     <div class="indicator"><span class="spinner"></span></div>
                                     <!--/ indicator -->
-                                    <img data-toggle="unveil" src="/image/background/400x250/placeholder.jpg" data-src="http://maps.googleapis.com/maps/api/staticmap?center=-15.800513,-47.91378&zoom=11&size=400x250&sensor=false" alt="Cover" width="100%" />
+                                    <img data-toggle="unveil" src="/image/background/400x250/placeholder.jpg" data-src="https://maps.googleapis.com/maps/api/staticmap?center=50.0615581,19.9365147&zoom=13&size=400x250&sensor=false&key=AIzaSyBkba35-FVRDk3mBFH7XrEWgNlfb8IeAX8" alt="Cover" width="100%" />
                                 </div>
                                 <!--/ media -->
                             </div>
@@ -2128,9 +2128,9 @@
                                 <tbody>
                                     <tr>
                                         <td width="5%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox1" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                <label for="customcheckbox1"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox1" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">
+                                                <label for="customcheckbox1"></label>
                                             </div>
                                         </td>
                                         <td width="5%"><i class="ico-food"></td>
@@ -2138,9 +2138,9 @@
                                     </tr>
                                     <tr>
                                         <td width="5%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox2" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                <label for="customcheckbox2"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox2" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">
+                                                <label for="customcheckbox2"></label>
                                             </div>
                                         </td>
                                         <td width="5%"><i class="ico-gun"></td>
@@ -2148,9 +2148,9 @@
                                     </tr>
                                     <tr>
                                         <td width="5%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox3" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                <label for="customcheckbox3"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox3" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">
+                                                <label for="customcheckbox3"></label>
                                             </div>
                                         </td>
                                         <td width="5%"><i class="ico-football"></td>
@@ -2158,9 +2158,9 @@
                                     </tr>
                                     <tr>
                                         <td width="5%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox4" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                <label for="customcheckbox4"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox4" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">
+                                                <label for="customcheckbox4"></label>
                                             </div>
                                         </td>
                                         <td width="5%"><i class="ico-shield3"></td>
@@ -2168,9 +2168,9 @@
                                     </tr>
                                     <tr>
                                         <td width="5%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox5" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                <label for="customcheckbox5"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox5" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">
+                                                <label for="customcheckbox5"></label>
                                             </div>
                                         </td>
                                         <td width="5%"><i class="ico-power-cord"></td>
@@ -2415,7 +2415,7 @@
         <!--/ Application and vendor script : mandatory -->
 
         <!-- Plugins and page level script : optional -->
-		<script type="text/javascript" src="/javascript/pace.min.js"></script>
+        <script type="text/javascript" src="/javascript/pace.min.js"></script>
         <script type="text/javascript" src="/plugins/owl/js/owl.carousel.js"></script>
         <script type="text/javascript" src="/plugins/flot/js/jquery.flot.js"></script>
         <script type="text/javascript" src="/plugins/flot/js/jquery.flot.resize.js"></script>

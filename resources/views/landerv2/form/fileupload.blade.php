@@ -19,8 +19,7 @@
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
-        <link rel="stylesheet" href="/plugins/selectize/css/selectize.css">
-        <link rel="stylesheet" href="/plugins/flot/css/flot.css">
+        <link rel="stylesheet" href="/plugins/fileupload/css/fileupload.css">
         <!--/ Plugins stylesheet : optional -->
 
         <!-- Application stylesheet : mandatory -->
@@ -88,7 +87,7 @@
                                 <li><a href="#">Third item</a></li>
                             </ul>
                     </li>
-
+                    
                 </ul>
                 <!--/ END Left nav -->
 
@@ -120,7 +119,7 @@
                                 <span class="option text-right"><a href="javascript:void(0);">Clear all</a></span>
                             </div>
                             <div class="dropdown-body slimscroll">
-
+                                
                                 <!-- Message list -->
                                 <div class="media-list">
                                     <a href="javascript:void(0);" class="media read border-dotted">
@@ -134,7 +133,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar1.jpg" class="media-object img-circle" alt="">
@@ -173,7 +172,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar9.jpg" class="media-object img-circle" alt="">
@@ -199,7 +198,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar5.jpg" class="media-object img-circle" alt="">
@@ -212,7 +211,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar3.jpg" class="media-object img-circle" alt="">
@@ -233,7 +232,7 @@
                         <!--/ Dropdown menu -->
                     </li>
                     <!--/ Notification dropdown -->
-
+                    
                     <!-- Profile dropdown -->
                     <li class="dropdown profile">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
@@ -260,13 +259,14 @@
                         </a>
                     </li>
                     <!--/ Offcanvas right -->
-
+                  
                 </ul>
                 <!--/ END Right nav -->
             </div>
             <!--/ END Toolbar -->
         </header>
         <!--/ END Template Header -->
+        
 
         <!-- START Template Sidebar (Left) -->
         <aside class="sidebar sidebar-left sidebar-menu">
@@ -274,7 +274,7 @@
             <section class="content slimscroll">
                 <!-- START Template Navigation/Menu -->
                 <ul class="topmenu topmenu-responsive" data-toggle="menu">
-                    <li class="active">
+                    <li>
                         <a href="/" data-target="#dashboard" data-parent=".topmenu">
                             <span class="figure"><i class="ico-home2"></i></span>
                             <span class="text">Dashboard</span>
@@ -338,7 +338,7 @@
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="components" class="submenu collapse ">
+                        <ul id="components" class="submenu collapse">
                             <li class="submenu-header ellipsis">Components</li>
                             <li >
                                 <a href="/component/animation.html">
@@ -415,16 +415,16 @@
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-                    <li >
+                    <li class="active open">
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#form" data-parent=".topmenu">
                             <span class="figure"><i class="ico-file"></i></span>
                             <span class="text">Forms</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="form" class="submenu collapse ">
+                        <ul id="form" class="submenu collapse in">
                             <li class="submenu-header ellipsis">Forms</li>
-                            <li >
+                            <li>
                                 <a href="/form/element.html">
                                     <span class="text">Element</span>
                                     <span class="number"><span class="label label-info">U</span></span>
@@ -455,7 +455,7 @@
                                     <span class="text">X-editable</span>
                                 </a>
                             </li>
-                            <li >
+                            <li class="active" >
                                 <a href="/form/fileupload.html">
                                     <span class="text">File Upload</span>
                                     <span class="number"><span class="label label-success">N</span></span>
@@ -632,7 +632,7 @@
                                     <span class="text">Timeline</span>
                                 </a>
                             </li>
-
+                           
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
@@ -747,7 +747,7 @@
             <!--/ END Sidebar Container -->
         </aside>
         <!--/ END Template Sidebar (Left) -->
-
+        
         <!-- START Template Sidebar (right) -->
         <aside class="sidebar sidebar-right">
             <!-- START Offcanvas -->
@@ -1134,225 +1134,77 @@
                 <!-- Page Header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold"><span class="figure"><i class="ico-home2"></i></span> Dashboards</h4>
+                        <h4 class="title semibold">File Uploader</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <ol class="breadcrumb breadcrumb-transparent nm">
+                                <li><a href="#">Form</a></li>
+                                <li class="active">File Uploader</li>
+                            </ol>
+                        </div>
+                        <!--/ Toolbar -->
                     </div>
                 </div>
                 <!-- Page Header -->
 
+                <!-- START Row -->
                 <div class="row">
-                    <!-- START Left Side -->
-                    <div class="col-md-9">
-
-                        <!-- Website States -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <!-- START panel -->
-                                <div class="panel ">
-                                    <!-- panel-toolbar -->
-                                    <div class="panel-heading pt10">
-                                        <div class="panel-toolbar">
-                                            <h5 class="semibold nm ellipsis">Website Stats</h5>
-                                        </div>
-                                    </div>
-                                    <!--/ panel-toolbar -->
-                                    <!-- panel-body -->
-                                    <div class="panel-body pt0">
-                                        <div class="chart mt10" id="chart-audience" style="height:250px;"></div>
-                                    </div>
-                                    <!--/ panel-body -->
-                                    <!-- panel-footer -->
-                                    <div class="panel-footer hidden-xs">
-                                        <ul class="nav nav-section nav-justified">
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">24,548</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Visits</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-danger"><i class="ico-arrow-down4"></i> 32%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">175,132</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Page Views</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 15%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5"><span data-toggle="counterup">89.96</span>%</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Bounce Rate</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 3%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!--/ panel-footer -->
-                                </div>
-                                <!--/ END panel -->
-                            </div>
-                        </div>
-                        <!--/ Website States -->
-
-                        <!-- Browser Breakpoint -->
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <!-- START panel -->
-                                <div class="panel panel-default">
-                                    <!-- panel heading/header -->
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title ellipsis"><i class="ico-chrome mr5"></i>Browser Breakpoint</h3>
-                                        <!-- panel toolbar -->
-                                        <div class="panel-toolbar text-right">
-                                            <!-- option -->
-                                            <div class="option">
-                                                <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
-                                                <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
-                                            </div>
-                                            <!--/ option -->
-                                        </div>
-                                        <!--/ panel toolbar -->
-                                    </div>
-                                    <!--/ panel heading/header -->
-                                    <!-- panel body with collapse capabale -->
-                                    <div class="table-responsive panel-collapse pull out">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Browser Name</th>
-                                                    <th>Rendering Engine</th>
-                                                    <th>Platform</th>
-                                                    <th>Activity</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Google Chrome</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,4,1,5,3</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">50.65%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Safari</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">5,2,1,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">20.31%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Mozilla Firefox</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,1,5,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">61.22%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Internet Explorer</span></td>
-                                                    <td>Trident</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">3,1,4,5,2</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">0.65%</span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!--/ panel body with collapse capabale -->
-                                </div>
-                                <!--/ END panel -->
-                            </div>
-                        </div>
-                        <!-- Browser Breakpoint -->
+                    <div class="col-md-12">
+                        <p class="lead semibold">File Upload widget with multiple file selection, drag&amp;drop support, progress bars, validation and preview images, audio and video for jQuery. Supports cross-domain, chunked and resumable file uploads and client-side image resizing.</p>
                     </div>
-                    <!--/ END Left Side -->
+                </div>
+                <!--/ END Row -->
 
-                    <!-- START Right Side -->
-                    <div class="col-md-3">
-                        <div class="panel panel-minimal">
-
-                            <div class="panel">
-                                <div class="panel-body">
-                                    <h4 class="semibold nm"><i class="ico-dollar mr5"></i>Today Income</h4>
-                                    <h2 class="thin mt5 text-muted">+<span data-toggle="counterup">1120</span></h2>
-                                    <!-- chart -->
-                                    <div class="chart" style="height:120px;" id="stats1"></div>
-                                    <!--/ chart -->
-                                </div>
+                <!-- START Row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- START Panel -->
+                        <div class="panel panel-default" id="basic-uploader">
+                            <!-- panel header/heading -->
+                            <div class="panel-heading">
+                                <h3 class="panel-title">File Uploader</h3>
                             </div>
-
-                            <div class="widget panel bgcolor-warning">
+                            <!--/ panel header/heading -->
                             <!-- panel body -->
                             <div class="panel-body">
-                                <div class="clearfix">
-                                    <p class="pull-left semibold">Perth, AU</p>
-                                    <p class="pull-right semibold">
-                                        <span class="mr5">°F</span>
-                                        <span>°C</span>
-                                    </p>
+                                <!-- error message -->
+                                <div class="alert alert-info">This uploader will return an error since there is no upload logic. You need to code your own upload logic.</div>
+
+                                <!-- The global progress bar -->
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-success"></div>
                                 </div>
-                                <div class="text-center mt15 mb15">
-                                    <h1 class="semibold">
-                                        <i class="ico-sun22"></i>
-                                        <span class="">32°</span>
-                                    </h1>
+
+                                <!-- The fileinput-button span is used to style the file input field as button -->
+                                <div class="mb15">
+                                    <span class="btn btn-primary fileinput-button">
+                                        <i class="glyphicon glyphicon-plus"></i>
+                                        <span>Add files...</span>
+                                        <!-- The file input field used as target for the file upload widget -->
+                                        <input type="file" name="files[]" multiple>
+                                    </span>
                                 </div>
-                                <div class="clearfix">
-                                    <p class="pull-left semibold nm">
-                                        <i class="ico-arrow-down5"></i> 31°
-                                    </p>
-                                    <p class="pull-right semibold nm">
-                                        <i class="ico-arrow-up5"></i> 37°
-                                    </p>
+
+                                <!-- dropzone -->
+                                <div class="dropzone table-layout well mb0" style="box-shadow:none;border-style:dashed;height:200px;">
+                                    <div class="col-xs-11 text-center">
+                                        <h4 class="text-muted"><i class="ico-file-plus2 mr5"></i> Drag and drop your file here!</h4>
+                                    </div>
                                 </div>
                             </div>
                             <!--/ panel body -->
-                        </div>
 
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h5 class="panel-title"><i class="ico-globe mr5"></i>Traffic</h5>
-                            </div>
-                            <ul class="list-group">
-                                <li class="list-group-item">Visits <span class="semibold pull-right">47650</span></li>
-                                <li class="list-group-item">Unique Visits <span class="semibold pull-right">15620</span></li>
-                                <li class="list-group-item">
-                                    <p>Traffic Sources</p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-success"></i>GOOGLE.COM
-                                        <span class="pull-right semibold">15883</span>
-                                    </p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-danger"></i>DIRECT TRAFFIC
-                                        <span class="pull-right semibold">11912</span>
-                                    </p>
-                                </li>
-                            </ul>
+                            <!-- file list -->
+                            <table class="table table-striped table-hovered upload-lists">
+                                <tbody></tbody>
+                            </table>
                         </div>
-
-                        </div>
+                        <!--/ END Panel -->
                     </div>
-                    <!--/ END Right Side -->
                 </div>
+                <!--/ END Row -->
             </div>
             <!--/ END Template Container -->
 
@@ -1371,14 +1223,21 @@
 
         <!-- Plugins and page level script : optional -->
         <script type="text/javascript" src="/javascript/pace.min.js"></script>
-        <script type="text/javascript" src="/plugins/selectize/js/selectize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.resize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.categories.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.time.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.tooltip.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.spline.js"></script>
-        <script type="text/javascript" src="/javascript/backend/pages/dashboard-v1.js"></script>
+        <script type="text/javascript" src="/plugins/fileupload/js/vendor/jquery.ui.widget.js"></script>
+        <script type="text/javascript" src="/plugins/fileupload/js/vendor/load-image.js"></script>
+        <script type="text/javascript" src="/plugins/fileupload/js/vendor/load-image-meta.js"></script>
+        <script type="text/javascript" src="/plugins/fileupload/js/vendor/load-image-exif.js"></script>
+        <script type="text/javascript" src="/plugins/fileupload/js/vendor/load-image-ios.js"></script>
+        <script type="text/javascript" src="/plugins/fileupload/js/vendor/canvas-to-blob.js"></script>
+        <script type="text/javascript" src="/plugins/fileupload/js/vendor/jquery.iframe-transport.js"></script>
+        <script type="text/javascript" src="/plugins/fileupload/js/jquery.fileupload.js"></script>
+        <script type="text/javascript" src="/plugins/fileupload/js/jquery.fileupload-process.js"></script>
+        <script type="text/javascript" src="/plugins/fileupload/js/jquery.fileupload-image.js"></script>
+        <script type="text/javascript" src="/plugins/fileupload/js/jquery.fileupload-audio.js"></script>
+        <script type="text/javascript" src="/plugins/fileupload/js/jquery.fileupload-video.js"></script>
+        <script type="text/javascript" src="/plugins/fileupload/js/jquery.fileupload-validate.js"></script>
+        <script type="text/javascript" src="/plugins/fileupload/js/jquery.fileupload-ui.js"></script>
+        <script type="text/javascript" src="/javascript/backend/forms/fileupload.js"></script>
         <!--/ Plugins and page level script : optional -->
         <!--/ END JAVASCRIPT SECTION -->
     </body>

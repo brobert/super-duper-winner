@@ -19,8 +19,9 @@
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
+        <link rel="stylesheet" href="/plugins/magnific/css/magnific.css">
         <link rel="stylesheet" href="/plugins/selectize/css/selectize.css">
-        <link rel="stylesheet" href="/plugins/flot/css/flot.css">
+        <link rel="stylesheet" href="/plugins/gritter/css/gritter.css">
         <!--/ Plugins stylesheet : optional -->
 
         <!-- Application stylesheet : mandatory -->
@@ -88,7 +89,7 @@
                                 <li><a href="#">Third item</a></li>
                             </ul>
                     </li>
-
+                    
                 </ul>
                 <!--/ END Left nav -->
 
@@ -120,7 +121,7 @@
                                 <span class="option text-right"><a href="javascript:void(0);">Clear all</a></span>
                             </div>
                             <div class="dropdown-body slimscroll">
-
+                                
                                 <!-- Message list -->
                                 <div class="media-list">
                                     <a href="javascript:void(0);" class="media read border-dotted">
@@ -134,7 +135,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar1.jpg" class="media-object img-circle" alt="">
@@ -173,7 +174,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar9.jpg" class="media-object img-circle" alt="">
@@ -199,7 +200,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar5.jpg" class="media-object img-circle" alt="">
@@ -212,7 +213,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar3.jpg" class="media-object img-circle" alt="">
@@ -233,7 +234,7 @@
                         <!--/ Dropdown menu -->
                     </li>
                     <!--/ Notification dropdown -->
-
+                    
                     <!-- Profile dropdown -->
                     <li class="dropdown profile">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
@@ -260,7 +261,7 @@
                         </a>
                     </li>
                     <!--/ Offcanvas right -->
-
+                  
                 </ul>
                 <!--/ END Right nav -->
             </div>
@@ -274,7 +275,7 @@
             <section class="content slimscroll">
                 <!-- START Template Navigation/Menu -->
                 <ul class="topmenu topmenu-responsive" data-toggle="menu">
-                    <li class="active">
+                    <li>
                         <a href="/" data-target="#dashboard" data-parent=".topmenu">
                             <span class="figure"><i class="ico-home2"></i></span>
                             <span class="text">Dashboard</span>
@@ -492,14 +493,14 @@
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-                    <li >
+                    <li class="active open" >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#page" data-parent=".topmenu">
                             <span class="figure"><i class="ico-copy4"></i></span>
                             <span class="text">Miscelleneous</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="page" class="submenu collapse ">
+                        <ul id="page" class="submenu collapse in">
                             <li class="submenu-header ellipsis">Miscelleneous</li>
                             <li >
                                 <a href="/page/starter.html">
@@ -525,7 +526,7 @@
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
                             </li>
-                            <li >
+                            <li>
                                 <a href="/page/calendar.html">
                                     <span class="text">Calendar</span>
                                 </a>
@@ -611,14 +612,14 @@
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
                             </li>
-                            <li >
+                            <li class="active open" >
                                 <a href="javascript:void(0);" data-toggle="submenu" data-target="#message" data-parent="#page">
                                     <span class="text">Message</span>
                                     <span class="arrow"></span>
                                 </a>
                                 <!-- START 2nd Level Menu -->
-                                <ul id="message" class="submenu collapse ">
-                                    <li >
+                                <ul id="message" class="submenu collapse in">
+                                    <li class="active">
                                         <a href="/page/message/bubble.html"><span class="text">Bubble message</span></a>
                                     </li>
                                     <li >
@@ -632,7 +633,7 @@
                                     <span class="text">Timeline</span>
                                 </a>
                             </li>
-
+                           
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
@@ -747,7 +748,7 @@
             <!--/ END Sidebar Container -->
         </aside>
         <!--/ END Template Sidebar (Left) -->
-
+        
         <!-- START Template Sidebar (right) -->
         <aside class="sidebar sidebar-right">
             <!-- START Offcanvas -->
@@ -1134,225 +1135,349 @@
                 <!-- Page Header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold"><span class="figure"><i class="ico-home2"></i></span> Dashboards</h4>
+                        <h4 class="title semibold">Message - bubble</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <div class="toolbar">
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ModalComposeMessage"><i class="ico-pencil5"></i> Compose Message</button>
+                        </div>
                     </div>
                 </div>
                 <!-- Page Header -->
 
-                <div class="row">
-                    <!-- START Left Side -->
-                    <div class="col-md-9">
-
-                        <!-- Website States -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <!-- START panel -->
-                                <div class="panel ">
-                                    <!-- panel-toolbar -->
-                                    <div class="panel-heading pt10">
-                                        <div class="panel-toolbar">
-                                            <h5 class="semibold nm ellipsis">Website Stats</h5>
-                                        </div>
+                <!-- START Table layout -->
+                <div class="table-layout nm">
+                    <!-- message list-->
+                    <div class="col-lg-4 valign-top panel panel-minimal">
+                        <!-- panel heading -->
+                        <div class="panel-heading">
+                            <!-- panel toolbar -->
+                            <div class="panel-toolbar">
+                                <div class="input-group">
+                                    <div class="has-icon">
+                                        <input type="text" class="form-control" placeholder="Filter message...">
+                                        <i class="ico-search form-control-icon"></i>
                                     </div>
-                                    <!--/ panel-toolbar -->
-                                    <!-- panel-body -->
-                                    <div class="panel-body pt0">
-                                        <div class="chart mt10" id="chart-audience" style="height:250px;"></div>
-                                    </div>
-                                    <!--/ panel-body -->
-                                    <!-- panel-footer -->
-                                    <div class="panel-footer hidden-xs">
-                                        <ul class="nav nav-section nav-justified">
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">24,548</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Visits</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-danger"><i class="ico-arrow-down4"></i> 32%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">175,132</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Page Views</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 15%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5"><span data-toggle="counterup">89.96</span>%</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Bounce Rate</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 3%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default">Search</button>
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                        <ul class="dropdown-menu pull-right" role="menu">
+                                            <li class="dropdown-header">Filter :</li>
+                                            <li><a href="javascript:void(0);"><i class="icon ico-download22"></i>Inbox</a></li>
+                                            <li><a href="javascript:void(0);"><i class="icon ico-upload22"></i>Outbox</a></li>
+                                            <li><a href="javascript:void(0);"><i class="icon ico-remove4"></i>Trash</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="javascript:void(0);"><i class="icon ico-briefcase2"></i>Others</a></li>
                                         </ul>
                                     </div>
-                                    <!--/ panel-footer -->
                                 </div>
-                                <!--/ END panel -->
                             </div>
                         </div>
-                        <!--/ Website States -->
+                        <!--/ panel heading -->
 
-                        <!-- Browser Breakpoint -->
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <!-- START panel -->
-                                <div class="panel panel-default">
-                                    <!-- panel heading/header -->
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title ellipsis"><i class="ico-chrome mr5"></i>Browser Breakpoint</h3>
-                                        <!-- panel toolbar -->
-                                        <div class="panel-toolbar text-right">
-                                            <!-- option -->
-                                            <div class="option">
-                                                <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
-                                                <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
-                                            </div>
-                                            <!--/ option -->
-                                        </div>
-                                        <!--/ panel toolbar -->
-                                    </div>
-                                    <!--/ panel heading/header -->
-                                    <!-- panel body with collapse capabale -->
-                                    <div class="table-responsive panel-collapse pull out">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Browser Name</th>
-                                                    <th>Rendering Engine</th>
-                                                    <th>Platform</th>
-                                                    <th>Activity</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Google Chrome</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,4,1,5,3</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">50.65%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Safari</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">5,2,1,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">20.31%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Mozilla Firefox</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,1,5,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">61.22%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Internet Explorer</span></td>
-                                                    <td>Trident</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">3,1,4,5,2</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">0.65%</span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!--/ panel body with collapse capabale -->
-                                </div>
-                                <!--/ END panel -->
+                        <hr class="mt10 mb10"><!-- horizontal line -->
+                        
+                        <!-- panel body -->
+                        <div class="panel-body np">
+                            <!-- message list -->
+                            <div class="media-list">
+                                <a href="" class="media">
+                                    <span class="pull-left">
+                                        <img src="/image/avatar/avatar6.jpg" class="media-object img-circle" alt="" width="50px" height="50px;">
+                                    </span>
+                                    <span class="media-body">
+                                        <span class="media-heading">Arthur Abbott</span>
+                                        <span class="media-text ellipsis nm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</span>
+                                        <!-- meta icon -->
+                                        <span class="media-meta"><i class="ico-star6"></i></span>
+                                        <span class="media-meta"><i class="ico-attachment"></i></span>
+                                        <span class="media-meta pull-right">2m</span>
+                                        <!--/ meta icon -->
+                                    </span>
+                                </a>
+
+                                <a href="" class="media read">
+                                    <span class="pull-left">
+                                        <img src="/image/avatar/avatar1.jpg" class="media-object img-circle" alt="" width="50px" height="50px;">
+                                    </span>
+                                    <span class="media-body">
+                                        <span class="media-heading">Martina Poole</span>
+                                        <span class="media-text ellipsis nm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</span>
+                                        <!-- meta icon -->
+                                        <span class="media-meta"><i class="ico-reply"></i></span>
+                                        <span class="media-meta"><i class="ico-attachment"></i></span>
+                                        <span class="media-meta pull-right">20m</span>
+                                        <!--/ meta icon -->
+                                    </span>
+                                </a>
+
+                                <a href="" class="media">
+                                    <span class="pull-left">
+                                        <img src="/image/avatar/avatar2.jpg" class="media-object img-circle" alt="" width="50px" height="50px;">
+                                    </span>
+                                    <span class="media-body">
+                                        <span class="media-heading">Elvis Christensen</span>
+                                        <span class="media-text ellipsis nm">Duis aute irure dolor in reprehenderit in voluptate velit esse.</span>
+                                        <!-- meta icon -->
+                                        <span class="media-meta"><i class="ico-attachment"></i></span>
+                                        <span class="media-meta pull-right">5h</span>
+                                        <!--/ meta icon -->
+                                    </span>
+                                </a>
+
+                                <a href="" class="media read">
+                                    <span class="pull-left">
+                                        <img src="/image/avatar/avatar3.jpg" class="media-object img-circle" alt="" width="50px" height="50px;">
+                                    </span>
+                                    <span class="media-body">
+                                        <span class="media-heading">Walter Foster</span>
+                                        <span class="media-text ellipsis nm">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+                                        <!-- meta icon -->
+                                        <span class="media-meta"><i class="ico-attachment"></i></span>
+                                        <span class="media-meta pull-right">21h</span>
+                                        <!--/ meta icon -->
+                                    </span>
+                                </a>
+
+                                <a href="" class="media read">
+                                    <span class="pull-left">
+                                        <img src="/image/avatar/avatar4.jpg" class="media-object img-circle" alt="" width="50px" height="50px;">
+                                    </span>
+                                    <span class="media-body">
+                                        <span class="media-heading">Callum Santosr</span>
+                                        <span class="media-text ellipsis nm">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+                                        <!-- meta icon -->
+                                        <span class="media-meta pull-right">1d</span>
+                                        <!--/ meta icon -->
+                                    </span>
+                                </a>
+
+                                <a href="" class="media read">
+                                    <span class="pull-left">
+                                        <img src="/image/avatar/avatar5.jpg" class="media-object img-circle" alt="" width="50px" height="50px;">
+                                    </span>
+                                    <span class="media-body">
+                                        <span class="media-heading">Noelani Blevins</span>
+                                        <span class="media-text ellipsis nm">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</span>
+                                        <!-- meta icon -->
+                                        <span class="media-meta pull-right">2d</span>
+                                        <!--/ meta icon -->
+                                    </span>
+                                </a>
+
+                                <a href="" class="media read">
+                                    <span class="pull-left">
+                                        <img src="/image/avatar/avatar8.jpg" class="media-object img-circle" alt="" width="50px" height="50px;">
+                                    </span>
+                                    <span class="media-body">
+                                        <span class="media-heading">Carl Johnson</span>
+                                        <span class="media-text ellipsis nm">Curabitur consequat, lectus sit amet luctus vulputate, nisi sem</span>
+                                        <!-- meta icon -->
+                                        <span class="media-meta"><i class="ico-attachment"></i></span>
+                                        <span class="media-meta pull-right">2w</span>
+                                        <!--/ meta icon -->
+                                    </span>
+                                </a>
+
+                                <a href="" class="media read">
+                                    <span class="pull-left">
+                                        <img src="/image/avatar/avatar9.jpg" class="media-object img-circle" alt="" width="50px" height="50px;">
+                                    </span>
+                                    <span class="media-body">
+                                        <span class="media-heading">Tamara Moon</span>
+                                        <span class="media-text ellipsis nm">Aliquam ultrices iaculis odio. Nam interdum enim non nisi. Aenean eget metus.</span>
+                                        <!-- meta icon -->
+                                        <span class="media-meta"><i class="ico-attachment"></i></span>
+                                        <span class="media-meta pull-right">2w</span>
+                                        <!--/ meta icon -->
+                                    </span>
+                                </a>
                             </div>
+                            <!-- message list -->
                         </div>
-                        <!-- Browser Breakpoint -->
+                        <!--/ panel body -->
                     </div>
-                    <!--/ END Left Side -->
+                    <!--/ message list -->
 
-                    <!-- START Right Side -->
-                    <div class="col-md-3">
-                        <div class="panel panel-minimal">
-
-                            <div class="panel">
-                                <div class="panel-body">
-                                    <h4 class="semibold nm"><i class="ico-dollar mr5"></i>Today Income</h4>
-                                    <h2 class="thin mt5 text-muted">+<span data-toggle="counterup">1120</span></h2>
-                                    <!-- chart -->
-                                    <div class="chart" style="height:120px;" id="stats1"></div>
-                                    <!--/ chart -->
+                    <!-- message content -->
+                    <div class="col-lg-8 valign-top panel panel-default">
+                        <!-- panel heading -->
+                        <div class="panel-heading">
+                            <h5 class="panel-title"><i class="ico-star6 text-warning mr5"></i> Arthur Abbott</h5>
+                            <!-- panel toolbar -->
+                            <div class="panel-toolbar text-right">
+                                <div class="btn-group hidden-xs">
+                                    <button type="button" class="btn btn-sm btn-default"><i class="ico-folder"></i></button>
+                                    <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                        <li role="presentation" class="dropdown-header">Move to folder</li>
+                                        <li><a href="javascript:void(0);">Important</a></li>
+                                        <li><a href="javascript:void(0);">Misc</a></li>
+                                        <li><a href="javascript:void(0);">Work</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-default"><i class="ico-archive2"></i></button>
+                                    <button type="button" class="btn btn-sm btn-default"><i class="ico-warning2"></i></button>
+                                    <button type="button" class="btn btn-sm btn-default"><i class="ico-remove2"></i></button>
                                 </div>
                             </div>
-
-                            <div class="widget panel bgcolor-warning">
-                            <!-- panel body -->
-                            <div class="panel-body">
-                                <div class="clearfix">
-                                    <p class="pull-left semibold">Perth, AU</p>
-                                    <p class="pull-right semibold">
-                                        <span class="mr5">°F</span>
-                                        <span>°C</span>
-                                    </p>
-                                </div>
-                                <div class="text-center mt15 mb15">
-                                    <h1 class="semibold">
-                                        <i class="ico-sun22"></i>
-                                        <span class="">32°</span>
-                                    </h1>
-                                </div>
-                                <div class="clearfix">
-                                    <p class="pull-left semibold nm">
-                                        <i class="ico-arrow-down5"></i> 31°
-                                    </p>
-                                    <p class="pull-right semibold nm">
-                                        <i class="ico-arrow-up5"></i> 37°
-                                    </p>
-                                </div>
-                            </div>
-                            <!--/ panel body -->
+                            <!--/ panel toolbar -->
                         </div>
+                        <!--/ panel heading -->
 
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h5 class="panel-title"><i class="ico-globe mr5"></i>Traffic</h5>
-                            </div>
-                            <ul class="list-group">
-                                <li class="list-group-item">Visits <span class="semibold pull-right">47650</span></li>
-                                <li class="list-group-item">Unique Visits <span class="semibold pull-right">15620</span></li>
-                                <li class="list-group-item">
-                                    <p>Traffic Sources</p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-success"></i>GOOGLE.COM
-                                        <span class="pull-right semibold">15883</span>
-                                    </p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-danger"></i>DIRECT TRAFFIC
-                                        <span class="pull-right semibold">11912</span>
-                                    </p>
+                        <!-- panel body -->
+                        <div class="panel-body">
+                            <!-- message list -->
+                            <ul class="media-list media-list-bubble">
+                                <li class="media media-right">
+                                    <a href="javascript:void(0);" class="media-object">
+                                        <img src="/image/avatar/avatar7.jpg" class="img-circle" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <p class="media-text">eros non enim commodo hendrerit.</p>
+                                        <span class="clearfix"></span>
+                                        <p class="media-text">Suspendisse dui.</p>
+                                        <span class="clearfix"></span>
+                                        <p class="media-text">eu nulla at</p>
+                                        <!-- meta -->
+                                        <span class="clearfix"></span><!-- important: clearing floated media text -->
+                                        <p class="media-meta">Sun, Mar 02</p>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <a href="javascript:void(0);" class="media-object">
+                                        <img src="/image/avatar/avatar6.jpg" class="img-circle" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <p class="media-text">Etiam laoreet, libero et tristique pellentesque, tellus sem mollis dui, in sodales elit erat.</p>
+                                        <span class="clearfix"></span>
+                                        <p class="media-text">faucibus ut, nulla. Cras eu tellus</p>
+                                        <!-- meta -->
+                                        <span class="clearfix"></span><!-- important: clearing floated media text -->
+                                        <p class="media-meta">Tue, Oct 01</p>
+                                    </div>
+                                </li>
+                                <li class="media media-right">
+                                    <a href="javascript:void(0);" class="media-object">
+                                        <img src="/image/avatar/avatar7.jpg" class="img-circle" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <p class="media-text">Duis a mi fringilla mi lacinia mattis. Integer</p>
+                                        <!-- meta -->
+                                        <span class="clearfix"></span><!-- important: clearing floated media text -->
+                                        <p class="media-meta">Fri, Sep 27</p>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <a href="javascript:void(0);" class="media-object">
+                                        <img src="/image/avatar/avatar6.jpg" class="img-circle" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <p class="media-text">Praesent interdum ligula eu enim. Etiam imperdiet dictum magna.</p>
+                                        <!-- meta -->
+                                        <span class="clearfix"></span><!-- important: clearing floated media text -->
+                                        <p class="media-meta">Wed, Aug 28</p>
+                                    </div>
+                                </li>
+                                <li class="media media-right">
+                                    <a href="javascript:void(0);" class="media-object">
+                                        <img src="/image/avatar/avatar7.jpg" class="img-circle" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <p class="media-text">Aliquam rutrum lorem ac risus. Morbi metus. Vivamus euismod urna.</p>
+                                        <!-- meta -->
+                                        <span class="clearfix"></span><!-- important: clearing floated media text -->
+                                        <p class="media-meta">Sat, Sep 27</p>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <a href="javascript:void(0);" class="media-object">
+                                        <img src="/image/avatar/avatar6.jpg" class="img-circle" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <p class="media-text">Vestibulum accumsan neque et nunc. Quisque ornare tortor at risus. Nunc ac</p>
+                                        <span class="clearfix"></span>
+                                        <p class="media-text">Nam porttitor scelerisque neque</p>
+                                        <!-- meta -->
+                                        <span class="clearfix"></span><!-- important: clearing floated media text -->
+                                        <p class="media-meta">Sun, Feb 22</p>
+                                    </div>
                                 </li>
                             </ul>
+                            <!--/ message list -->
                         </div>
+                        <!-- panel body -->
 
+                        <!-- panel footer -->
+                        <div class="panel-footer">
+                            <div class="panel-toolbar-wrapper">
+                                <div class="panel-toolbar">
+                                    <div class="input-group" style="width:100%;">
+                                        <input type="text" class="form-control" placeholder="Type your message">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="button"><i class="ico-paper-plane"></i> <span class="semibold">Send</span></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mt10 mb10"><!-- horizontal line -->
+                            <div class="panel-toolbar-wrapper">
+                                <div class="panel-toolbar">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="ico-google-drive"></i></button>
+                                        <button type="button" class="btn btn-default"><i class="ico-instagram"></i></button>
+                                    </div>
+                                </div>
+                                <div class="panel-toolbar text-right">
+                                    <a href="javascript:void(0);" class="btn btn-default"><i class="ico-attachment"></i> Attach files</a>
+                                </div>
+                            </div>
                         </div>
+                        <!-- panel footer -->
                     </div>
-                    <!--/ END Right Side -->
+                    <!--/ message content -->
                 </div>
+                <!--/ END Table layout -->
+
+                <!-- START Modal compose message -->
+                <div id="ModalComposeMessage" class="modal fade">
+                    <div class="modal-dialog">
+                        <form class="modal-content" action="" parsley-validate>
+                            <div class="modal-header text-center">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <div class="ico-bubbles mb15 mt15" style="font-size:36px;"></div>
+                                <h4 class="semibold modal-title text-primary">Compose message</h4>
+                                <p class="text-muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="control-label">To <span class="text-danger">*</span></label>
+                                            <input type="text" name="contact" id="selectize-contact" class="form-control" placeholder="Select contact...">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Subject <span class="text-danger">*</span></label>
+                                            <input name="subject" type="text" class="form-control" parsley-required="true">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Your message</label>
+                                            <textarea name="message" class="form-control" rows="4" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-success">Send</button>
+                            </div>
+                        </form><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div>
+                <!--/ END Modal compose message -->
             </div>
             <!--/ END Template Container -->
 
@@ -1371,14 +1496,11 @@
 
         <!-- Plugins and page level script : optional -->
         <script type="text/javascript" src="/javascript/pace.min.js"></script>
+        <script type="text/javascript" src="/plugins/magnific/js/jquery.magnific-popup.js"></script>
+        <script type="text/javascript" src="/plugins/shuffle/js/jquery.shuffle.js"></script>
         <script type="text/javascript" src="/plugins/selectize/js/selectize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.resize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.categories.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.time.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.tooltip.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.spline.js"></script>
-        <script type="text/javascript" src="/javascript/backend/pages/dashboard-v1.js"></script>
+        <script type="text/javascript" src="/plugins/gritter/js/jquery.gritter.js"></script>
+        <script type="text/javascript" src="/javascript/backend/pages/message.js"></script>
         <!--/ Plugins and page level script : optional -->
         <!--/ END JAVASCRIPT SECTION -->
     </body>

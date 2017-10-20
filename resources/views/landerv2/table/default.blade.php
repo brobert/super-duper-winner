@@ -19,8 +19,6 @@
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
-        <link rel="stylesheet" href="/plugins/selectize/css/selectize.css">
-        <link rel="stylesheet" href="/plugins/flot/css/flot.css">
         <!--/ Plugins stylesheet : optional -->
 
         <!-- Application stylesheet : mandatory -->
@@ -88,7 +86,7 @@
                                 <li><a href="#">Third item</a></li>
                             </ul>
                     </li>
-
+                    
                 </ul>
                 <!--/ END Left nav -->
 
@@ -120,7 +118,7 @@
                                 <span class="option text-right"><a href="javascript:void(0);">Clear all</a></span>
                             </div>
                             <div class="dropdown-body slimscroll">
-
+                                
                                 <!-- Message list -->
                                 <div class="media-list">
                                     <a href="javascript:void(0);" class="media read border-dotted">
@@ -134,7 +132,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar1.jpg" class="media-object img-circle" alt="">
@@ -173,7 +171,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar9.jpg" class="media-object img-circle" alt="">
@@ -199,7 +197,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar5.jpg" class="media-object img-circle" alt="">
@@ -212,7 +210,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar3.jpg" class="media-object img-circle" alt="">
@@ -233,7 +231,7 @@
                         <!--/ Dropdown menu -->
                     </li>
                     <!--/ Notification dropdown -->
-
+                    
                     <!-- Profile dropdown -->
                     <li class="dropdown profile">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
@@ -260,7 +258,7 @@
                         </a>
                     </li>
                     <!--/ Offcanvas right -->
-
+                  
                 </ul>
                 <!--/ END Right nav -->
             </div>
@@ -274,7 +272,7 @@
             <section class="content slimscroll">
                 <!-- START Template Navigation/Menu -->
                 <ul class="topmenu topmenu-responsive" data-toggle="menu">
-                    <li class="active">
+                    <li>
                         <a href="/" data-target="#dashboard" data-parent=".topmenu">
                             <span class="figure"><i class="ico-home2"></i></span>
                             <span class="text">Dashboard</span>
@@ -470,16 +468,16 @@
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-                    <li >
+                    <li class="active open">
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#table" data-parent=".topmenu">
                             <span class="figure"><i class="ico-table22"></i></span>
                             <span class="text">Tables</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="table" class="submenu collapse ">
+                        <ul id="table" class="submenu collapse in">
                             <li class="submenu-header ellipsis">Tables</li>
-                            <li >
+                            <li class="active">
                                 <a href="/table/default.html">
                                     <span class="text">Basic Tables</span>
                                 </a>
@@ -632,7 +630,7 @@
                                     <span class="text">Timeline</span>
                                 </a>
                             </li>
-
+                           
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
@@ -747,7 +745,7 @@
             <!--/ END Sidebar Container -->
         </aside>
         <!--/ END Template Sidebar (Left) -->
-
+        
         <!-- START Template Sidebar (right) -->
         <aside class="sidebar sidebar-right">
             <!-- START Offcanvas -->
@@ -1134,225 +1132,870 @@
                 <!-- Page Header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold"><span class="figure"><i class="ico-home2"></i></span> Dashboards</h4>
+                        <h4 class="title semibold">Table default</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <ol class="breadcrumb breadcrumb-transparent nm">
+                                <li><a href="#">Table</a></li>
+                                <li class="active">Default</li>
+                            </ol>
+                        </div>
+                        <!--/ Toolbar -->
                     </div>
                 </div>
                 <!-- Page Header -->
 
+                <!-- START row -->
                 <div class="row">
-                    <!-- START Left Side -->
-                    <div class="col-md-9">
+                    <div class="col-md-12">
+                        <!-- START panel -->
+                        <div class="panel panel-primary">
+                            <!-- panel heading/header -->
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><span class="panel-icon mr5"><i class="ico-table22"></i></span> Table Showcase</h3>
+                                <!-- panel toolbar -->
+                                <div class="panel-toolbar text-right">
+                                    <!-- option -->
+                                    <div class="option">
+                                        <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
+                                        <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
+                                    </div>
+                                    <!--/ option -->
+                                </div>
+                                <!--/ panel toolbar -->
+                            </div>
+                            <!--/ panel heading/header -->
+                            <!-- panel toolbar wrapper -->
+                            <div class="panel-toolbar-wrapper pl0 pt5 pb5">
+                                <div class="panel-toolbar pl10">
+                                    <div class="checkbox custom-checkbox pull-left">  
+                                        <input type="checkbox" id="customcheckbox-one0" value="1" data-toggle="checkall" data-target="#table1">  
+                                        <label for="customcheckbox-one0">&nbsp;&nbsp;Select all</label>  
+                                    </div>
+                                </div>
+                                <div class="panel-toolbar text-right">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-default"><i class="ico-upload22"></i></button>
+                                        <button type="button" class="btn btn-sm btn-default"><i class="ico-archive2"></i></button>
+                                    </div>
 
-                        <!-- Website States -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <!-- START panel -->
-                                <div class="panel ">
-                                    <!-- panel-toolbar -->
-                                    <div class="panel-heading pt10">
-                                        <div class="panel-toolbar">
-                                            <h5 class="semibold nm ellipsis">Website Stats</h5>
-                                        </div>
+                                    <button type="button" class="btn btn-sm btn-danger"><i class="ico-remove3"></i></button>
+                                </div>
+                            </div>
+                            <!--/ panel toolbar wrapper -->
+
+                            <!-- panel body with collapse capabale -->
+                            <div class="table-responsive panel-collapse pull out">
+                                <table class="table table-bordered table-hover" id="table1">
+                                    <thead>
+                                        <tr>
+                                            <th width="3%" class="text-center"><i class="ico-long-arrow-down"></i></th>
+                                            <th width="5%"></th>
+                                            <th>Name</th>
+                                            <th>Country</th>
+                                            <th>Email</th>
+                                            <th>Company</th>
+                                            <th width="10%">Progress</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox custom-checkbox nm">  
+                                                    <input type="checkbox" id="customcheckbox-one1" value="1" data-toggle="selectrow" data-target="tr" data-contextual="success" checked>  
+                                                    <label for="customcheckbox-one1"></label>   
+                                                </div>
+                                            </td>
+                                            <td><div class="media-object"><img src="/image/avatar/avatar.png" alt="" class="img-circle"></div>
+                                            </td>
+                                            <td>Short, Cheyenne E.</td>
+                                            <td>Bangladesh</td>
+                                            <td>quis.diam@gravida.net</td>
+                                            <td>Tellus Non Corp.</td>
+                                            <td>
+                                                <div class="progress progress-xs nm">
+                                                    <div class="progress-bar progress-bar-danger" style="width:30%;"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <!-- button toolbar -->
+                                                <div class="toolbar">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-default">Action</button>
+                                                        <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-print3"></i>Print</a></li>
+                                                            <li class="divider"></li>
+                                                            <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--/ button toolbar -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox custom-checkbox nm">  
+                                                    <input type="checkbox" id="customcheckbox-one2" value="1" data-toggle="selectrow" data-target="tr" data-contextual="warning">  
+                                                    <label for="customcheckbox-one2"></label>   
+                                                </div>
+                                            </td>
+                                            <td><div class="media-object"><img src="/image/avatar/avatar1.jpg" alt="" class="img-circle"></div></td>
+                                            <td>Acosta, Isaiah V.</td>
+                                            <td>Turkmenistan</td>
+                                            <td>ac.mattis@Maecenas.ca</td>
+                                            <td>Pharetra Associates</td>
+                                            <td>
+                                                <div class="progress progress-xs nm">
+                                                    <div class="progress-bar progress-bar-danger" style="width:10%;"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <!-- button toolbar -->
+                                                <div class="toolbar">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-default">Action</button>
+                                                        <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-print3"></i>Print</a></li>
+                                                            <li class="divider"></li>
+                                                            <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--/ button toolbar -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox custom-checkbox nm">  
+                                                    <input type="checkbox" id="customcheckbox-one3" value="1" data-toggle="selectrow" data-target="tr" data-contextual="danger">  
+                                                    <label for="customcheckbox-one3"></label>   
+                                                </div>
+                                            </td>
+                                            <td><div class="media-object"><img src="/image/avatar/avatar2.jpg" alt="" class="img-circle"></div></td>
+                                            <td>Stuart, Meghan W.</td>
+                                            <td>British Indian</td>
+                                            <td>enim@erat.com</td>
+                                            <td>Bibendum Donec Industries</td>
+                                            <td>
+                                                <div class="progress progress-xs nm">
+                                                    <div class="progress-bar progress-bar-warning" style="width:50%;"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <!-- button toolbar -->
+                                                <div class="toolbar">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-default">Action</button>
+                                                        <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-print3"></i>Print</a></li>
+                                                            <li class="divider"></li>
+                                                            <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--/ button toolbar -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox custom-checkbox nm">  
+                                                    <input type="checkbox" id="customcheckbox-one4" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">  
+                                                    <label for="customcheckbox-one4"></label>   
+                                                </div>
+                                            </td>
+                                            <td><div class="media-object"><img src="/image/avatar/avatar3.jpg" alt="" class="img-circle"></div></td>
+                                            <td>Pugh, Moses V.</td>
+                                            <td>Lithuania</td>
+                                            <td>diam@sapienmolestie.com</td>
+                                            <td>Vel Turpis Foundation</td>
+                                            <td>
+                                                <div class="progress progress-xs nm">
+                                                    <div class="progress-bar progress-bar-warning" style="width:50%;"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <!-- button toolbar -->
+                                                <div class="toolbar">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-default">Action</button>
+                                                        <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-print3"></i>Print</a></li>
+                                                            <li class="divider"></li>
+                                                            <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--/ button toolbar -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox custom-checkbox nm">  
+                                                    <input type="checkbox" id="customcheckbox-one5" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
+                                                    <label for="customcheckbox-one5"></label>   
+                                                </div>
+                                            </td>
+                                            <td><div class="media-object"><img src="/image/avatar/avatar4.jpg" alt="" class="img-circle"></div></td>
+                                            <td>Lawrence, Donna B.</td>
+                                            <td>Togo</td>
+                                            <td>arcu@onecfelis.co.uk</td>
+                                            <td>Tellus Non Corp.</td>
+                                            <td>
+                                                <div class="progress progress-xs nm">
+                                                    <div class="progress-bar progress-bar-success" style="width:90%;"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <!-- button toolbar -->
+                                                <div class="toolbar">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-default">Action</button>
+                                                        <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-print3"></i>Print</a></li>
+                                                            <li class="divider"></li>
+                                                            <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--/ button toolbar -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox custom-checkbox nm">  
+                                                    <input type="checkbox" id="customcheckbox-one6" value="1" data-toggle="selectrow" data-target="tr">  
+                                                    <label for="customcheckbox-one6"></label>   
+                                                </div>
+                                            </td>
+                                            <td><div class="media-object"><img src="/image/avatar/avatar5.jpg" alt="" class="img-circle"></div></td>
+                                            <td>Sharpe, Addison L.</td>
+                                            <td>Falkland Islands</td>
+                                            <td>enim@dolor.ca</td>
+                                            <td>Convallis Ante Lectus Ltd</td>
+                                            <td>
+                                                <div class="progress progress-xs nm">
+                                                    <div class="progress-bar" style="width:70%;"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <!-- button toolbar -->
+                                                <div class="toolbar">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-default">Action</button>
+                                                        <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-print3"></i>Print</a></li>
+                                                            <li class="divider"></li>
+                                                            <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--/ button toolbar -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox custom-checkbox nm">  
+                                                    <input type="checkbox" id="customcheckbox-one7" value="1" data-toggle="selectrow" data-target="tr">  
+                                                    <label for="customcheckbox-one7"></label>   
+                                                </div>
+                                            </td>
+                                            <td><div class="media-object"><img src="/image/avatar/avatar6.jpg" alt="" class="img-circle"></div></td>
+                                            <td>Witt, Cullen T.</td>
+                                            <td>Kiribati</td>
+                                            <td>dui@magna.org</td>
+                                            <td>In Inc.</td>
+                                            <td>
+                                                <div class="progress progress-xs nm">
+                                                    <div class="progress-bar progress-bar-success" style="width:100%;"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <!-- button toolbar -->
+                                                <div class="toolbar">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-default">Action</button>
+                                                        <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-print3"></i>Print</a></li>
+                                                            <li class="divider"></li>
+                                                            <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--/ button toolbar -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox custom-checkbox nm">  
+                                                    <input type="checkbox" id="customcheckbox-one8" value="1" data-toggle="selectrow" data-target="tr">  
+                                                    <label for="customcheckbox-one8"></label>   
+                                                </div>
+                                            </td>
+                                            <td><div class="media-object"><img src="/image/avatar/avatar7.jpg" alt="" class="img-circle"></div></td>
+                                            <td>Cotton, Christopher S.</td>
+                                            <td>Benin</td>
+                                            <td>tincidunt@laoreet.edu</td>
+                                            <td>A Odio LLC</td>
+                                            <td>
+                                                <div class="progress progress-xs nm">
+                                                    <div class="progress-bar progress-bar-info" style="width:100%;"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <!-- button toolbar -->
+                                                <div class="toolbar">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-default">Action</button>
+                                                        <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-print3"></i>Print</a></li>
+                                                            <li class="divider"></li>
+                                                            <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--/ button toolbar -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox custom-checkbox nm">  
+                                                    <input type="checkbox" id="customcheckbox-one9" value="1" data-toggle="selectrow" data-target="tr">  
+                                                    <label for="customcheckbox-one9"></label>   
+                                                </div>
+                                            </td>
+                                            <td><div class="media-object"><img src="/image/avatar/avatar1.jpg" alt="" class="img-circle"></div></td>
+                                            <td>Dudley, Joan I.</td>
+                                            <td>Bonaire</td>
+                                            <td>magna@sodalesnisi.net</td>
+                                            <td>Mi Corp.</td>
+                                            <td>
+                                                <div class="progress progress-xs nm">
+                                                    <div class="progress-bar progress-bar-danger" style="width:2%;"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <!-- button toolbar -->
+                                                <div class="toolbar">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-default">Action</button>
+                                                        <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-print3"></i>Print</a></li>
+                                                            <li class="divider"></li>
+                                                            <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--/ button toolbar -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox custom-checkbox nm">  
+                                                    <input type="checkbox" id="customcheckbox-one10" value="1" data-toggle="selectrow" data-target="tr">  
+                                                    <label for="customcheckbox-one10"></label>   
+                                                </div>
+                                            </td>
+                                            <td><div class="media-object"><img src="/image/avatar/avatar2.jpg" alt="" class="img-circle"></div></td>
+                                            <td>Best, Eagan R.</td>
+                                            <td>Saint Martin</td>
+                                            <td>sodales@odio.org</td>
+                                            <td>Nunc Corporation</td>
+                                            <td>
+                                                <div class="progress progress-xs nm">
+                                                    <div class="progress-bar progress-bar-success" style="width:90%;"></div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <!-- button toolbar -->
+                                                <div class="toolbar">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-default">Action</button>
+                                                        <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                                            <li><a href="javascript:void(0);"><i class="icon ico-print3"></i>Print</a></li>
+                                                            <li class="divider"></li>
+                                                            <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--/ button toolbar -->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--/ panel body with collapse capabale -->
+                        </div>
+                    </div>
+                </div>
+                <!--/ END row -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- START panel -->
+                        <div class="panel panel-default" id="toolbar-showcase">
+                            <!-- panel heading/header -->
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><span class="panel-icon mr5"><i class="ico-equalizer"></i></span> Toolbar example</h3>
+                                <!-- panel toolbar -->
+                                <div class="panel-toolbar text-right">
+                                    <!-- option -->
+                                    <div class="option">
+                                        <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
+                                        <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
                                     </div>
-                                    <!--/ panel-toolbar -->
-                                    <!-- panel-body -->
-                                    <div class="panel-body pt0">
-                                        <div class="chart mt10" id="chart-audience" style="height:250px;"></div>
-                                    </div>
-                                    <!--/ panel-body -->
-                                    <!-- panel-footer -->
-                                    <div class="panel-footer hidden-xs">
-                                        <ul class="nav nav-section nav-justified">
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">24,548</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Visits</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-danger"><i class="ico-arrow-down4"></i> 32%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">175,132</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Page Views</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 15%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5"><span data-toggle="counterup">89.96</span>%</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Bounce Rate</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 3%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
+                                    <!--/ option -->
+                                </div>
+                                <!--/ panel toolbar -->
+                            </div>
+                            <!--/ panel heading/header -->
+                            <!-- panel toolbar wrapper -->
+                            <div class="panel-toolbar-wrapper pl10 pr10 pt5 pb5">
+                                <div class="panel-toolbar hide" id="toolbar-toshow">
+                                    <button type="button" class="btn btn-sm btn-danger"><i class="ico-remove3"></i></button>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-default">Action</button>
+                                        <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="javascript:void(0);"><i class="icon ico-pencil"></i>Update</a></li>
+                                            <li><a href="javascript:void(0);"><i class="icon ico-print3"></i>Print</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="javascript:void(0);" class="text-danger"><i class="icon ico-remove3"></i>Delete</a></li>
                                         </ul>
                                     </div>
-                                    <!--/ panel-footer -->
                                 </div>
-                                <!--/ END panel -->
-                            </div>
-                        </div>
-                        <!--/ Website States -->
-
-                        <!-- Browser Breakpoint -->
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <!-- START panel -->
-                                <div class="panel panel-default">
-                                    <!-- panel heading/header -->
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title ellipsis"><i class="ico-chrome mr5"></i>Browser Breakpoint</h3>
-                                        <!-- panel toolbar -->
-                                        <div class="panel-toolbar text-right">
-                                            <!-- option -->
-                                            <div class="option">
-                                                <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
-                                                <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
-                                            </div>
-                                            <!--/ option -->
-                                        </div>
-                                        <!--/ panel toolbar -->
+                                <div class="panel-toolbar text-right">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-default"><i class="ico-upload22"></i></button>
+                                        <button type="button" class="btn btn-sm btn-default"><i class="ico-archive2"></i></button>
                                     </div>
-                                    <!--/ panel heading/header -->
-                                    <!-- panel body with collapse capabale -->
-                                    <div class="table-responsive panel-collapse pull out">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Browser Name</th>
-                                                    <th>Rendering Engine</th>
-                                                    <th>Platform</th>
-                                                    <th>Activity</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Google Chrome</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,4,1,5,3</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">50.65%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Safari</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">5,2,1,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">20.31%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Mozilla Firefox</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,1,5,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">61.22%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Internet Explorer</span></td>
-                                                    <td>Trident</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">3,1,4,5,2</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">0.65%</span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!--/ panel body with collapse capabale -->
-                                </div>
-                                <!--/ END panel -->
-                            </div>
-                        </div>
-                        <!-- Browser Breakpoint -->
-                    </div>
-                    <!--/ END Left Side -->
-
-                    <!-- START Right Side -->
-                    <div class="col-md-3">
-                        <div class="panel panel-minimal">
-
-                            <div class="panel">
-                                <div class="panel-body">
-                                    <h4 class="semibold nm"><i class="ico-dollar mr5"></i>Today Income</h4>
-                                    <h2 class="thin mt5 text-muted">+<span data-toggle="counterup">1120</span></h2>
-                                    <!-- chart -->
-                                    <div class="chart" style="height:120px;" id="stats1"></div>
-                                    <!--/ chart -->
                                 </div>
                             </div>
+                            <!--/ panel toolbar wrapper -->
 
-                            <div class="widget panel bgcolor-warning">
-                            <!-- panel body -->
-                            <div class="panel-body">
-                                <div class="clearfix">
-                                    <p class="pull-left semibold">Perth, AU</p>
-                                    <p class="pull-right semibold">
-                                        <span class="mr5">°F</span>
-                                        <span>°C</span>
-                                    </p>
-                                </div>
-                                <div class="text-center mt15 mb15">
-                                    <h1 class="semibold">
-                                        <i class="ico-sun22"></i>
-                                        <span class="">32°</span>
-                                    </h1>
-                                </div>
-                                <div class="clearfix">
-                                    <p class="pull-left semibold nm">
-                                        <i class="ico-arrow-down5"></i> 31°
-                                    </p>
-                                    <p class="pull-right semibold nm">
-                                        <i class="ico-arrow-up5"></i> 37°
-                                    </p>
-                                </div>
+                            <!-- panel body with collapse capabale -->
+                            <div class="table-responsive panel-collapse pull out">
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th width="3%" class="text-center">
+                                                <div class="checkbox custom-checkbox pull-left" data-toggle="tooltip" data-placement="right" title="Check all">  
+                                                    <input type="checkbox" id="customcheckbox-two0" value="1" data-toggle="checkall" data-target="#toolbar-showcase">  
+                                                    <label for="customcheckbox-two0"></label>  
+                                                </div>
+                                            </th>
+                                            <th width="5%"></th>
+                                            <th>Name</th>
+                                            <th>Country</th>
+                                            <th>Email</th>
+                                            <th>Company</th>
+                                            <th width="10%">Progress</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox custom-checkbox nm">  
+                                                    <input type="checkbox" id="customcheckbox-two1" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">  
+                                                    <label for="customcheckbox-two1"></label>   
+                                                </div>
+                                            </td>
+                                            <td><div class="media-object"><img src="/image/avatar/avatar.png" alt="" class="img-circle"></div>
+                                            </td>
+                                            <td>Short, Cheyenne E.</td>
+                                            <td>Bangladesh</td>
+                                            <td>quis.diam@gravida.net</td>
+                                            <td>Tellus Non Corp.</td>
+                                            <td>
+                                                <div class="progress progress-xs nm">
+                                                    <div class="progress-bar progress-bar-danger" style="width:30%;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox custom-checkbox nm">  
+                                                    <input type="checkbox" id="customcheckbox-two2" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">  
+                                                    <label for="customcheckbox-two2"></label>   
+                                                </div>
+                                            </td>
+                                            <td><div class="media-object"><img src="/image/avatar/avatar1.jpg" alt="" class="img-circle"></div></td>
+                                            <td>Acosta, Isaiah V.</td>
+                                            <td>Turkmenistan</td>
+                                            <td>ac.mattis@Maecenas.ca</td>
+                                            <td>Pharetra Associates</td>
+                                            <td>
+                                                <div class="progress progress-xs nm">
+                                                    <div class="progress-bar progress-bar-danger" style="width:10%;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox custom-checkbox nm">  
+                                                    <input type="checkbox" id="customcheckbox-two3" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">  
+                                                    <label for="customcheckbox-two3"></label>   
+                                                </div>
+                                            </td>
+                                            <td><div class="media-object"><img src="/image/avatar/avatar2.jpg" alt="" class="img-circle"></div></td>
+                                            <td>Stuart, Meghan W.</td>
+                                            <td>British Indian</td>
+                                            <td>enim@erat.com</td>
+                                            <td>Bibendum Donec Industries</td>
+                                            <td>
+                                                <div class="progress progress-xs nm">
+                                                    <div class="progress-bar progress-bar-warning" style="width:50%;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox custom-checkbox nm">  
+                                                    <input type="checkbox" id="customcheckbox-two4" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">  
+                                                    <label for="customcheckbox-two4"></label>   
+                                                </div>
+                                            </td>
+                                            <td><div class="media-object"><img src="/image/avatar/avatar3.jpg" alt="" class="img-circle"></div></td>
+                                            <td>Pugh, Moses V.</td>
+                                            <td>Lithuania</td>
+                                            <td>diam@sapienmolestie.com</td>
+                                            <td>Vel Turpis Foundation</td>
+                                            <td>
+                                                <div class="progress progress-xs nm">
+                                                    <div class="progress-bar progress-bar-warning" style="width:50%;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox custom-checkbox nm">  
+                                                    <input type="checkbox" id="customcheckbox-two5" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">  
+                                                    <label for="customcheckbox-two5"></label>   
+                                                </div>
+                                            </td>
+                                            <td><div class="media-object"><img src="/image/avatar/avatar4.jpg" alt="" class="img-circle"></div></td>
+                                            <td>Lawrence, Donna B.</td>
+                                            <td>Togo</td>
+                                            <td>arcu@onecfelis.co.uk</td>
+                                            <td>Tellus Non Corp.</td>
+                                            <td>
+                                                <div class="progress progress-xs nm">
+                                                    <div class="progress-bar progress-bar-success" style="width:90%;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <!--/ panel body -->
-                        </div>
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h5 class="panel-title"><i class="ico-globe mr5"></i>Traffic</h5>
-                            </div>
-                            <ul class="list-group">
-                                <li class="list-group-item">Visits <span class="semibold pull-right">47650</span></li>
-                                <li class="list-group-item">Unique Visits <span class="semibold pull-right">15620</span></li>
-                                <li class="list-group-item">
-                                    <p>Traffic Sources</p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-success"></i>GOOGLE.COM
-                                        <span class="pull-right semibold">15883</span>
-                                    </p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-danger"></i>DIRECT TRAFFIC
-                                        <span class="pull-right semibold">11912</span>
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-
+                            <!--/ panel body with collapse capabale -->
                         </div>
                     </div>
-                    <!--/ END Right Side -->
                 </div>
+                <!--/ END row -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- START panel -->
+                        <div class="panel panel-default">
+                            <!-- panel heading/header -->
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Row hover</h3>
+                                <!-- panel toolbar -->
+                                <div class="panel-toolbar text-right">
+                                    <!-- option -->
+                                    <div class="option">
+                                        <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
+                                        <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
+                                    </div>
+                                    <!--/ option -->
+                                </div>
+                                <!--/ panel toolbar -->
+                            </div>
+                            <!--/ panel heading/header -->
+                            <!-- panel body with collapse capabale -->
+                            <div class="table-responsive panel-collapse pull out">
+                                <table class="table table-hover table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Project Name</th>
+                                            <th>Status</th>
+                                            <th>Activity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Viverra Company</td>
+                                            <td><span class="label label-success">Complete</span></td>
+                                            <td class="text-center"><span class="sparklines" sparkType="bar" sparkBarColor="#a0d569">2,4,1,5,3</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sem Elit Ltd</td>
+                                            <td><span class="label label-warning">Delay</span></td>
+                                            <td class="text-center"><span class="sparklines" sparkType="bar" sparkBarColor="#f1c40f">5,2,1,3,4</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Eget Nisi LLP</td>
+                                            <td><span class="label label-danger">In Complete</span></td>
+                                            <td class="text-center"><span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,1,5,3,4</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dictum Nunc Ltd</td>
+                                            <td><span class="label label-info">On Hold</span></td>
+                                            <td class="text-center"><span class="sparklines" sparkType="bar" sparkBarColor="#ac92ed">3,1,4,5,2</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sagittis Institute</td>
+                                            <td><span class="label label-primary ">Others</span></td>
+                                            <td class="text-center"><span class="sparklines" sparkType="bar" sparkBarColor="#4fc0e8">1,2,3,4,5</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--/ panel body with collapse capabale -->
+                        </div>
+                        <!--/ END panel -->
+                    </div>
+
+                    <div class="col-md-6">
+                        <!-- START panel -->
+                        <div class="panel panel-default">
+                            <!-- panel heading/header -->
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Striped row</h3>
+                                <!-- panel toolbar -->
+                                <div class="panel-toolbar text-right">
+                                    <!-- option -->
+                                    <div class="option">
+                                        <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
+                                        <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
+                                    </div>
+                                    <!--/ option -->
+                                </div>
+                                <!--/ panel toolbar -->
+                            </div>
+                            <!--/ panel heading/header -->
+                            <!-- panel body with collapse capabale -->
+                            <div class="table-responsive panel-collapse pull out">
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Name</th>
+                                            <th>Income</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center"><span class="sparklines" sparkType="line" sparkLineColor="#4fc0e8" sparkFillColor="#d6f0fa">1,6,2,9,6,9,6,8,0,8</span></td>
+                                            <td>Norman Harmon</td>
+                                            <td>$43.34</td>
+                                            <td>Mar 3, 2014</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><span class="sparklines" sparkType="line" sparkLineColor="#ac92ed" sparkFillColor="#cdbef4">4,1,6,5,5,3,4,6,1,7</span></td>
+                                            <td>Plato Pickett</td>
+                                            <td>$65.93</td>
+                                            <td>Jan 21, 2014</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><span class="sparklines" sparkType="line" sparkLineColor="#a0d569" sparkFillColor="#dbefc6">3,9,0,1,6,6,6,2,9,1</span></td>
+                                            <td>Nathan Paul</td>
+                                            <td>$6.07</td>
+                                            <td>Feb 4, 2013</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><span class="sparklines" sparkType="line" sparkLineColor="#f1c40f" sparkFillColor="#fbefc0">0,4,6,4,8,5,6,7,5,3</span></td>
+                                            <td>Nasim Larson</td>
+                                            <td>$11.28</td>
+                                            <td>Sep 17, 2013</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><span class="sparklines" sparkType="line" sparkLineColor="#ed5466" sparkFillColor="#f8c0c6">2,6,9,5,4,9,8,5,7,4</span></td>
+                                            <td>Odysseus Nguyen</td>
+                                            <td>$7.51</td>
+                                            <td>Aug 8, 2014</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--/ panel body with collapse capabale -->
+                        </div>
+                    </div>
+                </div>
+                <!--/ END row -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- START panel -->
+                        <div class="panel panel-default">
+                            <!-- panel heading/header -->
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Contextual classes - Row</h3>
+                                <!-- panel toolbar -->
+                                <div class="panel-toolbar text-right">
+                                    <!-- option -->
+                                    <div class="option">
+                                        <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
+                                        <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
+                                    </div>
+                                    <!--/ option -->
+                                </div>
+                                <!--/ panel toolbar -->
+                            </div>
+                            <!--/ panel heading/header -->
+                            <!-- panel body with collapse capabale -->
+                            <div class="table-responsive panel-collapse pull out">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Account No</th>
+                                            <th>Owner</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="text-info">D143BEC6</span></td>
+                                            <td>Wing Pugh</td>
+                                            <td><span class="text-muted bold">$5,020</span></td>
+                                        </tr>
+                                        <tr class="active">
+                                            <td><span class="text-info">1E8EBC56</span></td>
+                                            <td>Harrison Huffman</td>
+                                            <td><span class="text-muted bold">$8,626</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="text-info">09C26998</span></td>
+                                            <td>Bernard Dickson</td>
+                                            <td><span class="text-muted bold">$9,418</span></td>
+                                        </tr>
+                                        <tr class="success">
+                                            <td><span class="text-info">07D62121</span></td>
+                                            <td>Colton Austin</td>
+                                            <td><span class="text-muted bold">$8,747</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="text-info">F1583348</span></td>
+                                            <td>Bevis Gilliam</td>
+                                            <td><span class="text-muted bold">$5,615</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--/ panel body with collapse capabale -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <!-- START panel -->
+                        <div class="panel panel-default">
+                            <!-- panel heading/header -->
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Contextual classes - Cell</h3>
+                                <!-- panel toolbar -->
+                                <div class="panel-toolbar text-right">
+                                    <!-- option -->
+                                    <div class="option">
+                                        <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
+                                        <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
+                                    </div>
+                                    <!--/ option -->
+                                </div>
+                                <!--/ panel toolbar -->
+                            </div>
+                            <!--/ panel heading/header -->
+                            <!-- panel body with collapse capabale -->
+                            <div class="table-responsive panel-collapse pull out">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Account No</th>
+                                            <th>Owner</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="active"><span class="text-info">D143BEC6</span></td>
+                                            <td>Wing Pugh</td>
+                                            <td><span class="text-muted bold">$5,020</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="text-info">1E8EBC56</span></td>
+                                            <td class="success">Harrison Huffman</td>
+                                            <td><span class="text-muted bold">$8,626</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="text-info">09C26998</span></td>
+                                            <td>Bernard Dickson</td>
+                                            <td class="warning"><span class="text-muted bold">$9,418</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="danger"><span class="text-info">07D62121</span></td>
+                                            <td>Colton Austin</td>
+                                            <td><span class="text-muted bold">$8,747</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="text-info">F1583348</span></td>
+                                            <td class="stroke">Bevis Gilliam</td>
+                                            <td><span class="text-muted bold">$5,615</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--/ panel body with collapse capabale -->
+                        </div>
+                    </div>
+                </div>
+                <!-- START row -->
             </div>
             <!--/ END Template Container -->
 
@@ -1371,14 +2014,7 @@
 
         <!-- Plugins and page level script : optional -->
         <script type="text/javascript" src="/javascript/pace.min.js"></script>
-        <script type="text/javascript" src="/plugins/selectize/js/selectize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.resize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.categories.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.time.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.tooltip.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.spline.js"></script>
-        <script type="text/javascript" src="/javascript/backend/pages/dashboard-v1.js"></script>
+        <script type="text/javascript" src="/javascript/backend/tables/default.js"></script>
         <!--/ Plugins and page level script : optional -->
         <!--/ END JAVASCRIPT SECTION -->
     </body>

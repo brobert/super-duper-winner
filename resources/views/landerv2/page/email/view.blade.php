@@ -19,8 +19,11 @@
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/plugins/magnific/css/magnific.css">
         <link rel="stylesheet" href="/plugins/selectize/css/selectize.css">
-        <link rel="stylesheet" href="/plugins/flot/css/flot.css">
+        <link rel="stylesheet" href="/plugins/gritter/css/gritter.css">
+        <link rel="stylesheet" href="/plugins/summernote/css/summernote.css">
         <!--/ Plugins stylesheet : optional -->
 
         <!-- Application stylesheet : mandatory -->
@@ -88,7 +91,7 @@
                                 <li><a href="#">Third item</a></li>
                             </ul>
                     </li>
-
+                    
                 </ul>
                 <!--/ END Left nav -->
 
@@ -120,7 +123,7 @@
                                 <span class="option text-right"><a href="javascript:void(0);">Clear all</a></span>
                             </div>
                             <div class="dropdown-body slimscroll">
-
+                                
                                 <!-- Message list -->
                                 <div class="media-list">
                                     <a href="javascript:void(0);" class="media read border-dotted">
@@ -134,7 +137,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar1.jpg" class="media-object img-circle" alt="">
@@ -173,7 +176,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar9.jpg" class="media-object img-circle" alt="">
@@ -199,7 +202,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar5.jpg" class="media-object img-circle" alt="">
@@ -212,7 +215,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar3.jpg" class="media-object img-circle" alt="">
@@ -233,7 +236,7 @@
                         <!--/ Dropdown menu -->
                     </li>
                     <!--/ Notification dropdown -->
-
+                    
                     <!-- Profile dropdown -->
                     <li class="dropdown profile">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
@@ -260,7 +263,7 @@
                         </a>
                     </li>
                     <!--/ Offcanvas right -->
-
+                  
                 </ul>
                 <!--/ END Right nav -->
             </div>
@@ -274,7 +277,7 @@
             <section class="content slimscroll">
                 <!-- START Template Navigation/Menu -->
                 <ul class="topmenu topmenu-responsive" data-toggle="menu">
-                    <li class="active">
+                    <li>
                         <a href="/" data-target="#dashboard" data-parent=".topmenu">
                             <span class="figure"><i class="ico-home2"></i></span>
                             <span class="text">Dashboard</span>
@@ -492,14 +495,14 @@
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-                    <li >
+                    <li class="active open" >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#page" data-parent=".topmenu">
                             <span class="figure"><i class="ico-copy4"></i></span>
                             <span class="text">Miscelleneous</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="page" class="submenu collapse ">
+                        <ul id="page" class="submenu collapse in">
                             <li class="submenu-header ellipsis">Miscelleneous</li>
                             <li >
                                 <a href="/page/starter.html">
@@ -525,22 +528,22 @@
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
                             </li>
-                            <li >
+                            <li>
                                 <a href="/page/calendar.html">
                                     <span class="text">Calendar</span>
                                 </a>
                             </li>
-                            <li >
+                            <li class="active open">
                                 <a href="javascript:void(0);" data-toggle="submenu" data-target="#email" data-parent="#page">
                                     <span class="text">Email</span>
                                     <span class="arrow"></span>
                                 </a>
                                 <!-- START 2nd Level Menu -->
-                                <ul id="email" class="submenu collapse ">
-                                    <li >
+                                <ul id="email" class="submenu collapse in">
+                                    <li>
                                         <a href="/page/email/inbox.html"><span class="text">Inbox</span></a>
                                     </li>
-                                    <li >
+                                    <li class="active" >
                                         <a href="/page/email/view.html"><span class="text">View</span></a>
                                     </li>
                                 </ul>
@@ -632,7 +635,7 @@
                                     <span class="text">Timeline</span>
                                 </a>
                             </li>
-
+                           
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
@@ -747,7 +750,7 @@
             <!--/ END Sidebar Container -->
         </aside>
         <!--/ END Template Sidebar (Left) -->
-
+        
         <!-- START Template Sidebar (right) -->
         <aside class="sidebar sidebar-right">
             <!-- START Offcanvas -->
@@ -1134,225 +1137,369 @@
                 <!-- Page Header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold"><span class="figure"><i class="ico-home2"></i></span> Dashboards</h4>
+                        <h4 class="title semibold">Email view</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <div class="toolbar">
+                            <div class="input-group">
+                                <div class="has-icon">
+                                    <input type="text" class="form-control" placeholder="Search your email...">
+                                    <i class="ico-search form-control-icon"></i>
+                                </div>
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default">Search</button>
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                    <ul class="dropdown-menu pull-right" role="menu">
+                                        <li class="dropdown-header">Filter :</li>
+                                        <li><a href="javascript:void(0);"><i class="icon ico-download22"></i>Inbox</a></li>
+                                        <li><a href="javascript:void(0);"><i class="icon ico-upload22"></i>Outbox</a></li>
+                                        <li><a href="javascript:void(0);"><i class="icon ico-remove4"></i>Trash</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0);"><i class="icon ico-briefcase2"></i>Others</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Page Header -->
 
-                <div class="row">
-                    <!-- START Left Side -->
-                    <div class="col-md-9">
-
-                        <!-- Website States -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <!-- START panel -->
-                                <div class="panel ">
-                                    <!-- panel-toolbar -->
-                                    <div class="panel-heading pt10">
-                                        <div class="panel-toolbar">
-                                            <h5 class="semibold nm ellipsis">Website Stats</h5>
-                                        </div>
-                                    </div>
-                                    <!--/ panel-toolbar -->
-                                    <!-- panel-body -->
-                                    <div class="panel-body pt0">
-                                        <div class="chart mt10" id="chart-audience" style="height:250px;"></div>
-                                    </div>
-                                    <!--/ panel-body -->
-                                    <!-- panel-footer -->
-                                    <div class="panel-footer hidden-xs">
-                                        <ul class="nav nav-section nav-justified">
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">24,548</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Visits</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-danger"><i class="ico-arrow-down4"></i> 32%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">175,132</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Page Views</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 15%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5"><span data-toggle="counterup">89.96</span>%</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Bounce Rate</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 3%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!--/ panel-footer -->
-                                </div>
-                                <!--/ END panel -->
+                <!-- START Table layout -->
+                <div class="table-layout">
+                    <!-- message list-->
+                    <div class="col-lg-3 valign-top panel panel-minimal">
+                        <!-- panel heading -->
+                        <div class="panel-heading">
+                            <!-- panel toolbar -->
+                            <div class="panel-toolbar">
+                                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#ModalComposeMessage">
+                                    <i class="ico-pencil5"></i> 
+                                    <span class="semibold">Compose Email</span>
+                                </button>
                             </div>
                         </div>
-                        <!--/ Website States -->
-
-                        <!-- Browser Breakpoint -->
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <!-- START panel -->
-                                <div class="panel panel-default">
-                                    <!-- panel heading/header -->
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title ellipsis"><i class="ico-chrome mr5"></i>Browser Breakpoint</h3>
-                                        <!-- panel toolbar -->
-                                        <div class="panel-toolbar text-right">
-                                            <!-- option -->
-                                            <div class="option">
-                                                <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
-                                                <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
+                        <!--/ panel heading -->
+                        
+                        <!-- panel body -->
+                        <div class="panel-body">
+                            <!-- Browse -->
+                            <h5 class="semibold">Browse</h5>
+                            <div class="list-group">
+                                <a href="/page/email/inbox.html" class="list-group-item"><i class="ico-drawer mr5"></i> Inbox <span class="semibold text-muted pull-right">1943</span></a>
+                                <a href="javascript:void(0);" class="list-group-item"><i class="ico-paper-plane mr5"></i> Sent <span class="semibold text-muted pull-right">51</span></a>
+                                <a href="javascript:void(0);" class="list-group-item"><i class="ico-pen3 mr5"></i> Draft <span class="semibold text-muted pull-right">11</span></a>
+                                <a href="javascript:void(0);" class="list-group-item"><i class="ico-remove2 mr5"></i> Trash</a>
+                            </div>
+                            <!--/ Browse -->
+                            <!-- Label -->
+                            <h5 class="semibold">Label</h5>
+                            <div class="list-group">
+                                <a href="javascript:void(0);" class="list-group-item"><i class="ico-square text-danger mr5"></i> Work</a>
+                                <a href="javascript:void(0);" class="list-group-item"><i class="ico-square text-muted mr5"></i> Design</a>
+                                <a href="javascript:void(0);" class="list-group-item"><i class="ico-square text-teal mr5"></i> Social</a>
+                                <a href="javascript:void(0);" class="list-group-item"><i class="ico-square text-success mr5"></i> Magazine</a>
+                            </div>
+                            <!--/ Label-->
+                            <!-- Progress bar -->
+                            <h5 class="semibold">Space Used</h5>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <ul class="list-table nm">
+                                        <li class="text-left">Inbox</li>
+                                        <li>
+                                            <div class="progress progress-xs nm">
+                                                <div class="progress-bar" style="width: 40%"></div>
                                             </div>
-                                            <!--/ option -->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-group-item">
+                                    <ul class="list-table nm">
+                                        <li class="text-left">Sent</li>
+                                        <li>
+                                            <div class="progress progress-xs nm">
+                                                <div class="progress-bar" style="width: 15%"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-group-item">
+                                    <ul class="list-table nm">
+                                        <li class="text-left">Draft</li>
+                                        <li>
+                                            <div class="progress progress-xs nm">
+                                                <div class="progress-bar" style="width: 20%"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-group-item">
+                                    <ul class="list-table nm">
+                                        <li class="text-left">Trash</li>
+                                        <li>
+                                            <div class="progress progress-xs nm">
+                                                <div class="progress-bar progress-bar-danger" style="width: 90%"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--/ Progress bar -->
+
+                            <hr><!-- horizontal line -->
+
+                            <!-- Advertisements -->
+                            <h5 class="semibold">Dummie Advert</h5>
+                            <ul class="list-table mb15">
+                                <li class="text-left valign-top">
+                                    <div class="thumbnail nm">
+                                        <!-- media -->
+                                        <div class="media">
+                                            <!-- indicator -->
+                                            <div class="indicator"><span class="spinner"></span></div>
+                                            <!-- indicator -->
+                                            <img data-toggle="unveil" src="/image/background/400x250/placeholder.jpg" data-src="/image/background/400x250/adv.jpg" alt="Advertisements" width="100%">
                                         </div>
-                                        <!--/ panel toolbar -->
+                                        <!--/ media -->
                                     </div>
-                                    <!--/ panel heading/header -->
-                                    <!-- panel body with collapse capabale -->
-                                    <div class="table-responsive panel-collapse pull out">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Browser Name</th>
-                                                    <th>Rendering Engine</th>
-                                                    <th>Platform</th>
-                                                    <th>Activity</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Google Chrome</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,4,1,5,3</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">50.65%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Safari</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">5,2,1,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">20.31%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Mozilla Firefox</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,1,5,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">61.22%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Internet Explorer</span></td>
-                                                    <td>Trident</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">3,1,4,5,2</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">0.65%</span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!--/ panel body with collapse capabale -->
-                                </div>
-                                <!--/ END panel -->
-                            </div>
-                        </div>
-                        <!-- Browser Breakpoint -->
-                    </div>
-                    <!--/ END Left Side -->
-
-                    <!-- START Right Side -->
-                    <div class="col-md-3">
-                        <div class="panel panel-minimal">
-
-                            <div class="panel">
-                                <div class="panel-body">
-                                    <h4 class="semibold nm"><i class="ico-dollar mr5"></i>Today Income</h4>
-                                    <h2 class="thin mt5 text-muted">+<span data-toggle="counterup">1120</span></h2>
-                                    <!-- chart -->
-                                    <div class="chart" style="height:120px;" id="stats1"></div>
-                                    <!--/ chart -->
-                                </div>
-                            </div>
-
-                            <div class="widget panel bgcolor-warning">
-                            <!-- panel body -->
-                            <div class="panel-body">
-                                <div class="clearfix">
-                                    <p class="pull-left semibold">Perth, AU</p>
-                                    <p class="pull-right semibold">
-                                        <span class="mr5">°F</span>
-                                        <span>°C</span>
-                                    </p>
-                                </div>
-                                <div class="text-center mt15 mb15">
-                                    <h1 class="semibold">
-                                        <i class="ico-sun22"></i>
-                                        <span class="">32°</span>
-                                    </h1>
-                                </div>
-                                <div class="clearfix">
-                                    <p class="pull-left semibold nm">
-                                        <i class="ico-arrow-down5"></i> 31°
-                                    </p>
-                                    <p class="pull-right semibold nm">
-                                        <i class="ico-arrow-up5"></i> 37°
-                                    </p>
-                                </div>
-                            </div>
-                            <!--/ panel body -->
-                        </div>
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h5 class="panel-title"><i class="ico-globe mr5"></i>Traffic</h5>
-                            </div>
-                            <ul class="list-group">
-                                <li class="list-group-item">Visits <span class="semibold pull-right">47650</span></li>
-                                <li class="list-group-item">Unique Visits <span class="semibold pull-right">15620</span></li>
-                                <li class="list-group-item">
-                                    <p>Traffic Sources</p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-success"></i>GOOGLE.COM
-                                        <span class="pull-right semibold">15883</span>
-                                    </p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-danger"></i>DIRECT TRAFFIC
-                                        <span class="pull-right semibold">11912</span>
-                                    </p>
+                                </li>
+                                <li class="text-left valign-top">
+                                    <a class="semibold" href="javascript:void(0);">Bootstrap3</a>
+                                    <p class="text-muted nm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 </li>
                             </ul>
+                            <!--/ Advertisements -->
                         </div>
-
-                        </div>
+                        <!--/ panel body -->
                     </div>
-                    <!--/ END Right Side -->
+                    <!--/ message list -->
+
+                    <!-- content -->
+                    <div class="col-lg-8 valign-top panel panel-default">
+                        <!-- toolbar -->
+                        <div class="panel-toolbar-wrapper pt10 pb10">
+                            <div class="panel-toolbar">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><i class="ico-arrow-left"></i></button>
+                                    <button type="button" class="btn btn-default"><i class="ico-forward"></i></button>
+                                    <button type="button" class="btn btn-default"><i class="ico-reply"></i></button>
+                                    <button type="button" class="btn btn-default"><i class="ico-remove2"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-toolbar text-right">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><i class="ico-folder"></i></button>
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                        <li role="presentation" class="dropdown-header">Move to folder</li>
+                                        <li><a href="javascript:void(0);">Important</a></li>
+                                        <li><a href="javascript:void(0);">Misc</a></li>
+                                        <li><a href="javascript:void(0);">Work</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><i class="ico-tags"></i></button>
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                        <li role="presentation" class="dropdown-header">Set tags</li>
+                                        <li><a href="javascript:void(0);"><i class="icon ico-radio-unchecked text-primary"></i> Primary</a></li>
+                                        <li><a href="javascript:void(0);"><i class="icon ico-radio-unchecked text-danger"></i> Important</a></li>
+                                        <li><a href="javascript:void(0);"><i class="icon ico-radio-unchecked text-success"></i> Done</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ toolbar -->
+
+                        <!-- panel body -->
+                        <div class="panel-body bgcolor-default">
+                            <h3 class="semibold mt0 mb5">Click me. I'll take you to the email view</h3>
+                            <p class="nm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <!--/ panel body -->
+
+                        <hr class="nm"><!-- horizontal line -->
+
+                        <!-- panel body -->
+                        <div class="panel-body">
+                            <!-- sender detail -->
+                            <ul class="list-table">
+                                <li style="width:70px;">
+                                    <img class="img-circle" src="/image/avatar/avatar6.jpg" alt="" width="65px" height="65px">
+                                </li>
+                                <li class="text-left">
+                                    <h4 class="semibold ellipsis nm">
+                                        Colt Jenkins / 
+                                        <small class="text-muted"><a href="javascript:void(0);">cj@mail.com</a> to <a href="javascript:void(0);">Me</a></small>
+                                    </h4>
+                                </li>
+                                <li class="text-right">
+                                    <h5 class="semibold text-muted">Jul 19, 2013</h5>
+                                </li>
+                            </ul>
+                            <!--/ sender detail -->
+                        </div>
+                        <!--/ panel body -->
+
+                        <!-- panel body -->
+                        <div class="panel-body slimscroll" style="height:450px;">
+                            <h5 class="semibold">Dear Mr. John Doe,</h5>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <blockquote class="mt15 mb15">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+                            <p>Check this awesome photo :)</p>
+                            <div class="row mt15 mb15" id="photo-album">
+                                <div class="col-md-2 col-xs-4">
+                                    <!-- thumbnail -->
+                                    <a href="/image/background/background1.jpg" class="thumbnail magnific">
+                                        <img src="/image/background/400x400/background1.jpg" alt="" width="100%" />
+                                    </a>
+                                    <!--/ thumbnail -->
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <!-- thumbnail -->
+                                    <a href="/image/background/background2.jpg" class="thumbnail magnific">
+                                        <img src="/image/background/400x400/background2.jpg" alt="" width="100%" />
+                                    </a>
+                                    <!--/ thumbnail -->
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <!-- thumbnail -->
+                                    <a href="/image/background/background3.jpg" class="thumbnail magnific">
+                                        <img src="/image/background/400x400/background3.jpg" alt="" width="100%" />
+                                    </a>
+                                    <!--/ thumbnail -->
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <!-- thumbnail -->
+                                    <a href="/image/background/background4.jpg" class="thumbnail magnific">
+                                        <img src="/image/background/400x400/background4.jpg" alt="" width="100%" />
+                                    </a>
+                                    <!--/ thumbnail -->
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <!-- thumbnail -->
+                                    <a href="/image/background/background5.jpg" class="thumbnail magnific">
+                                        <img src="/image/background/400x400/background5.jpg" alt="" width="100%" />
+                                    </a>
+                                    <!--/ thumbnail -->
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <!-- thumbnail -->
+                                    <a href="/image/background/background6.jpg" class="thumbnail magnific">
+                                        <img src="/image/background/400x400/background6.jpg" alt="" width="100%" />
+                                    </a>
+                                    <!--/ thumbnail -->
+                                </div>
+                            </div>
+
+                            <address>
+                                <p class="semibold nm">Best Regard,</p>
+                                <p class="nm">Arthur Abbott</p>
+                                <a href="/mailto:#">arbb@mail.com</a>
+                            </address>
+                        </div>
+                        <!--/ panel body -->
+
+                        <!-- panel body -->
+                        <div class="panel-body">
+                            <h5 class="semibold mt0">Attachment</h5>
+
+                            <!-- attachment -->
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped nm">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span class="label label-success">HTML</span> file.html (1.2 MB)
+                                            </td>
+                                            <td width="6%"><a href="javascript:void(0);">View</a></td>
+                                            <td width="6%"><a href="javascript:void(0);">Download</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="label label-primary">CSS</span> file.css (1.2 MB)
+                                            </td>
+                                            <td width="6%"><a href="javascript:void(0);">View</a></td>
+                                            <td width="6%"><a href="javascript:void(0);">Download</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="label label-danger">PHP</span> file.php (1.2 MB)
+                                            </td>
+                                            <td width="6%"><a href="javascript:void(0);">View</a></td>
+                                            <td width="6%"><a href="javascript:void(0);">Download</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--/ attachment -->
+                        </div>
+                        <!--/ panel body -->
+
+                        <!-- reply box -->
+                        <div class="summernote">
+                            <i>Click here to <strong>Reply</strong> or <strong>Forward</strong></i>
+                        </div>
+                        <!--/ reply box -->
+                    </div>
+                    <!--/ content -->
                 </div>
+                <!--/ END Table layout -->
+
+                <!-- START Modal compose message -->
+                <div id="ModalComposeMessage" class="modal fade">
+                    <div class="modal-dialog">
+                        <form class="modal-content" action="" parsley-validate>
+                            <div class="modal-header text-center">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <div class="ico-envelop-opened mb15 mt15" style="font-size:36px;"></div>
+                                <h4 class="semibold modal-title text-primary">Compose Email</h4>
+                                <p class="text-muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="control-label">To <span class="text-danger">*</span></label>
+                                            <input type="text" name="contact" id="selectize-contact" class="form-control" placeholder="Select contact...">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Subject <span class="text-danger">*</span></label>
+                                            <input name="subject" type="text" class="form-control" parsley-required="true">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Your message</label>
+                                            <div class="summernote"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-success">Send</button>
+                            </div>
+                        </form><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div>
+                <!--/ END Modal compose message -->
             </div>
             <!--/ END Template Container -->
 
@@ -1371,14 +1518,11 @@
 
         <!-- Plugins and page level script : optional -->
         <script type="text/javascript" src="/javascript/pace.min.js"></script>
+        <script type="text/javascript" src="/plugins/magnific/js/jquery.magnific-popup.js"></script>
         <script type="text/javascript" src="/plugins/selectize/js/selectize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.resize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.categories.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.time.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.tooltip.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.spline.js"></script>
-        <script type="text/javascript" src="/javascript/backend/pages/dashboard-v1.js"></script>
+        <script type="text/javascript" src="/plugins/gritter/js/jquery.gritter.js"></script>
+        <script type="text/javascript" src="/plugins/summernote/js/summernote.js"></script>
+        <script type="text/javascript" src="/javascript/backend/pages/email.js"></script>
         <!--/ Plugins and page level script : optional -->
         <!--/ END JAVASCRIPT SECTION -->
     </body>

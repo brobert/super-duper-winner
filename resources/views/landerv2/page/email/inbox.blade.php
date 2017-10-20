@@ -19,8 +19,11 @@
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/plugins/magnific/css/magnific.css">
         <link rel="stylesheet" href="/plugins/selectize/css/selectize.css">
-        <link rel="stylesheet" href="/plugins/flot/css/flot.css">
+        <link rel="stylesheet" href="/plugins/gritter/css/gritter.css">
+        <link rel="stylesheet" href="/plugins/summernote/css/summernote.css">
         <!--/ Plugins stylesheet : optional -->
 
         <!-- Application stylesheet : mandatory -->
@@ -88,7 +91,7 @@
                                 <li><a href="#">Third item</a></li>
                             </ul>
                     </li>
-
+                    
                 </ul>
                 <!--/ END Left nav -->
 
@@ -120,7 +123,7 @@
                                 <span class="option text-right"><a href="javascript:void(0);">Clear all</a></span>
                             </div>
                             <div class="dropdown-body slimscroll">
-
+                                
                                 <!-- Message list -->
                                 <div class="media-list">
                                     <a href="javascript:void(0);" class="media read border-dotted">
@@ -134,7 +137,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar1.jpg" class="media-object img-circle" alt="">
@@ -173,7 +176,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar9.jpg" class="media-object img-circle" alt="">
@@ -199,7 +202,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar5.jpg" class="media-object img-circle" alt="">
@@ -212,7 +215,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar3.jpg" class="media-object img-circle" alt="">
@@ -233,7 +236,7 @@
                         <!--/ Dropdown menu -->
                     </li>
                     <!--/ Notification dropdown -->
-
+                    
                     <!-- Profile dropdown -->
                     <li class="dropdown profile">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
@@ -260,7 +263,7 @@
                         </a>
                     </li>
                     <!--/ Offcanvas right -->
-
+                  
                 </ul>
                 <!--/ END Right nav -->
             </div>
@@ -274,7 +277,7 @@
             <section class="content slimscroll">
                 <!-- START Template Navigation/Menu -->
                 <ul class="topmenu topmenu-responsive" data-toggle="menu">
-                    <li class="active">
+                    <li>
                         <a href="/" data-target="#dashboard" data-parent=".topmenu">
                             <span class="figure"><i class="ico-home2"></i></span>
                             <span class="text">Dashboard</span>
@@ -492,14 +495,14 @@
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-                    <li >
+                    <li class="active open" >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#page" data-parent=".topmenu">
                             <span class="figure"><i class="ico-copy4"></i></span>
                             <span class="text">Miscelleneous</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="page" class="submenu collapse ">
+                        <ul id="page" class="submenu collapse in">
                             <li class="submenu-header ellipsis">Miscelleneous</li>
                             <li >
                                 <a href="/page/starter.html">
@@ -525,19 +528,19 @@
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
                             </li>
-                            <li >
+                            <li>
                                 <a href="/page/calendar.html">
                                     <span class="text">Calendar</span>
                                 </a>
                             </li>
-                            <li >
+                            <li class="active open">
                                 <a href="javascript:void(0);" data-toggle="submenu" data-target="#email" data-parent="#page">
                                     <span class="text">Email</span>
                                     <span class="arrow"></span>
                                 </a>
                                 <!-- START 2nd Level Menu -->
-                                <ul id="email" class="submenu collapse ">
-                                    <li >
+                                <ul id="email" class="submenu collapse in">
+                                    <li class="active">
                                         <a href="/page/email/inbox.html"><span class="text">Inbox</span></a>
                                     </li>
                                     <li >
@@ -632,7 +635,7 @@
                                     <span class="text">Timeline</span>
                                 </a>
                             </li>
-
+                           
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
@@ -747,7 +750,7 @@
             <!--/ END Sidebar Container -->
         </aside>
         <!--/ END Template Sidebar (Left) -->
-
+        
         <!-- START Template Sidebar (right) -->
         <aside class="sidebar sidebar-right">
             <!-- START Offcanvas -->
@@ -1134,225 +1137,660 @@
                 <!-- Page Header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold"><span class="figure"><i class="ico-home2"></i></span> Dashboards</h4>
+                        <h4 class="title semibold">Email inbox <small class="text-muted">(3 Unread)</small></h4>
+                    </div>
+                    <div class="page-header-section">
+                        <div class="toolbar">
+                            <div class="input-group">
+                                <div class="has-icon">
+                                    <input type="text" class="form-control" placeholder="Search your email...">
+                                    <i class="ico-search form-control-icon"></i>
+                                </div>
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default">Search</button>
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                    <ul class="dropdown-menu pull-right" role="menu">
+                                        <li class="dropdown-header">Filter :</li>
+                                        <li><a href="javascript:void(0);"><i class="icon ico-download22"></i>Inbox</a></li>
+                                        <li><a href="javascript:void(0);"><i class="icon ico-upload22"></i>Outbox</a></li>
+                                        <li><a href="javascript:void(0);"><i class="icon ico-remove4"></i>Trash</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0);"><i class="icon ico-briefcase2"></i>Others</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Page Header -->
 
-                <div class="row">
-                    <!-- START Left Side -->
-                    <div class="col-md-9">
-
-                        <!-- Website States -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <!-- START panel -->
-                                <div class="panel ">
-                                    <!-- panel-toolbar -->
-                                    <div class="panel-heading pt10">
-                                        <div class="panel-toolbar">
-                                            <h5 class="semibold nm ellipsis">Website Stats</h5>
-                                        </div>
-                                    </div>
-                                    <!--/ panel-toolbar -->
-                                    <!-- panel-body -->
-                                    <div class="panel-body pt0">
-                                        <div class="chart mt10" id="chart-audience" style="height:250px;"></div>
-                                    </div>
-                                    <!--/ panel-body -->
-                                    <!-- panel-footer -->
-                                    <div class="panel-footer hidden-xs">
-                                        <ul class="nav nav-section nav-justified">
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">24,548</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Visits</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-danger"><i class="ico-arrow-down4"></i> 32%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">175,132</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Page Views</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 15%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5"><span data-toggle="counterup">89.96</span>%</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Bounce Rate</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 3%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!--/ panel-footer -->
-                                </div>
-                                <!--/ END panel -->
+                <!-- START Table layout -->
+                <div class="table-layout">
+                    <!-- message list-->
+                    <div class="col-lg-3 valign-top panel panel-minimal">
+                        <!-- panel heading -->
+                        <div class="panel-heading">
+                            <!-- panel toolbar -->
+                            <div class="panel-toolbar">
+                                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#ModalComposeMessage">
+                                    <i class="ico-pencil5"></i> 
+                                    <span class="semibold">Compose Email</span>
+                                </button>
                             </div>
                         </div>
-                        <!--/ Website States -->
-
-                        <!-- Browser Breakpoint -->
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <!-- START panel -->
-                                <div class="panel panel-default">
-                                    <!-- panel heading/header -->
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title ellipsis"><i class="ico-chrome mr5"></i>Browser Breakpoint</h3>
-                                        <!-- panel toolbar -->
-                                        <div class="panel-toolbar text-right">
-                                            <!-- option -->
-                                            <div class="option">
-                                                <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
-                                                <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
+                        <!--/ panel heading -->
+                        
+                        <!-- panel body -->
+                        <div class="panel-body">
+                            <!-- Browse -->
+                            <h5 class="semibold">Browse</h5>
+                            <div class="list-group">
+                                <a href="" class="list-group-item"><i class="ico-drawer mr5"></i> Inbox <span class="semibold text-muted pull-right">1943</span></a>
+                                <a href="javascript:void(0);" class="list-group-item"><i class="ico-paper-plane mr5"></i> Sent <span class="semibold text-muted pull-right">51</span></a>
+                                <a href="javascript:void(0);" class="list-group-item"><i class="ico-pen3 mr5"></i> Draft <span class="semibold text-muted pull-right">11</span></a>
+                                <a href="javascript:void(0);" class="list-group-item"><i class="ico-remove2 mr5"></i> Trash</a>
+                            </div>
+                            <!--/ Browse -->
+                            <!-- Label -->
+                            <h5 class="semibold">Label</h5>
+                            <div class="list-group">
+                                <a href="javascript:void(0);" class="list-group-item"><i class="ico-square text-danger mr5"></i> Work</a>
+                                <a href="javascript:void(0);" class="list-group-item"><i class="ico-square text-muted mr5"></i> Design</a>
+                                <a href="javascript:void(0);" class="list-group-item"><i class="ico-square text-teal mr5"></i> Social</a>
+                                <a href="javascript:void(0);" class="list-group-item"><i class="ico-square text-success mr5"></i> Magazine</a>
+                            </div>
+                            <!--/ Label-->
+                            <!-- Progress bar -->
+                            <h5 class="semibold">Space Used</h5>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <ul class="list-table nm">
+                                        <li class="text-left">Inbox</li>
+                                        <li>
+                                            <div class="progress progress-xs nm">
+                                                <div class="progress-bar" style="width: 40%"></div>
                                             </div>
-                                            <!--/ option -->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-group-item">
+                                    <ul class="list-table nm">
+                                        <li class="text-left">Sent</li>
+                                        <li>
+                                            <div class="progress progress-xs nm">
+                                                <div class="progress-bar" style="width: 15%"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-group-item">
+                                    <ul class="list-table nm">
+                                        <li class="text-left">Draft</li>
+                                        <li>
+                                            <div class="progress progress-xs nm">
+                                                <div class="progress-bar" style="width: 20%"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-group-item">
+                                    <ul class="list-table nm">
+                                        <li class="text-left">Trash</li>
+                                        <li>
+                                            <div class="progress progress-xs nm">
+                                                <div class="progress-bar progress-bar-danger" style="width: 90%"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--/ Progress bar -->
+
+                            <hr><!-- horizontal line -->
+
+                            <!-- Advertisements -->
+                            <h5 class="semibold">Dummie Advert</h5>
+                            <ul class="list-table mb15">
+                                <li class="text-left valign-top">
+                                    <div class="thumbnail nm">
+                                        <!-- media -->
+                                        <div class="media">
+                                            <!-- indicator -->
+                                            <div class="indicator"><span class="spinner"></span></div>
+                                            <!-- indicator -->
+                                            <img data-toggle="unveil" src="/image/background/400x250/placeholder.jpg" data-src="/image/background/400x250/adv.jpg" alt="Advertisements" width="100%">
                                         </div>
-                                        <!--/ panel toolbar -->
+                                        <!--/ media -->
                                     </div>
-                                    <!--/ panel heading/header -->
-                                    <!-- panel body with collapse capabale -->
-                                    <div class="table-responsive panel-collapse pull out">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Browser Name</th>
-                                                    <th>Rendering Engine</th>
-                                                    <th>Platform</th>
-                                                    <th>Activity</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Google Chrome</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,4,1,5,3</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">50.65%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Safari</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">5,2,1,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">20.31%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Mozilla Firefox</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,1,5,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">61.22%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Internet Explorer</span></td>
-                                                    <td>Trident</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">3,1,4,5,2</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">0.65%</span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!--/ panel body with collapse capabale -->
-                                </div>
-                                <!--/ END panel -->
-                            </div>
-                        </div>
-                        <!-- Browser Breakpoint -->
-                    </div>
-                    <!--/ END Left Side -->
-
-                    <!-- START Right Side -->
-                    <div class="col-md-3">
-                        <div class="panel panel-minimal">
-
-                            <div class="panel">
-                                <div class="panel-body">
-                                    <h4 class="semibold nm"><i class="ico-dollar mr5"></i>Today Income</h4>
-                                    <h2 class="thin mt5 text-muted">+<span data-toggle="counterup">1120</span></h2>
-                                    <!-- chart -->
-                                    <div class="chart" style="height:120px;" id="stats1"></div>
-                                    <!--/ chart -->
-                                </div>
-                            </div>
-
-                            <div class="widget panel bgcolor-warning">
-                            <!-- panel body -->
-                            <div class="panel-body">
-                                <div class="clearfix">
-                                    <p class="pull-left semibold">Perth, AU</p>
-                                    <p class="pull-right semibold">
-                                        <span class="mr5">°F</span>
-                                        <span>°C</span>
-                                    </p>
-                                </div>
-                                <div class="text-center mt15 mb15">
-                                    <h1 class="semibold">
-                                        <i class="ico-sun22"></i>
-                                        <span class="">32°</span>
-                                    </h1>
-                                </div>
-                                <div class="clearfix">
-                                    <p class="pull-left semibold nm">
-                                        <i class="ico-arrow-down5"></i> 31°
-                                    </p>
-                                    <p class="pull-right semibold nm">
-                                        <i class="ico-arrow-up5"></i> 37°
-                                    </p>
-                                </div>
-                            </div>
-                            <!--/ panel body -->
-                        </div>
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h5 class="panel-title"><i class="ico-globe mr5"></i>Traffic</h5>
-                            </div>
-                            <ul class="list-group">
-                                <li class="list-group-item">Visits <span class="semibold pull-right">47650</span></li>
-                                <li class="list-group-item">Unique Visits <span class="semibold pull-right">15620</span></li>
-                                <li class="list-group-item">
-                                    <p>Traffic Sources</p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-success"></i>GOOGLE.COM
-                                        <span class="pull-right semibold">15883</span>
-                                    </p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-danger"></i>DIRECT TRAFFIC
-                                        <span class="pull-right semibold">11912</span>
-                                    </p>
+                                </li>
+                                <li class="text-left valign-top">
+                                    <a class="semibold" href="javascript:void(0);">Bootstrap3</a>
+                                    <p class="text-muted nm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 </li>
                             </ul>
+                            <!--/ Advertisements -->
                         </div>
-
-                        </div>
+                        <!--/ panel body -->
                     </div>
-                    <!--/ END Right Side -->
+                    <!--/ message list -->
+
+                    <!-- content -->
+                    <div class="col-lg-8 valign-top panel panel-default">
+                        <!-- panel toolbar wrapper -->
+                        <div class="panel-toolbar-wrapper pl0 pt5 pb5">
+                            <!-- panel toolbar -->
+                            <div class="panel-toolbar pl10">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><i class="ico-loop4"></i></button>
+                                    <button type="button" class="btn btn-default"><i class="ico-remove3"></i></button>
+                                </div>
+                                <div class="btn-group hidden-xs">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <i class="ico-folder"></i>&nbsp;&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                        <li role="presentation" class="dropdown-header">Move to folder</li>
+                                        <li><a href="javascript:void(0);">Important</a></li>
+                                        <li><a href="javascript:void(0);">Misc</a></li>
+                                        <li><a href="javascript:void(0);">Work</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-toolbar text-right">
+                                <div class="static-text mr10 hidden-xs">
+                                    <span class="semibold">1-20</span> of <span class="semibold">1053</span>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default"><i class="ico-angle-left"></i></button>
+                                    <button type="button" class="btn btn-default"><i class="ico-angle-right"></i></button>
+                                </div>
+                            </div>
+                            <!--/ panel toolbar -->
+                        </div>
+                        <!--/ panel toolbar wrapper -->
+
+                        <!-- email list -->
+                        <div class="table-responsive nm">
+                            <table class="table table-hover table-email" id="table-email">
+                                <tbody>
+                                    <tr>
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox1" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox1"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon1" value="1">  
+                                                <label for="checkboxicon1"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">Karly Osborn</h5>
+                                            <p class="date">Today</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <i class="ico-square text-danger mr5"></i> 
+                                                <i class="ico-attachment text-muted mr5"></i>
+                                                <a href="/page/email/view.html">Click me. I'll take you to the email view</a>
+                                            </h5>
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="read">
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox2" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox2"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon2" value="1">  
+                                                <label for="checkboxicon2"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">Pinterest</h5>
+                                            <p class="date">Yesterday</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <a href="javascript:void(0);">미상의 시체 started following 1 of your boards</a>
+                                            </h5>
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="read">
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox3" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox3"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon3" value="1">  
+                                                <label for="checkboxicon3"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">Pinterest</h5>
+                                            <p class="date">Yesterday</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <a href="javascript:void(0);">Jae Dong Cha repinned 1 of your pins</a>
+                                            </h5>
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="read">
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox4" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox4"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon4" value="1" checked="">  
+                                                <label for="checkboxicon4"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">Dropbox</h5>
+                                            <p class="date">Yesterday</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <i class="ico-square text-default mr5"></i> 
+                                                <a href="javascript:void(0);">Update to the dropbox Term Of Service</a>
+                                            </h5>
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox5" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox5"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon5" value="1" checked="">  
+                                                <label for="checkboxicon5"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">iTunes</h5>
+                                            <p class="date">Yesterday</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <a href="javascript:void(0);">Top-Selling albums &amp; movies at a special</a>
+                                            </h5>
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox6" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox6"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon6" value="1">  
+                                                <label for="checkboxicon6"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">Avira Online</h5>
+                                            <p class="date">Yesterday</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <a href="javascript:void(0);">Verify your Avira Online account now</a>
+                                            </h5>
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox7" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox7"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon7" value="1">  
+                                                <label for="checkboxicon7"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">AirAsia</h5>
+                                            <p class="date">Friday</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <a href="javascript:void(0);"><i class="ico-heart"></i> FREE SEATS? Stay tuned!</a>
+                                            </h5>
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="read">
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox8" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox8"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon8" value="1">  
+                                                <label for="checkboxicon8"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">Behance Team</h5>
+                                            <p class="date">Friday</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <i class="ico-square text-danger mr5"></i>
+                                                <a href="javascript:void(0);">This creative ritual worth stealing</a>
+                                            </h5>
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox9" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox9"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon9" value="1" checked="">  
+                                                <label for="checkboxicon9"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">GoDaddy</h5>
+                                            <p class="date">Thursday</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <a href="javascript:void(0);">Be your own boss. It starts with 25% off.</a>
+                                            </h5>
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="read">
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox10" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox10"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon10" value="1">  
+                                                <label for="checkboxicon10"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">Twitter</h5>
+                                            <p class="date">Thursday</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <i class="ico-square text-danger mr5"></i>
+                                                <a href="javascript:void(0);">Louis Twenty (@LouisTwenty) is now following you.</a>
+                                            </h5>
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox11" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox11"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon11" value="1" checked="">  
+                                                <label for="checkboxicon11"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">BlackBerry</h5>
+                                            <p class="date">Wednesday</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <a href="javascript:void(0);">BBM 2.0: Better than ever!</a>
+                                            </h5>
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox12" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox12"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon12" value="1">  
+                                                <label for="checkboxicon12"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">Team Typeform</h5>
+                                            <p class="date">Wednesday</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <i class="ico-attachment text-muted mr5"></i>
+                                                <a href="javascript:void(0);">Important! security announcement (api)</a>
+                                            </h5>
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="read">
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox13" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox13"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon7" value="1">  
+                                                <label for="checkboxicon13"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">Twitter</h5>
+                                            <p class="date">Wednesday</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <i class="ico-square text-teal mr5"></i>
+                                                <a href="javascript:void(0);">Do you know John Doe and Tamara Moon?</a>
+                                            </h5>
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="read">
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox14" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox14"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon14" value="1">  
+                                                <label for="checkboxicon14"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">Spotify</h5>
+                                            <p class="date">Tuesday</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <a href="javascript:void(0);">Topsify added a new song lists.</a>
+                                            </h5>
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="read">
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox15" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox15"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon15" value="1">  
+                                                <label for="checkboxicon15"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">Behance</h5>
+                                            <p class="date">Tuesday</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <i class="ico-square text-teal mr5"></i>
+                                                <a href="javascript:void(0);">Kasmir Ali published a new project</a>
+                                            </h5>
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox16" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox16"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon16" value="1" checked="">  
+                                                <label for="checkboxicon16"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">Paypal</h5>
+                                            <p class="date">Monday</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <i class="ico-attachment text-muted mr5"></i>
+                                                <a href="javascript:void(0);">Receipt for your payment to GoDaddy.com.</a>
+                                            </h5>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="2%">
+                                            <div class="checkbox custom-checkbox nm">  
+                                                <input type="checkbox" id="customcheckbox17" value="1" data-toggle="selectrow" data-target="tr">  
+                                                <label for="customcheckbox17"></label>   
+                                            </div>
+                                        </td>
+                                        <td width="2%">
+                                            <span class="checkbox checkbox-icon icon-star">  
+                                                <input type="checkbox" id="checkboxicon17" value="1">  
+                                                <label for="checkboxicon17"></label>   
+                                            </span>
+                                        </td>
+                                        <td class="meta">
+                                            <h5 class="sender">Facebook</h5>
+                                            <p class="date">Feb 16</p>
+                                        </td>
+                                        <td class="message">
+                                            <h5 class="heading">
+                                                <i class="ico-square text-teal mr5"></i>
+                                                <a href="javascript:void(0);">Tamara Moon tagged you in a post on Facebook</a>
+                                            </h5>
+                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--/ email list -->
+                    </div>
+                    <!--/ content -->
                 </div>
+                <!--/ END Table layout -->
+
+                <!-- START Modal compose message -->
+                <div id="ModalComposeMessage" class="modal fade">
+                    <div class="modal-dialog">
+                        <form class="modal-content" action="" parsley-validate>
+                            <div class="modal-header text-center">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <div class="ico-envelop-opened mb15 mt15" style="font-size:36px;"></div>
+                                <h4 class="semibold modal-title text-primary">Compose Email</h4>
+                                <p class="text-muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="control-label">To <span class="text-danger">*</span></label>
+                                            <input type="text" name="contact" id="selectize-contact" class="form-control" placeholder="Select contact...">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Subject <span class="text-danger">*</span></label>
+                                            <input name="subject" type="text" class="form-control" parsley-required="true">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Your message</label>
+                                            <div class="summernote"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-success">Send</button>
+                            </div>
+                        </form><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div>
+                <!--/ END Modal compose message -->
             </div>
             <!--/ END Template Container -->
 
@@ -1371,14 +1809,11 @@
 
         <!-- Plugins and page level script : optional -->
         <script type="text/javascript" src="/javascript/pace.min.js"></script>
+        <script type="text/javascript" src="/plugins/magnific/js/jquery.magnific-popup.js"></script>
         <script type="text/javascript" src="/plugins/selectize/js/selectize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.resize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.categories.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.time.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.tooltip.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.spline.js"></script>
-        <script type="text/javascript" src="/javascript/backend/pages/dashboard-v1.js"></script>
+        <script type="text/javascript" src="/plugins/gritter/js/jquery.gritter.js"></script>
+        <script type="text/javascript" src="/plugins/summernote/js/summernote.js"></script>
+        <script type="text/javascript" src="/javascript/backend/pages/email.js"></script>
         <!--/ Plugins and page level script : optional -->
         <!--/ END JAVASCRIPT SECTION -->
     </body>

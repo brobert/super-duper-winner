@@ -19,8 +19,8 @@
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
-        <link rel="stylesheet" href="/plugins/selectize/css/selectize.css">
-        <link rel="stylesheet" href="/plugins/flot/css/flot.css">
+        <link rel="stylesheet" href="/plugins/datatables/css/datatables.css">
+        <link rel="stylesheet" href="/plugins/datatables/css/tabletools.css">
         <!--/ Plugins stylesheet : optional -->
 
         <!-- Application stylesheet : mandatory -->
@@ -88,7 +88,7 @@
                                 <li><a href="#">Third item</a></li>
                             </ul>
                     </li>
-
+                    
                 </ul>
                 <!--/ END Left nav -->
 
@@ -120,7 +120,7 @@
                                 <span class="option text-right"><a href="javascript:void(0);">Clear all</a></span>
                             </div>
                             <div class="dropdown-body slimscroll">
-
+                                
                                 <!-- Message list -->
                                 <div class="media-list">
                                     <a href="javascript:void(0);" class="media read border-dotted">
@@ -134,7 +134,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar1.jpg" class="media-object img-circle" alt="">
@@ -173,7 +173,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar9.jpg" class="media-object img-circle" alt="">
@@ -199,7 +199,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar5.jpg" class="media-object img-circle" alt="">
@@ -212,7 +212,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar3.jpg" class="media-object img-circle" alt="">
@@ -233,7 +233,7 @@
                         <!--/ Dropdown menu -->
                     </li>
                     <!--/ Notification dropdown -->
-
+                    
                     <!-- Profile dropdown -->
                     <li class="dropdown profile">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
@@ -260,7 +260,7 @@
                         </a>
                     </li>
                     <!--/ Offcanvas right -->
-
+                  
                 </ul>
                 <!--/ END Right nav -->
             </div>
@@ -274,7 +274,7 @@
             <section class="content slimscroll">
                 <!-- START Template Navigation/Menu -->
                 <ul class="topmenu topmenu-responsive" data-toggle="menu">
-                    <li class="active">
+                    <li>
                         <a href="/" data-target="#dashboard" data-parent=".topmenu">
                             <span class="figure"><i class="ico-home2"></i></span>
                             <span class="text">Dashboard</span>
@@ -470,21 +470,21 @@
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-                    <li >
+                    <li class="active open">
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#table" data-parent=".topmenu">
                             <span class="figure"><i class="ico-table22"></i></span>
                             <span class="text">Tables</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="table" class="submenu collapse ">
+                        <ul id="table" class="submenu collapse in">
                             <li class="submenu-header ellipsis">Tables</li>
-                            <li >
+                            <li>
                                 <a href="/table/default.html">
                                     <span class="text">Basic Tables</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="/table/datatable.html">
                                     <span class="text">Data Tables</span>
                                 </a>
@@ -632,7 +632,7 @@
                                     <span class="text">Timeline</span>
                                 </a>
                             </li>
-
+                           
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
@@ -747,7 +747,7 @@
             <!--/ END Sidebar Container -->
         </aside>
         <!--/ END Template Sidebar (Left) -->
-
+        
         <!-- START Template Sidebar (right) -->
         <aside class="sidebar sidebar-right">
             <!-- START Offcanvas -->
@@ -1134,225 +1134,643 @@
                 <!-- Page Header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold"><span class="figure"><i class="ico-home2"></i></span> Dashboards</h4>
+                        <h4 class="title semibold">Table datatable</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <ol class="breadcrumb breadcrumb-transparent nm">
+                                <li><a href="#">Table</a></li>
+                                <li class="active">Datatable</li>
+                            </ol>
+                        </div>
+                        <!--/ Toolbar -->
                     </div>
                 </div>
                 <!-- Page Header -->
 
+                <!-- START row -->
                 <div class="row">
-                    <!-- START Left Side -->
-                    <div class="col-md-9">
-
-                        <!-- Website States -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <!-- START panel -->
-                                <div class="panel ">
-                                    <!-- panel-toolbar -->
-                                    <div class="panel-heading pt10">
-                                        <div class="panel-toolbar">
-                                            <h5 class="semibold nm ellipsis">Website Stats</h5>
-                                        </div>
-                                    </div>
-                                    <!--/ panel-toolbar -->
-                                    <!-- panel-body -->
-                                    <div class="panel-body pt0">
-                                        <div class="chart mt10" id="chart-audience" style="height:250px;"></div>
-                                    </div>
-                                    <!--/ panel-body -->
-                                    <!-- panel-footer -->
-                                    <div class="panel-footer hidden-xs">
-                                        <ul class="nav nav-section nav-justified">
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">24,548</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Visits</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-danger"><i class="ico-arrow-down4"></i> 32%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">175,132</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Page Views</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 15%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5"><span data-toggle="counterup">89.96</span>%</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Bounce Rate</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 3%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!--/ panel-footer -->
-                                </div>
-                                <!--/ END panel -->
-                            </div>
-                        </div>
-                        <!--/ Website States -->
-
-                        <!-- Browser Breakpoint -->
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <!-- START panel -->
-                                <div class="panel panel-default">
-                                    <!-- panel heading/header -->
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title ellipsis"><i class="ico-chrome mr5"></i>Browser Breakpoint</h3>
-                                        <!-- panel toolbar -->
-                                        <div class="panel-toolbar text-right">
-                                            <!-- option -->
-                                            <div class="option">
-                                                <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
-                                                <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
-                                            </div>
-                                            <!--/ option -->
-                                        </div>
-                                        <!--/ panel toolbar -->
-                                    </div>
-                                    <!--/ panel heading/header -->
-                                    <!-- panel body with collapse capabale -->
-                                    <div class="table-responsive panel-collapse pull out">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Browser Name</th>
-                                                    <th>Rendering Engine</th>
-                                                    <th>Platform</th>
-                                                    <th>Activity</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Google Chrome</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,4,1,5,3</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">50.65%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Safari</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">5,2,1,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">20.31%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Mozilla Firefox</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,1,5,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">61.22%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Internet Explorer</span></td>
-                                                    <td>Trident</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">3,1,4,5,2</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">0.65%</span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!--/ panel body with collapse capabale -->
-                                </div>
-                                <!--/ END panel -->
-                            </div>
-                        </div>
-                        <!-- Browser Breakpoint -->
-                    </div>
-                    <!--/ END Left Side -->
-
-                    <!-- START Right Side -->
-                    <div class="col-md-3">
-                        <div class="panel panel-minimal">
-
-                            <div class="panel">
-                                <div class="panel-body">
-                                    <h4 class="semibold nm"><i class="ico-dollar mr5"></i>Today Income</h4>
-                                    <h2 class="thin mt5 text-muted">+<span data-toggle="counterup">1120</span></h2>
-                                    <!-- chart -->
-                                    <div class="chart" style="height:120px;" id="stats1"></div>
-                                    <!--/ chart -->
-                                </div>
-                            </div>
-
-                            <div class="widget panel bgcolor-warning">
-                            <!-- panel body -->
-                            <div class="panel-body">
-                                <div class="clearfix">
-                                    <p class="pull-left semibold">Perth, AU</p>
-                                    <p class="pull-right semibold">
-                                        <span class="mr5">°F</span>
-                                        <span>°C</span>
-                                    </p>
-                                </div>
-                                <div class="text-center mt15 mb15">
-                                    <h1 class="semibold">
-                                        <i class="ico-sun22"></i>
-                                        <span class="">32°</span>
-                                    </h1>
-                                </div>
-                                <div class="clearfix">
-                                    <p class="pull-left semibold nm">
-                                        <i class="ico-arrow-down5"></i> 31°
-                                    </p>
-                                    <p class="pull-right semibold nm">
-                                        <i class="ico-arrow-up5"></i> 37°
-                                    </p>
-                                </div>
-                            </div>
-                            <!--/ panel body -->
-                        </div>
-
+                    <div class="col-md-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h5 class="panel-title"><i class="ico-globe mr5"></i>Traffic</h5>
+                                <h3 class="panel-title">Zero configuration</h3>
                             </div>
-                            <ul class="list-group">
-                                <li class="list-group-item">Visits <span class="semibold pull-right">47650</span></li>
-                                <li class="list-group-item">Unique Visits <span class="semibold pull-right">15620</span></li>
-                                <li class="list-group-item">
-                                    <p>Traffic Sources</p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-success"></i>GOOGLE.COM
-                                        <span class="pull-right semibold">15883</span>
-                                    </p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-danger"></i>DIRECT TRAFFIC
-                                        <span class="pull-right semibold">11912</span>
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-
+                            <table class="table table-striped" id="zero-configuration">
+                                <thead>
+                                    <tr>
+                                        <th>Rendering engine</th>
+                                        <th>Browser</th>
+                                        <th>Platform(s)</th>
+                                        <th>Engine version</th>
+                                        <th>CSS grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 4.0</td>
+                                        <td>Win 95+</td>
+                                        <td>4</td>
+                                        <td><span class="label label-danger">X</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 5.0</td>
+                                        <td>Win 95+</td>
+                                        <td>5</td>
+                                        <td><span class="label label-warning">C</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 5.5</td>
+                                        <td>Win 95+</td>
+                                        <td>5.5</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 6</td>
+                                        <td>Win 98+</td>
+                                        <td>6</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 7</td>
+                                        <td>Win XP SP2+</td>
+                                        <td>7</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>AOL browser (AOL desktop)</td>
+                                        <td>Win XP</td>
+                                        <td>6</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Firefox 1.0</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>1.7</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Firefox 1.5</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Firefox 2.0</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Firefox 3.0</td>
+                                        <td>Win 2k+ / OSX.3+</td>
+                                        <td>1.9</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Camino 1.0</td>
+                                        <td>OSX.2+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Camino 1.5</td>
+                                        <td>OSX.3+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Netscape 7.2</td>
+                                        <td>Win 95+ / Mac OS 8.6-9.2</td>
+                                        <td>1.7</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Netscape Browser 8</td>
+                                        <td>Win 98SE+</td>
+                                        <td>1.7</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Netscape Navigator 9</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.0</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1</td>
+                                        <td><span class="label label-primary">B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.1</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1.1</td>
+                                        <td><span class="label label-primary">B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.2</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1.2</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.3</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1.3</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.4</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1.4</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <!--/ END Right Side -->
                 </div>
+                <!--/ END row -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Ajax source</h3>
+                            </div>
+                            <table class="table table-bordered" id="ajax-source">
+                                <thead>
+                                    <tr>
+                                        <th>Rendering engine</th>
+                                        <th>Browser</th>
+                                        <th>Platform(s)</th>
+                                        <th>Engine version</th>
+                                        <th>CSS grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--/ END row -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default" id="demo">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Table tools</h3>
+                            </div>
+                            <table class="table table-striped table-bordered" id="table-tools">
+                                <thead>
+                                    <tr>
+                                        <th>Rendering engine</th>
+                                        <th>Browser</th>
+                                        <th>Platform(s)</th>
+                                        <th>Engine version</th>
+                                        <th>CSS grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 4.0</td>
+                                        <td>Win 95+</td>
+                                        <td>4</td>
+                                        <td><span class="label label-danger">X</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 5.0</td>
+                                        <td>Win 95+</td>
+                                        <td>5</td>
+                                        <td><span class="label label-warning">C</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 5.5</td>
+                                        <td>Win 95+</td>
+                                        <td>5.5</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 6</td>
+                                        <td>Win 98+</td>
+                                        <td>6</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 7</td>
+                                        <td>Win XP SP2+</td>
+                                        <td>7</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>AOL browser (AOL desktop)</td>
+                                        <td>Win XP</td>
+                                        <td>6</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Firefox 1.0</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>1.7</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Firefox 1.5</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Firefox 2.0</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Firefox 3.0</td>
+                                        <td>Win 2k+ / OSX.3+</td>
+                                        <td>1.9</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Camino 1.0</td>
+                                        <td>OSX.2+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Camino 1.5</td>
+                                        <td>OSX.3+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Netscape 7.2</td>
+                                        <td>Win 95+ / Mac OS 8.6-9.2</td>
+                                        <td>1.7</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Netscape Browser 8</td>
+                                        <td>Win 98SE+</td>
+                                        <td>1.7</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Netscape Navigator 9</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.0</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1</td>
+                                        <td><span class="label label-primary">B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.1</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1.1</td>
+                                        <td><span class="label label-primary">B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.2</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1.2</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.3</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1.3</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.4</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1.4</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--/ END row -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Row detail</h3>
+                            </div>
+                            <table class="table table-striped table-bordered table-hover" id="row-detail">
+                                <thead>
+                                    <tr>
+                                        <th>Rendering engine</th>
+                                        <th>Browser</th>
+                                        <th>Platform(s)</th>
+                                        <th>Engine version</th>
+                                        <th>CSS grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Camino 1.0</td>
+                                        <td>OSX.2+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Camino 1.5</td>
+                                        <td>OSX.3+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Netscape 7.2</td>
+                                        <td>Win 95+ / Mac OS 8.6-9.2</td>
+                                        <td>1.7</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Netscape Browser 8</td>
+                                        <td>Win 98SE+</td>
+                                        <td>1.7</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Netscape Navigator 9</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.0</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1</td>
+                                        <td><span class="label label-primary">B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.1</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1.1</td>
+                                        <td><span class="label label-primary">B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.2</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1.2</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.3</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1.3</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.4</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1.4</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--/ END row -->
+
+                <!-- START row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Individual column filtering</h3>
+                            </div>
+                            <table class="table table-striped" id="column-filtering">
+                                <thead>
+                                    <tr>
+                                        <th>Rendering engine</th>
+                                        <th>Browser</th>
+                                        <th>Platform(s)</th>
+                                        <th>Engine version</th>
+                                        <th>CSS grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 4.0</td>
+                                        <td>Win 95+</td>
+                                        <td>4</td>
+                                        <td><span class="label label-danger">X</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 5.0</td>
+                                        <td>Win 95+</td>
+                                        <td>5</td>
+                                        <td><span class="label label-warning">C</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 5.5</td>
+                                        <td>Win 95+</td>
+                                        <td>5.5</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 6</td>
+                                        <td>Win 98+</td>
+                                        <td>6</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 7</td>
+                                        <td>Win XP SP2+</td>
+                                        <td>7</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trident</td>
+                                        <td>AOL browser (AOL desktop)</td>
+                                        <td>Win XP</td>
+                                        <td>6</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Firefox 1.0</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>1.7</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Firefox 1.5</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Firefox 2.0</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Firefox 3.0</td>
+                                        <td>Win 2k+ / OSX.3+</td>
+                                        <td>1.9</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Camino 1.0</td>
+                                        <td>OSX.2+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Camino 1.5</td>
+                                        <td>OSX.3+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Netscape 7.2</td>
+                                        <td>Win 95+ / Mac OS 8.6-9.2</td>
+                                        <td>1.7</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Netscape Browser 8</td>
+                                        <td>Win 98SE+</td>
+                                        <td>1.7</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Netscape Navigator 9</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>1.8</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.0</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1</td>
+                                        <td><span class="label label-primary">B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.1</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1.1</td>
+                                        <td><span class="label label-primary">B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.2</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1.2</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.3</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1.3</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gecko</td>
+                                        <td>Mozilla 1.4</td>
+                                        <td>Win 95+ / OSX.1+</td>
+                                        <td>1.4</td>
+                                        <td><span class="label label-success">A</span></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th><input type="search" class="form-control" name="search_engine" placeholder="Rendering engine"></th>
+                                        <th><input type="search" class="form-control" name="search_engine" placeholder="Browser"></th>
+                                        <th><input type="search" class="form-control" name="search_engine" placeholder="Platform(s)"></th>
+                                        <th><input type="search" class="form-control" name="search_engine" placeholder="Engine version"></th>
+                                        <th><input type="search" class="form-control" name="search_engine" placeholder="CSS grade"></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--/ END row -->
             </div>
             <!--/ END Template Container -->
 
@@ -1371,14 +1789,10 @@
 
         <!-- Plugins and page level script : optional -->
         <script type="text/javascript" src="/javascript/pace.min.js"></script>
-        <script type="text/javascript" src="/plugins/selectize/js/selectize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.resize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.categories.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.time.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.tooltip.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.spline.js"></script>
-        <script type="text/javascript" src="/javascript/backend/pages/dashboard-v1.js"></script>
+        <script type="text/javascript" src="/plugins/datatables/js/jquery.dataTables.js"></script>
+        <script type="text/javascript" src="/plugins/datatables/tabletools/js/dataTables.tableTools.js"></script>
+        <script type="text/javascript" src="/plugins/datatables/js/datatables-bs3.js"></script>
+        <script type="text/javascript" src="/javascript/backend/tables/datatable.js"></script>
         <!--/ Plugins and page level script : optional -->
         <!--/ END JAVASCRIPT SECTION -->
     </body>

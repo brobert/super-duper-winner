@@ -19,8 +19,6 @@
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
-        <link rel="stylesheet" href="/plugins/selectize/css/selectize.css">
-        <link rel="stylesheet" href="/plugins/flot/css/flot.css">
         <!--/ Plugins stylesheet : optional -->
 
         <!-- Application stylesheet : mandatory -->
@@ -274,7 +272,7 @@
             <section class="content slimscroll">
                 <!-- START Template Navigation/Menu -->
                 <ul class="topmenu topmenu-responsive" data-toggle="menu">
-                    <li class="active">
+                    <li>
                         <a href="/" data-target="#dashboard" data-parent=".topmenu">
                             <span class="figure"><i class="ico-home2"></i></span>
                             <span class="text">Dashboard</span>
@@ -492,14 +490,14 @@
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-                    <li >
+                    <li class="active open" >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#page" data-parent=".topmenu">
                             <span class="figure"><i class="ico-copy4"></i></span>
                             <span class="text">Miscelleneous</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="page" class="submenu collapse ">
+                        <ul id="page" class="submenu collapse in">
                             <li class="submenu-header ellipsis">Miscelleneous</li>
                             <li >
                                 <a href="/page/starter.html">
@@ -525,7 +523,7 @@
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
                             </li>
-                            <li >
+                            <li>
                                 <a href="/page/calendar.html">
                                     <span class="text">Calendar</span>
                                 </a>
@@ -627,7 +625,7 @@
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
                             </li>
-                            <li >
+                            <li class="active" >
                                 <a href="/page/timeline/v2.html">
                                     <span class="text">Timeline</span>
                                 </a>
@@ -1131,228 +1129,458 @@
         <section id="main" role="main">
             <!-- START Template Container -->
             <div class="container-fluid">
-                <!-- Page Header -->
-                <div class="page-header page-header-block">
-                    <div class="page-header-section">
-                        <h4 class="title semibold"><span class="figure"><i class="ico-home2"></i></span> Dashboards</h4>
+                <!-- START jumbotron -->
+                <section class="jumbotron jumbotron-bg7 jumbotron mt-15 mb15 mr-15 ml-15" data-stellar-background-ratio="0.4" style="min-height:320px;">
+                    <!-- pattern overlay -->
+                    <div class="pattern pattern2 overlay overlay-primary"></div>
+                    <!--/ pattern overlay -->
+                    <div class="container" style="padding-top:8%;">
+                        <h1 class="thin text-white text-center font-alt">Create your application in an instant.</h1>
+                        <div class="text-center pt15">
+                            <a href="javascript:void(0);" class="btn btn-danger">Learn More <i class="ico-angle-right"></i></a>
+                        </div>
                     </div>
-                </div>
-                <!-- Page Header -->
+                </section>
+                <!--/ END jumbotron -->
 
+                <!-- START Row -->
                 <div class="row">
-                    <!-- START Left Side -->
+                    <!-- Left side / top side -->
                     <div class="col-md-9">
-
-                        <!-- Website States -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <!-- START panel -->
-                                <div class="panel ">
-                                    <!-- panel-toolbar -->
-                                    <div class="panel-heading pt10">
-                                        <div class="panel-toolbar">
-                                            <h5 class="semibold nm ellipsis">Website Stats</h5>
-                                        </div>
-                                    </div>
-                                    <!--/ panel-toolbar -->
-                                    <!-- panel-body -->
-                                    <div class="panel-body pt0">
-                                        <div class="chart mt10" id="chart-audience" style="height:250px;"></div>
-                                    </div>
-                                    <!--/ panel-body -->
-                                    <!-- panel-footer -->
-                                    <div class="panel-footer hidden-xs">
-                                        <ul class="nav nav-section nav-justified">
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">24,548</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Visits</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-danger"><i class="ico-arrow-down4"></i> 32%</span>
-                                                    </p>
+                        <!-- START Timeline -->
+                        <ul class="timeline">
+                            <li class="header">
+                                <!-- Post form -->
+                                <form class="panel" action="">
+                                    <textarea class="form-control form-control-minimal" rows="2" placeholder="Add project events / progress"></textarea>
+                                    <div class="panel-footer">
+                                        <div class="panel-toolbar-wrapper">
+                                            <div class="panel-toolbar">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-default"><i class="ico-user-plus2"></i></button>
+                                                    <button type="button" class="btn btn-default"><i class="ico-camera3"></i></button>
+                                                    <button type="button" class="btn btn-default"><i class="ico-location"></i></button>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">175,132</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Page Views</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 15%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5"><span data-toggle="counterup">89.96</span>%</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Bounce Rate</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 3%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!--/ panel-footer -->
-                                </div>
-                                <!--/ END panel -->
-                            </div>
-                        </div>
-                        <!--/ Website States -->
-
-                        <!-- Browser Breakpoint -->
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <!-- START panel -->
-                                <div class="panel panel-default">
-                                    <!-- panel heading/header -->
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title ellipsis"><i class="ico-chrome mr5"></i>Browser Breakpoint</h3>
-                                        <!-- panel toolbar -->
-                                        <div class="panel-toolbar text-right">
-                                            <!-- option -->
-                                            <div class="option">
-                                                <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
-                                                <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
                                             </div>
-                                            <!--/ option -->
+                                            <div class="panel-toolbar text-right">
+                                                <button type="submit" class="btn btn-primary">Post</button>
+                                            </div>
                                         </div>
-                                        <!--/ panel toolbar -->
                                     </div>
-                                    <!--/ panel heading/header -->
-                                    <!-- panel body with collapse capabale -->
-                                    <div class="table-responsive panel-collapse pull out">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Browser Name</th>
-                                                    <th>Rendering Engine</th>
-                                                    <th>Platform</th>
-                                                    <th>Activity</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Google Chrome</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,4,1,5,3</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">50.65%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Safari</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">5,2,1,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">20.31%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Mozilla Firefox</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,1,5,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">61.22%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Internet Explorer</span></td>
-                                                    <td>Trident</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">3,1,4,5,2</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">0.65%</span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!--/ panel body with collapse capabale -->
-                                </div>
-                                <!--/ END panel -->
-                            </div>
-                        </div>
-                        <!-- Browser Breakpoint -->
+                                </form>
+                                <!--/ Post form -->
+                            </li>
+                            <li class="header year ellipsis">Now</li>
+                            <li class="wrapper">
+                                <!-- START Events -->
+                                <ul class="events">
+                                    <li class="wrapper">
+                                        <div class="figure bgcolor-success"><i class="ico-file-plus"></i></div>
+                                        <!-- panel -->
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <ul class="list-table">
+                                                    <li class="text-left" style="width:60px;">
+                                                        <img class="img-circle" src="/image/avatar/avatar9.jpg" alt="" width="50px" height="50px">
+                                                    </li>
+                                                    <li class="text-left">
+                                                        <p class="mb5"><span class="semibold">Tamara Moon</span> create a new project</p>
+                                                        <h5 class="text-accent semibold nm">"Alpha Omega"</h5>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!--/ panel -->
+                                    </li>
+
+                                    <li class="wrapper">
+                                        <div class="figure bgcolor-success"><i class="ico-user-plus"></i></div>
+                                        <!-- panel -->
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <ul class="list-table">
+                                                    <li class="text-left" style="width:60px;">
+                                                        <img class="img-circle" src="/image/avatar/avatar9.jpg" alt="" width="50px" height="50px">
+                                                    </li>
+                                                    <li class="text-left">
+                                                        <p class="nm"><span class="semibold">Tamara Moon</span> assign 6 people to this project</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="panel-footer">
+                                                <div class="img-group img-group-stack">
+                                                    <img src="/image/avatar/avatar7.jpg" class="img-circle" alt="">
+                                                    <img src="/image/avatar/avatar2.jpg" class="img-circle" alt="">
+                                                    <img src="/image/avatar/avatar4.jpg" class="img-circle" alt="">
+                                                    <img src="/image/avatar/avatar5.jpg" class="img-circle" alt="">
+                                                    <span class="more img-circle">2+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/ panel -->
+                                    </li>
+
+                                    <li class="wrapper">
+                                        <div class="figure bgcolor-success"><i class="ico-upload22"></i></div>
+                                        <!-- panel -->
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <ul class="list-table">
+                                                    <li class="text-left" style="width:60px;">
+                                                        <img class="img-circle" src="/image/avatar/avatar5.jpg" alt="" width="50px" height="50px">
+                                                    </li>
+                                                    <li class="text-left">
+                                                        <p class="nm"><span class="semibold">Emi Steele</span> update project location</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <hr class="nm"><!-- horizontal line -->
+                                            <!-- Thumbnail -->
+                                            <div class="thumbnail thumbnail-album">
+                                                <!-- media -->
+                                                <div class="media">
+                                                    <!-- indicator -->
+                                                    <div class="indicator"><span class="spinner"></span></div>
+                                                    <!--/ indicator -->
+                                                    <img data-toggle="unveil" src="/image/background/400x250/placeholder.jpg" data-src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=400x200&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284&sensor=false" alt="Cover" width="100%">
+                                                </div>
+                                                <!--/ media -->
+                                            </div>
+                                            <!--/ Thumbnail -->
+                                            <!-- Toolbar -->
+                                            <div class="panel-footer">
+                                                <div class="panel-toolbar">
+                                                    <a href="javascript:void(0);" class="semibold text-default">Comment</a>
+                                                    <span class="text-muted mr5 ml5">&#8226;</span>
+                                                    <a href="javascript:void(0);" class="semibold text-default">Share</a>
+                                                </div>
+                                            </div>
+                                            <!--/ Toolbar -->
+                                        </div>
+                                        <!--/ panel -->
+                                    </li>
+
+                                    <li class="wrapper">
+                                        <div class="figure bgcolor-success"><i class="ico-bubbles2"></i></div>
+                                        <!-- panel -->
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <ul class="list-table">
+                                                    <li class="text-left" style="width:60px;">
+                                                        <img class="img-circle" src="/image/avatar/avatar9.jpg" alt="" width="50px" height="50px">
+                                                    </li>
+                                                    <li class="text-left">
+                                                        <p class="nm"><span class="semibold">Tamara Moon</span> post a shoutout.</p>
+                                                    </li>
+                                                </ul>
+                                                <blockquote class="mb0">
+                                                    <p>Do your best guys as the launching ceremony is near!</p>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                        <!--/ panel -->
+                                    </li>
+                                </ul>
+                                <!--/ END Events -->
+                            </li>
+                            <li class="header year ellipsis">Mar 29, 2014</li>
+                            <li class="wrapper">
+                                <!-- START Events -->
+                                <ul class="events">
+                                    <li class="wrapper">
+                                        <div class="figure bgcolor-danger"><i class="ico-ticket"></i></div>
+                                        <!-- panel -->
+                                        <div class="panel">
+                                            <!-- ribbon -->
+                                            <span class="panel-ribbon panel-ribbon-danger"><i class="ico-bug2"></i></span>
+                                            <!-- ribbon -->
+                                            <div class="panel-body">
+                                                <ul class="list-table">
+                                                    <li class="text-left" style="width:60px;">
+                                                        <img class="img-circle" src="/image/avatar/avatar6.jpg" alt="" width="50px" height="50px">
+                                                    </li>
+                                                    <li class="text-left">
+                                                        <p class="nm"><span class="semibold">Ethan Olsen</span> submit a ticket</p>
+                                                        <h5 class="semibold text-muted nm">#15479</h5>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="panel-footer">
+                                                found a bug on line <strong>3011</strong> inside framework.js file. Could someone fix this?
+                                            </div>
+                                        </div>
+                                        <!--/ panel -->
+                                    </li>
+
+                                    <li class="wrapper">
+                                        <div class="figure bgcolor-success"><i class="ico-star6"></i></div>
+                                        <!-- panel -->
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <ul class="list-table">
+                                                    <li class="text-left" style="width:60px;">
+                                                        <img class="img-circle" src="/image/avatar/avatar9.jpg" alt="" width="50px" height="50px">
+                                                    </li>
+                                                    <li class="text-left">
+                                                        <p class="nm"><span class="semibold">Tamara Moon</span> promoted <a href="/javascript:void(0)l" class="semibold">Rudyard Miles</a> &amp; <a href="/javascript:void(0)l" class="semibold">Caleb Mercado</a> as the project manager.</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!--/ panel -->
+                                    </li>
+
+                                    <li class="wrapper">
+                                        <div class="figure bgcolor-success"><i class="ico-ticket"></i></div>
+                                        <!-- panel -->
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <ul class="list-table">
+                                                    <li class="text-left" style="width:60px;">
+                                                        <img class="img-circle" src="/image/avatar/avatar2.jpg" alt="" width="50px" height="50px">
+                                                    </li>
+                                                    <li class="text-left">
+                                                        <p class="nm"><span class="semibold">Denise Armstrong</span> assigned to ticket <a href="javascript:void(0);">#15479</a></p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!--/ panel -->
+                                    </li>
+
+                                    <li class="wrapper">
+                                        <div class="figure bgcolor-primary"><i class="ico-pencil"></i></div>
+                                        <!-- panel -->
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <ul class="list-table">
+                                                    <li class="text-left" style="width:60px;">
+                                                        <img class="img-circle" src="/image/avatar/avatar2.jpg" alt="" width="50px" height="50px">
+                                                    </li>
+                                                    <li class="text-left">
+                                                        <p class="nm"><span class="semibold">Denise Armstrong</span> update ticket <a href="javascript:void(0);">#15479</a> progress</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="panel-footer">
+                                                <p class="semibold clearfix mb5">
+                                                    <span class="pull-left">Fixing framework.js</span>
+                                                    <span class="pull-right">70%</span>
+                                                </p>
+                                                <div class="progress progress-xs mb5">
+                                                    <div class="progress-bar progress-bar-success" style="width:70%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/ panel -->
+                                    </li>
+
+                                    <li class="wrapper">
+                                        <div class="figure bgcolor-success"><i class="ico-checkmark3"></i></div>
+                                        <!-- panel -->
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <ul class="list-table">
+                                                    <li class="text-left" style="width:60px;">
+                                                        <img class="img-circle" src="/image/avatar/avatar2.jpg" alt="" width="50px" height="50px">
+                                                    </li>
+                                                    <li class="text-left">
+                                                        <p class="nm"><span class="semibold">Denise Armstrong</span> closed ticket <a href="javascript:void(0);">#15479</a></p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!--/ panel -->
+                                    </li>
+                                </ul>
+                                <!--/ END Events -->
+                            </li>
+                            <li class="header year ellipsis">Oct 24, 2014</li>
+                            <li class="wrapper">
+                                <!-- START Events -->
+                                <ul class="events">
+                                    <li class="wrapper featured">
+                                        <div class="figure bgcolor-success"><i class="ico-ladder"></i></div>
+                                        <!-- panel -->
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <ul class="list-table">
+                                                    <li class="text-left" style="width:60px;">
+                                                        <img class="img-circle" src="/image/avatar/avatar9.jpg" alt="" width="50px" height="50px">
+                                                    </li>
+                                                    <li class="text-left">
+                                                        <p class="nm"><span class="semibold">Tamara Moon</span> update project <span class="text-accent bold">"Alpha Omega"</span> overall progress</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="panel-footer">
+                                                <p class="semibold clearfix mb5">
+                                                    <span class="pull-left">Overall</span>
+                                                    <span class="pull-right">65%</span>
+                                                </p>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-success" style="width: 35%"></div>
+                                                    <div class="progress-bar progress-bar-warning" style="width: 20%"></div>
+                                                    <div class="progress-bar progress-bar-danger" style="width: 10%"></div>
+                                                </div>
+                                                <ul class="list-table">
+                                                    <li><i class="ico-circle text-success"></i> <span class="semibold">35%</span></li>
+                                                    <li><i class="ico-circle text-warning"></i> <span class="semibold">20%</span></li>
+                                                    <li><i class="ico-circle text-danger"></i> <span class="semibold">10%</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!--/ panel -->
+                                    </li>
+                                </ul>
+                                <!--/ END Events -->
+                            </li>
+                            <li class="header text-center semibold nm"><a href="javascript:void(0);">Load more</a></li>
+                        </ul>
+                        <!--/ END Timeline -->
                     </div>
-                    <!--/ END Left Side -->
+                    <!--/ Left side / top side -->
 
-                    <!-- START Right Side -->
-                    <div class="col-md-3">
-                        <div class="panel panel-minimal">
-
-                            <div class="panel">
-                                <div class="panel-body">
-                                    <h4 class="semibold nm"><i class="ico-dollar mr5"></i>Today Income</h4>
-                                    <h2 class="thin mt5 text-muted">+<span data-toggle="counterup">1120</span></h2>
-                                    <!-- chart -->
-                                    <div class="chart" style="height:120px;" id="stats1"></div>
-                                    <!--/ chart -->
+                    <!-- Right Side / Bottom side -->
+                    <div class="col-md-3 hidden-xs hidden-sm">
+                        <div class="panel panel-minimal nm">
+                            <!-- START Twitter Widget -->
+                            <div class="panel-toolbar-wrapper">
+                                <div class="panel-toolbar">
+                                    <h5 class="semibold nm text-info"><i class="ico-twitter mr5"></i>Twitter</h5>
+                                </div>
+                                <div class="panel-toolbar text-right">
+                                    <button class="btn btn-sm btn-default">Follow</button>
                                 </div>
                             </div>
-
-                            <div class="widget panel bgcolor-warning">
-                            <!-- panel body -->
-                            <div class="panel-body">
-                                <div class="clearfix">
-                                    <p class="pull-left semibold">Perth, AU</p>
-                                    <p class="pull-right semibold">
-                                        <span class="mr5">°F</span>
-                                        <span>°C</span>
-                                    </p>
-                                </div>
-                                <div class="text-center mt15 mb15">
-                                    <h1 class="semibold">
-                                        <i class="ico-sun22"></i>
-                                        <span class="">32°</span>
-                                    </h1>
-                                </div>
-                                <div class="clearfix">
-                                    <p class="pull-left semibold nm">
-                                        <i class="ico-arrow-down5"></i> 31°
-                                    </p>
-                                    <p class="pull-right semibold nm">
-                                        <i class="ico-arrow-up5"></i> 37°
-                                    </p>
-                                </div>
+                            <div class="panel-body pt0 pb0">
+                                <ul class="list-table">
+                                    <li style="width:55px;">
+                                        <img class="img-circle" src="/image/avatar/avatar9.jpg" alt="" width="45px" height="45px">
+                                    </li>
+                                    <li class="text-left">
+                                        <h5 class="semibold ellipsis">
+                                            Tamara Moon<br>
+                                            <small class="text-muted">@tmoon</small>
+                                        </h5>
+                                    </li>
+                                </ul>
                             </div>
-                            <!--/ panel body -->
-                        </div>
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h5 class="panel-title"><i class="ico-globe mr5"></i>Traffic</h5>
-                            </div>
-                            <ul class="list-group">
-                                <li class="list-group-item">Visits <span class="semibold pull-right">47650</span></li>
-                                <li class="list-group-item">Unique Visits <span class="semibold pull-right">15620</span></li>
-                                <li class="list-group-item">
-                                    <p>Traffic Sources</p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-success"></i>GOOGLE.COM
-                                        <span class="pull-right semibold">15883</span>
-                                    </p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-danger"></i>DIRECT TRAFFIC
-                                        <span class="pull-right semibold">11912</span>
-                                    </p>
+                            <ul class="nav nav-justified mt15">
+                                <li class="text-center">
+                                    <h4 class="nm">12.5k</h4>
+                                    <p class="nm text-muted">Followers</p>
+                                </li>
+                                <li class="text-center">
+                                    <h4 class="nm">1853</h4>
+                                    <p class="nm text-muted">Following</p>
+                                </li>
+                                <li class="text-center">
+                                    <h4 class="nm">3451</h4>
+                                    <p class="nm text-muted">Tweets</p>
                                 </li>
                             </ul>
-                        </div>
+                            <!--/ END Twitter Widget -->
 
+                            <hr><!--horizontal line -->
+
+                            <!-- START Bio -->
+                            <div class="panel-toolbar-wrapper">
+                                <div class="panel-toolbar">
+                                    <h5 class="semibold nm text-info"><i class="ico-info2 mr5"></i>About</h5>
+                                </div>
+                                <div class="panel-toolbar text-right">
+                                    <button class="btn btn-sm btn-default"><i class="ico-pencil7"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body pt0">
+                                <p class="semibold mb5">Bio</p>
+                                <ul class="list-unstyled mb10">
+                                    <li><i class="ico-briefcase text-muted mr5"></i> UI/UX Designer</li>
+                                    <li><i class="ico-graduation text-muted mr5"></i> Studied interface design</li>
+                                    <li><i class="ico-location text-muted mr5"></i> Lives in Sierra Leone</li>
+                                    <li><i class="ico-home4 text-muted mr5"></i> From Perth, Australia</li>
+                                </ul>
+                                <address class="nm">
+                                    <p class="semibold nm">Address</p>
+                                    795 Folsom Ave, Suite 600<br>
+                                    San Francisco, CA 94107<br>
+                                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                                </address>
+                            </div>
+                            <!--/ END Bio -->
+
+                            <hr><!--horizontal line -->
+
+                            <!-- START Friend lists -->
+                            <div class="panel-toolbar-wrapper">
+                                <div class="panel-toolbar">
+                                    <h5 class="semibold nm text-info"><i class="ico-users3 mr5"></i>Friend lists</h5>
+                                </div>
+                                <div class="panel-toolbar text-right">
+                                    <button class="btn btn-sm btn-default"><i class="ico-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body pt0">
+                                <div class="media-list media-list-contact">
+                                    <a href="/page/message/rich.html" class="media">
+                                        <span class="media-object pull-left">
+                                            <img src="/image/avatar/avatar1.jpg" class="img-circle" alt="">
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Autumn Barker</span>
+                                            <span class="media-meta">Sint Maarten</span>
+                                        </span>
+                                    </a>
+
+                                    <a href="/page/message/rich.html" class="media">
+                                        <span class="media-object pull-left">
+                                            <img src="/image/avatar/avatar2.jpg" class="img-circle" alt="">
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Giselle Horn</span>
+                                            <span class="media-meta">Saudi Arabia</span>
+                                        </span>
+                                    </a>
+
+                                    <a href="/page/message/rich.html" class="media">
+                                        <span class="media-object pull-left">
+                                            <img src="/image/avatar/avatar.png" class="img-circle" alt="">
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-heading"><span class="hasnotification hasnotification-danger mr5"></span> Austin Shields</span>
+                                            <span class="media-meta">Ghana</span>
+                                        </span>
+                                    </a>
+
+                                    <a href="/page/message/rich.html" class="media">
+                                        <span class="media-object pull-left">
+                                            <img src="/image/avatar/avatar.png" class="img-circle" alt="">
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-heading"><span class="hasnotification hasnotification-danger mr5"></span> Caryn Gibson</span>
+                                            <span class="media-meta">Rwanda</span>
+                                        </span>
+                                    </a>
+
+                                    <a href="/page/message/rich.html" class="media">
+                                        <span class="media-object pull-left">
+                                            <img src="/image/avatar/avatar3.jpg" class="img-circle" alt="">
+                                        </span>
+                                        <span class="media-body">
+                                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Nash Evans</span>
+                                            <span class="media-meta">Somalia</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <p class="nm"><a href="javascript:void(0);" class="semibold">View all</a></p>
+                            </div>
+                            <!--/ END Friend lists -->
                         </div>
                     </div>
-                    <!--/ END Right Side -->
+                    <!--/ Right side / bottom side -->
                 </div>
+                <!-- END Row -->
             </div>
             <!--/ END Template Container -->
 
@@ -1371,14 +1599,8 @@
 
         <!-- Plugins and page level script : optional -->
         <script type="text/javascript" src="/javascript/pace.min.js"></script>
-        <script type="text/javascript" src="/plugins/selectize/js/selectize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.resize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.categories.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.time.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.tooltip.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.spline.js"></script>
-        <script type="text/javascript" src="/javascript/backend/pages/dashboard-v1.js"></script>
+        <script type="text/javascript" src="/plugins/stellar/js/jquery.stellar.js"></script>
+        <script type="text/javascript" src="/javascript/backend/pages/timeline-v2.js"></script>
         <!--/ Plugins and page level script : optional -->
         <!--/ END JAVASCRIPT SECTION -->
     </body>

@@ -19,8 +19,7 @@
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
-        <link rel="stylesheet" href="/plugins/selectize/css/selectize.css">
-        <link rel="stylesheet" href="/plugins/flot/css/flot.css">
+        <link rel="stylesheet" href="/plugins/magnific/css/magnific.css">
         <!--/ Plugins stylesheet : optional -->
 
         <!-- Application stylesheet : mandatory -->
@@ -88,7 +87,7 @@
                                 <li><a href="#">Third item</a></li>
                             </ul>
                     </li>
-
+                    
                 </ul>
                 <!--/ END Left nav -->
 
@@ -120,7 +119,7 @@
                                 <span class="option text-right"><a href="javascript:void(0);">Clear all</a></span>
                             </div>
                             <div class="dropdown-body slimscroll">
-
+                                
                                 <!-- Message list -->
                                 <div class="media-list">
                                     <a href="javascript:void(0);" class="media read border-dotted">
@@ -134,7 +133,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar1.jpg" class="media-object img-circle" alt="">
@@ -173,7 +172,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar9.jpg" class="media-object img-circle" alt="">
@@ -199,7 +198,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar5.jpg" class="media-object img-circle" alt="">
@@ -212,7 +211,7 @@
                                             <!--/ meta icon -->
                                         </span>
                                     </a>
-
+                                    
                                     <a href="/page/message/rich.html" class="media border-dotted read">
                                         <span class="pull-left">
                                             <img src="/image/avatar/avatar3.jpg" class="media-object img-circle" alt="">
@@ -233,7 +232,7 @@
                         <!--/ Dropdown menu -->
                     </li>
                     <!--/ Notification dropdown -->
-
+                    
                     <!-- Profile dropdown -->
                     <li class="dropdown profile">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
@@ -260,7 +259,7 @@
                         </a>
                     </li>
                     <!--/ Offcanvas right -->
-
+                  
                 </ul>
                 <!--/ END Right nav -->
             </div>
@@ -274,7 +273,7 @@
             <section class="content slimscroll">
                 <!-- START Template Navigation/Menu -->
                 <ul class="topmenu topmenu-responsive" data-toggle="menu">
-                    <li class="active">
+                    <li>
                         <a href="/" data-target="#dashboard" data-parent=".topmenu">
                             <span class="figure"><i class="ico-home2"></i></span>
                             <span class="text">Dashboard</span>
@@ -492,14 +491,14 @@
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-                    <li >
+                    <li class="active open" >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#page" data-parent=".topmenu">
                             <span class="figure"><i class="ico-copy4"></i></span>
                             <span class="text">Miscelleneous</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="page" class="submenu collapse ">
+                        <ul id="page" class="submenu collapse in">
                             <li class="submenu-header ellipsis">Miscelleneous</li>
                             <li >
                                 <a href="/page/starter.html">
@@ -525,7 +524,7 @@
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
                             </li>
-                            <li >
+                            <li>
                                 <a href="/page/calendar.html">
                                     <span class="text">Calendar</span>
                                 </a>
@@ -595,17 +594,17 @@
                                     <span class="text">Register</span>
                                 </a>
                             </li>
-                            <li >
+                            <li class="active" >
                                 <a href="javascript:void(0);" data-toggle="submenu" data-target="#media" data-parent="#page">
                                     <span class="text">Media</span>
                                     <span class="arrow"></span>
                                 </a>
                                 <!-- START 2nd Level Menu -->
-                                <ul id="media" class="submenu collapse ">
-                                    <li >
+                                <ul id="media" class="submenu collapse in">
+                                    <li>
                                         <a href="/page/media/album.html"><span class="text">Media album</span></a>
                                     </li>
-                                    <li >
+                                    <li class="active" >
                                         <a href="/page/media/gallery.html"><span class="text">Media gallery</span></a>
                                     </li>
                                 </ul>
@@ -632,7 +631,7 @@
                                     <span class="text">Timeline</span>
                                 </a>
                             </li>
-
+                           
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
@@ -747,7 +746,7 @@
             <!--/ END Sidebar Container -->
         </aside>
         <!--/ END Template Sidebar (Left) -->
-
+        
         <!-- START Template Sidebar (right) -->
         <aside class="sidebar sidebar-right">
             <!-- START Offcanvas -->
@@ -1127,6 +1126,385 @@
         </aside>
         <!--/ END Template Sidebar (right) -->
 
+        <!-- START Template Sidebar (right) -->
+        <aside class="sidebar sidebar-right">
+            <!-- START Offcanvas -->
+            <div class="offcanvas-container" data-toggle="offcanvas" data-options='{"openerClass":"offcanvas-opener", "closerClass":"offcanvas-closer"}'>
+                <!-- START Wrapper -->
+                <div class="offcanvas-wrapper">
+                    <!-- Offcanvas Left -->
+                    <div class="offcanvas-left">
+                        <!-- Header -->
+                        <div class="header pl0 pr0">
+                            <ul class="list-table nm">
+                                <li style="width:50px;height:34px;" class="text-center">
+                                    <a href="javascript:void(0);" class="text-default offcanvas-closer"><i class="ico-arrow-left6 fsize16"></i></a>
+                                </li>
+                                <li class="text-center">
+                                    <h5 class="semibold nm">Settings</h5>
+                                </li>
+                                <li style="width:50px;height:34px;" class="text-center">
+                                    <a href="javascript:void(0);" class="text-default"><i class="ico-info22 fsize16"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/ Header -->
+
+                        <!-- Content -->
+                        <div class="content slimscroll">
+                            <h5 class="heading">News Feed</h5>
+                            <ul class="topmenu">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="figure"><i class="ico-plus"></i></span>
+                                        <span class="text">Add &amp; Manage Source</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="figure"><i class="ico-google-plus"></i></span>
+                                        <span class="text">Google Reader</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="figure"><i class="ico-twitter2"></i></span>
+                                        <span class="text">Twitter Source</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h5 class="heading">Friends</h5>
+                            <ul class="topmenu">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="figure"><i class="ico-search22"></i></span>
+                                        <span class="text">Find Friends</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="figure"><i class="ico-user-plus2"></i></span>
+                                        <span class="text">Add Friends</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h5 class="heading">Account</h5>
+                            <ul class="topmenu">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="figure"><i class="ico-user2"></i></span>
+                                        <span class="text">Edit Account</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="figure"><i class="ico-envelop"></i></span>
+                                        <span class="text">Manage Subscription</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="figure"><i class="ico-location6"></i></span>
+                                        <span class="text">Location Service</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="figure"><i class="ico-switch"></i></span>
+                                        <span class="text">Logout</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" class="text-danger">
+                                        <span class="figure"><i class="ico-minus-circle2"></i></span>
+                                        <span class="text">Deactivate</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/ Content -->
+                    </div>
+                    <!--/ Offcanvas Left -->
+
+                    <!-- Offcanvas Content -->
+                    <div class="offcanvas-content">
+                        <!-- Content -->
+                        <div class="content slimscroll">
+                            <!-- START profile -->
+                            <div class="panel nm">
+                    <!-- thumbnail -->
+                    <div class="thumbnail">
+                        <!-- media -->
+                        <div class="media">
+                            <!-- indicator -->
+                            <div class="indicator"><span class="spinner"></span></div>
+                            <!--/ indicator -->
+                            <img data-toggle="unveil" src="/image/background/400x250/placeholder.jpg" data-src="/image/background/400x250/background3.jpg" alt="Cover" width="100%">
+                        </div>
+                        <!--/ media -->
+                    </div>
+                    <!--/ thumbnail -->
+                </div>
+                <div class="panel-body text-center" style="margin-top:-55px;z-index:11">
+                    <img class="img-circle mb5" src="/image/avatar/avatar7.jpg" alt="" width="75">
+                    <h5 class="bold mt0 mb5">John Doe</h5>
+                    <p>Administrator</p>
+                    <button type="button" class="btn btn-primary offcanvas-opener offcanvas-open-ltr"><i class="ico-settings"></i> Settings</button>
+                </div>
+                            <!--/ END profile -->
+
+                            <!-- START contact -->
+                            <div class="media-list media-list-contact">
+                    <h5 class="heading pa15 pb0">Family</h5>
+                    <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
+                        <span class="media-object pull-left">
+                            <img src="/image/avatar/avatar1.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Autumn Barker</span>
+                            <span class="media-meta ellipsis">Malaysia</span>
+                        </span>
+                    </a>
+                    <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
+                        <span class="media-object pull-left">
+                            <img src="/image/avatar/avatar2.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Giselle Horn</span>
+                            <span class="media-meta ellipsis">Bolivia</span>
+                        </span>
+                    </a>
+                    <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
+                        <span class="media-object pull-left">
+                            <img src="/image/avatar/avatar.png" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-danger mr5"></span> Austin Shields</span>
+                            <span class="media-meta ellipsis">Timor-Leste</span>
+                        </span>
+                    </a>
+                    <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
+                        <span class="media-object pull-left">
+                            <img src="/image/avatar/avatar.png" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-danger mr5"></span> Caryn Gibson</span>
+                            <span class="media-meta ellipsis">Libya</span>
+                        </span>
+                    </a>
+                    <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
+                        <span class="media-object pull-left">
+                            <img src="/image/avatar/avatar3.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Nash Evans</span>
+                            <span class="media-meta ellipsis">Honduras</span>
+                        </span>
+                    </a>
+
+                    <h5 class="heading pa15 pb0">Friends</h5>
+                    <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
+                        <span class="media-object pull-left">
+                            <img src="/image/avatar/avatar4.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-default mr5"></span> Josiah Johnson</span>
+                            <span class="media-meta ellipsis">Belgium</span>
+                        </span>
+                    </a>
+                    <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
+                        <span class="media-object pull-left">
+                            <img src="/image/avatar/avatar.png" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-default mr5"></span> Philip Hewitt</span>
+                            <span class="media-meta ellipsis">Bahrain</span>
+                        </span>
+                    </a>
+                    <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
+                        <span class="media-object pull-left">
+                            <img src="/image/avatar/avatar5.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-default mr5"></span> Wilma Hunt</span>
+                            <span class="media-meta ellipsis">Dominica</span>
+                        </span>
+                    </a>
+                    <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
+                        <span class="media-object pull-left">
+                            <img src="/image/avatar/avatar6.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Noah Gill</span>
+                            <span class="media-meta ellipsis">Guatemala</span>
+                        </span>
+                    </a>
+
+                    <h5 class="heading pa15 pb0">Others</h5>
+                    <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
+                        <span class="media-object pull-left">
+                            <img src="/image/avatar/avatar8.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> David Fisher</span>
+                            <span class="media-meta ellipsis">French Guiana</span>
+                        </span>
+                    </a>
+                    <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
+                        <span class="media-object pull-left">
+                            <img src="/image/avatar/avatar9.jpg" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Samantha Avery</span>
+                            <span class="media-meta ellipsis">Jersey</span>
+                        </span>
+                    </a>
+                    <a href="javascript:void(0);" class="media offcanvas-opener offcanvas-open-rtl">
+                        <span class="media-object pull-left">
+                            <img src="/image/avatar/avatar.png" class="img-circle" alt="">
+                        </span>
+                        <span class="media-body">
+                            <span class="media-heading"><span class="hasnotification hasnotification-success mr5"></span> Madaline Medina</span>
+                            <span class="media-meta ellipsis">Finland</span>
+                        </span>
+                    </a>
+                </div>
+                            <!--/ END contact -->
+                        </div>
+                        <!--/ Content -->
+                    </div>
+                    <!--/ Offcanvas Content -->
+
+                    <!-- Offcanvas Right -->
+                    <div class="offcanvas-right">
+                        <!-- Header -->
+                        <div class="header pl0 pr0">
+                            <ul class="list-table nm">
+                                <li style="width:50px;height:34px;" class="text-center">
+                                    <a href="javascript:void(0);" class="text-default offcanvas-closer"><i class="ico-arrow-left6 fsize16"></i></a>
+                                </li>
+                                <li class="text-center">
+                                    <h5 class="semibold nm">Autumn Barker</h5>
+                                </li>
+                                <li style="width:50px;height:34px;" class="text-center">
+                                    <a href="javascript:void(0);" class="text-default"><i class="ico-info22 fsize16"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/ Header -->
+
+                        <!-- Footer -->
+                        <div class="footer">
+                            <div class="has-icon">
+                                <input type="text" class="form-control" placeholder="Type message...">
+                                <i class="ico-paper-plane form-control-icon"></i>
+                            </div>
+                        </div>
+                        <!--/ Footer -->
+
+                        <!-- Content -->
+                        <div class="content slimscroll">
+                            <!-- START chat -->
+                            <ul class="media-list media-list-bubble">
+                            <li class="media media-right">
+                                <a href="javascript:void(0);" class="media-object">
+                                    <img src="/image/avatar/avatar7.jpg" class="img-circle" alt="">
+                                </a>
+                                <div class="media-body">
+                                    <p class="media-text">eros non enim commodo hendrerit.</p>
+                                    <span class="clearfix"></span>
+                                    <p class="media-text">Suspendisse dui.</p>
+                                    <span class="clearfix"></span>
+                                    <p class="media-text">eu nulla at</p>
+                                    <!-- meta -->
+                                    <span class="clearfix"></span><!-- important: clearing floated media text -->
+                                    <p class="media-meta">Sun, Mar 02</p>
+                                </div>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:void(0);" class="media-object">
+                                    <img src="/image/avatar/avatar6.jpg" class="img-circle" alt="">
+                                </a>
+                                <div class="media-body">
+                                    <p class="media-text">Etiam laoreet, libero et tristique pellentesque, tellus sem mollis dui, in sodales elit erat.</p>
+                                    <span class="clearfix"></span>
+                                    <p class="media-text">faucibus ut, nulla. Cras eu tellus</p>
+                                    <!-- meta -->
+                                    <span class="clearfix"></span><!-- important: clearing floated media text -->
+                                    <p class="media-meta">Tue, Oct 01</p>
+                                </div>
+                            </li>
+                            <li class="media media-right">
+                                <a href="javascript:void(0);" class="media-object">
+                                    <img src="/image/avatar/avatar7.jpg" class="img-circle" alt="">
+                                </a>
+                                <div class="media-body">
+                                    <p class="media-text">Duis a mi fringilla mi lacinia mattis. Integer</p>
+                                    <!-- meta -->
+                                    <span class="clearfix"></span><!-- important: clearing floated media text -->
+                                    <p class="media-meta">Fri, Sep 27</p>
+                                </div>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:void(0);" class="media-object">
+                                    <img src="/image/avatar/avatar6.jpg" class="img-circle" alt="">
+                                </a>
+                                <div class="media-body">
+                                    <p class="media-text">Praesent interdum ligula eu enim. Etiam imperdiet dictum magna.</p>
+                                    <!-- meta -->
+                                    <span class="clearfix"></span><!-- important: clearing floated media text -->
+                                    <p class="media-meta">Wed, Aug 28</p>
+                                </div>
+                            </li>
+                            <li class="media media-right">
+                                <a href="javascript:void(0);" class="media-object">
+                                    <img src="/image/avatar/avatar7.jpg" class="img-circle" alt="">
+                                </a>
+                                <div class="media-body">
+                                    <p class="media-text">Aliquam rutrum lorem ac risus. Morbi metus. Vivamus euismod urna.</p>
+                                    <!-- meta -->
+                                    <span class="clearfix"></span><!-- important: clearing floated media text -->
+                                    <p class="media-meta">Sat, Sep 27</p>
+                                </div>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:void(0);" class="media-object">
+                                    <img src="/image/avatar/avatar6.jpg" class="img-circle" alt="">
+                                </a>
+                                <div class="media-body">
+                                    <p class="media-text">Vestibulum accumsan neque et nunc. Quisque ornare tortor at risus. Nunc ac</p>
+                                    <span class="clearfix"></span>
+                                    <p class="media-text">Nam porttitor scelerisque neque</p>
+                                    <!-- meta -->
+                                    <span class="clearfix"></span><!-- important: clearing floated media text -->
+                                    <p class="media-meta">Sun, Feb 22</p>
+                                </div>
+                            </li>
+                        </ul>
+                            <!--/ END chat -->
+                        </div>
+                        <!--/ Content -->
+                    </div>
+                    <!--/ Offcanvas Right -->
+                </div>
+                <!--/ END Wrapper -->
+            </div>
+            <!--/ END Offcanvas -->
+        </aside>
+        <!--/ END Template Sidebar (right) -->
+
         <!-- START Template Main -->
         <section id="main" role="main">
             <!-- START Template Container -->
@@ -1134,225 +1512,403 @@
                 <!-- Page Header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold"><span class="figure"><i class="ico-home2"></i></span> Dashboards</h4>
+                        <h4 class="title semibold">Media gallery</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <span class="toolbar-label semibold mr5">Filters : </span>
+                            <div class="btn-group" id="shuffle-filter">
+                                <button class="btn btn-default" data-group="creative">Creative</button>
+                                <button class="btn btn-default" data-group="business">Business</button>
+                                <button class="btn btn-default" data-group="nature">Nature</button>
+                            </div>
+                        </div>
+                        <!--/ Toolbar -->
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar clearfix">
+                            <div class="col-sm-6">
+                                <span class="toolbar-label semibold mr5">Sort : </span>
+                            </div>
+                            <div class="col-sm-6">
+                                <select class="form-control" id="shuffle-sort">
+                                    <option value="">Default</option>
+                                    <option value="title">Title</option>
+                                    <option value="date-created">Date Created</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--/ Toolbar -->
                     </div>
                 </div>
                 <!-- Page Header -->
 
-                <div class="row">
-                    <!-- START Left Side -->
-                    <div class="col-md-9">
-
-                        <!-- Website States -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <!-- START panel -->
-                                <div class="panel ">
-                                    <!-- panel-toolbar -->
-                                    <div class="panel-heading pt10">
-                                        <div class="panel-toolbar">
-                                            <h5 class="semibold nm ellipsis">Website Stats</h5>
-                                        </div>
+                <!-- START row -->
+                <div class="row" id="shuffle-grid">
+                    <div class="col-md-3 shuffle" data-groups='["nature"]' data-date-created="2014-01-02" data-title="background1">
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                        <a href="/image/background/background1.jpg" class="btn btn-default magnific" title="view picture"><i class="ico-search"></i></a>
+                                        <a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>
                                     </div>
-                                    <!--/ panel-toolbar -->
-                                    <!-- panel-body -->
-                                    <div class="panel-body pt0">
-                                        <div class="chart mt10" id="chart-audience" style="height:250px;"></div>
-                                    </div>
-                                    <!--/ panel-body -->
-                                    <!-- panel-footer -->
-                                    <div class="panel-footer hidden-xs">
-                                        <ul class="nav nav-section nav-justified">
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">24,548</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Visits</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-danger"><i class="ico-arrow-down4"></i> 32%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5" data-toggle="counterup">175,132</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Page Views</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 15%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="section">
-                                                    <h4 class="bold text-default mt0 mb5"><span data-toggle="counterup">89.96</span>%</h4>
-                                                    <p class="nm text-muted">
-                                                        <span class="semibold">Bounce Rate</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="text-success"><i class="ico-arrow-up4"></i> 3%</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!--/ panel-footer -->
                                 </div>
-                                <!--/ END panel -->
+                                <!--/ toolbar overlay -->
+                                <!-- meta -->
+                                <span class="meta bottom darken">
+                                    <h5 class="nm semibold">
+                                        background1.jpg <br/>
+                                        <small><i class="ico-calendar2"></i> 2014-01-02</small>
+                                    </h5>
+                                </span>
+                                <!--/ meta -->
+                                <img data-toggle="unveil" src="/image/background/400x400/placeholder.jpg" data-src="/image/background/400x400/background1.jpg" alt="Photo" width="100%" />
                             </div>
+                            <!--/ media -->
                         </div>
-                        <!--/ Website States -->
-
-                        <!-- Browser Breakpoint -->
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <!-- START panel -->
-                                <div class="panel panel-default">
-                                    <!-- panel heading/header -->
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title ellipsis"><i class="ico-chrome mr5"></i>Browser Breakpoint</h3>
-                                        <!-- panel toolbar -->
-                                        <div class="panel-toolbar text-right">
-                                            <!-- option -->
-                                            <div class="option">
-                                                <button class="btn up" data-toggle="panelcollapse"><i class="arrow"></i></button>
-                                                <button class="btn" data-toggle="panelremove" data-parent=".col-md-12"><i class="remove"></i></button>
-                                            </div>
-                                            <!--/ option -->
-                                        </div>
-                                        <!--/ panel toolbar -->
-                                    </div>
-                                    <!--/ panel heading/header -->
-                                    <!-- panel body with collapse capabale -->
-                                    <div class="table-responsive panel-collapse pull out">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Browser Name</th>
-                                                    <th>Rendering Engine</th>
-                                                    <th>Platform</th>
-                                                    <th>Activity</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Google Chrome</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,4,1,5,3</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">50.65%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Safari</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">5,2,1,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">20.31%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Mozilla Firefox</span></td>
-                                                    <td>Webkit</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">2,1,5,3,4</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">61.22%</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="semibold text-accent">Internet Explorer</span></td>
-                                                    <td>Trident</td>
-                                                    <td>Win 2k+ / OSX.3+</td>
-                                                    <td>
-                                                        <span class="sparklines" sparkType="bar" sparkBarColor="#ed5466">3,1,4,5,2</span>
-                                                        <span class="text-muted mr5 ml5">•</span>
-                                                        <span class="semibold text-muted">0.65%</span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!--/ panel body with collapse capabale -->
-                                </div>
-                                <!--/ END panel -->
-                            </div>
-                        </div>
-                        <!-- Browser Breakpoint -->
+                        <!--/ thumbnail -->
                     </div>
-                    <!--/ END Left Side -->
-
-                    <!-- START Right Side -->
-                    <div class="col-md-3">
-                        <div class="panel panel-minimal">
-
-                            <div class="panel">
-                                <div class="panel-body">
-                                    <h4 class="semibold nm"><i class="ico-dollar mr5"></i>Today Income</h4>
-                                    <h2 class="thin mt5 text-muted">+<span data-toggle="counterup">1120</span></h2>
-                                    <!-- chart -->
-                                    <div class="chart" style="height:120px;" id="stats1"></div>
-                                    <!--/ chart -->
+                    <div class="col-md-3 shuffle" data-groups='["creative"]' data-date-created="2014-01-04" data-title="background2">
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                        <a href="/image/background/background2.jpg" class="btn btn-default magnific" title="view picture"><i class="ico-search"></i></a>
+                                        <a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>
+                                    </div>
                                 </div>
+                                <!--/ toolbar overlay -->
+                                <!-- meta -->
+                                <span class="meta bottom darken">
+                                    <h5 class="nm semibold">
+                                        background2.jpg <br/>
+                                        <small><i class="ico-calendar2"></i> 2014-01-04</small>
+                                    </h5>
+                                </span>
+                                <!--/ meta -->
+                                <img data-toggle="unveil" src="/image/background/400x400/placeholder.jpg" data-src="/image/background/400x400/background2.jpg" alt="Photo" width="100%" />
                             </div>
-
-                            <div class="widget panel bgcolor-warning">
-                            <!-- panel body -->
-                            <div class="panel-body">
-                                <div class="clearfix">
-                                    <p class="pull-left semibold">Perth, AU</p>
-                                    <p class="pull-right semibold">
-                                        <span class="mr5">°F</span>
-                                        <span>°C</span>
-                                    </p>
-                                </div>
-                                <div class="text-center mt15 mb15">
-                                    <h1 class="semibold">
-                                        <i class="ico-sun22"></i>
-                                        <span class="">32°</span>
-                                    </h1>
-                                </div>
-                                <div class="clearfix">
-                                    <p class="pull-left semibold nm">
-                                        <i class="ico-arrow-down5"></i> 31°
-                                    </p>
-                                    <p class="pull-right semibold nm">
-                                        <i class="ico-arrow-up5"></i> 37°
-                                    </p>
-                                </div>
-                            </div>
-                            <!--/ panel body -->
+                            <!--/ media -->
                         </div>
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h5 class="panel-title"><i class="ico-globe mr5"></i>Traffic</h5>
-                            </div>
-                            <ul class="list-group">
-                                <li class="list-group-item">Visits <span class="semibold pull-right">47650</span></li>
-                                <li class="list-group-item">Unique Visits <span class="semibold pull-right">15620</span></li>
-                                <li class="list-group-item">
-                                    <p>Traffic Sources</p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-success"></i>GOOGLE.COM
-                                        <span class="pull-right semibold">15883</span>
-                                    </p>
-                                    <p class="mb5 clearfix">
-                                        <i class="ico-circle mr5 text-danger"></i>DIRECT TRAFFIC
-                                        <span class="pull-right semibold">11912</span>
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-
-                        </div>
+                        <!--/ thumbnail -->
                     </div>
-                    <!--/ END Right Side -->
+                    <div class="col-md-3 shuffle" data-groups='["nature"]' data-date-created="2014-02-06" data-title="background3">
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                        <a href="/image/background/background3.jpg" class="btn btn-default magnific" title="view picture"><i class="ico-search"></i></a>
+                                        <a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>
+                                    </div>
+                                </div>
+                                <!--/ toolbar overlay -->
+                                <!-- meta -->
+                                <span class="meta bottom darken">
+                                    <h5 class="nm semibold">
+                                        background3.jpg <br/>
+                                        <small><i class="ico-calendar2"></i> 2014-02-06</small>
+                                    </h5>
+                                </span>
+                                <!--/ meta -->
+                                <img data-toggle="unveil" src="/image/background/400x400/placeholder.jpg" data-src="/image/background/400x400/background3.jpg" alt="Photo" width="100%" />
+                            </div>
+                            <!--/ media -->
+                        </div>
+                        <!--/ thumbnail -->
+                    </div>
+                    <div class="col-md-3 shuffle" data-groups='["nature", "creative"]' data-date-created="2014-01-20" data-title="background4">
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                        <a href="/image/background/background4.jpg" class="btn btn-default magnific" title="view picture"><i class="ico-search"></i></a>
+                                        <a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>
+                                    </div>
+                                </div>
+                                <!--/ toolbar overlay -->
+                                <!-- meta -->
+                                <span class="meta bottom darken">
+                                    <h5 class="nm semibold">
+                                        background4.jpg <br/>
+                                        <small><i class="ico-calendar2"></i> 2014-01-20</small>
+                                    </h5>
+                                </span>
+                                <!--/ meta -->
+                                <img data-toggle="unveil" src="/image/background/400x400/placeholder.jpg" data-src="/image/background/400x400/background4.jpg" alt="Photo" width="100%" />
+                            </div>
+                            <!--/ media -->
+                        </div>
+                        <!--/ thumbnail -->
+                    </div>
+                    <div class="col-md-3 shuffle" data-groups='["nature"]' data-date-created="2014-02-01" data-title="background5">
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                        <a href="/image/background/background5.jpg" class="btn btn-default magnific" title="view picture"><i class="ico-search"></i></a>
+                                        <a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>
+                                    </div>
+                                </div>
+                                <!--/ toolbar overlay -->
+                                <!-- meta -->
+                                <span class="meta bottom darken">
+                                    <h5 class="nm semibold">
+                                        background5.jpg <br/>
+                                        <small><i class="ico-calendar2"></i> 2014-02-01</small>
+                                    </h5>
+                                </span>
+                                <!--/ meta -->
+                                <img data-toggle="unveil" src="/image/background/400x400/placeholder.jpg" data-src="/image/background/400x400/background5.jpg" alt="Photo" width="100%" />
+                            </div>
+                            <!--/ media -->
+                        </div>
+                        <!--/ thumbnail -->
+                    </div>
+                    <div class="col-md-3 shuffle" data-groups='["creative"]' data-date-created="2014-02-01" data-title="background6">
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                        <a href="/image/background/background6.jpg" class="btn btn-default magnific" title="view picture"><i class="ico-search"></i></a>
+                                        <a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>
+                                    </div>
+                                </div>
+                                <!--/ toolbar overlay -->
+                                <!-- meta -->
+                                <span class="meta bottom darken">
+                                    <h5 class="nm semibold">
+                                        background6.jpg <br/>
+                                        <small><i class="ico-calendar2"></i> 2014-02-01</small>
+                                    </h5>
+                                </span>
+                                <!--/ meta -->
+                                <img data-toggle="unveil" src="/image/background/400x400/placeholder.jpg" data-src="/image/background/400x400/background6.jpg" alt="Photo" width="100%" />
+                            </div>
+                            <!--/ media -->
+                        </div>
+                        <!--/ thumbnail -->
+                    </div>
+                    <div class="col-md-3 shuffle" data-groups='["business", "creative"]' data-date-created="2014-02-08" data-title="background7">
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                        <a href="/image/background/background7.jpg" class="btn btn-default magnific" title="view picture"><i class="ico-search"></i></a>
+                                        <a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>
+                                    </div>
+                                </div>
+                                <!--/ toolbar overlay -->
+                                <!-- meta -->
+                                <span class="meta bottom darken">
+                                    <h5 class="nm semibold">
+                                        background7.jpg <br/>
+                                        <small><i class="ico-calendar2"></i> 2014-02-08</small>
+                                    </h5>
+                                </span>
+                                <!--/ meta -->
+                                <img data-toggle="unveil" src="/image/background/400x400/placeholder.jpg" data-src="/image/background/400x400/background7.jpg" alt="Photo" width="100%" />
+                            </div>
+                            <!--/ media -->
+                        </div>
+                        <!--/ thumbnail -->
+                    </div>
+                    <div class="col-md-3 shuffle" data-groups='["nature", "creative"]' data-date-created="2014-01-21" data-title="background8">
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                        <a href="/image/background/background8.jpg" class="btn btn-default magnific" title="view picture"><i class="ico-search"></i></a>
+                                        <a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>
+                                    </div>
+                                </div>
+                                <!--/ toolbar overlay -->
+                                <!-- meta -->
+                                <span class="meta bottom darken">
+                                    <h5 class="nm semibold">
+                                        background8.jpg <br/>
+                                        <small><i class="ico-calendar2"></i> 2014-01-21</small>
+                                    </h5>
+                                </span>
+                                <!--/ meta -->
+                                <img data-toggle="unveil" src="/image/background/400x400/placeholder.jpg" data-src="/image/background/400x400/background8.jpg" alt="Photo" width="100%"/>
+                            </div>
+                            <!--/ media -->
+                        </div>
+                        <!--/ thumbnail -->
+                    </div>
+                    <div class="col-md-3 shuffle" data-groups='["business"]' data-date-created="2014-01-01" data-title="background9">
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                        <a href="/image/background/background9.jpg" class="btn btn-default magnific" title="view picture"><i class="ico-search"></i></a>
+                                        <a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>
+                                    </div>
+                                </div>
+                                <!--/ toolbar overlay -->
+                                <!-- meta -->
+                                <span class="meta bottom darken">
+                                    <h5 class="nm semibold">
+                                        background9.jpg <br/>
+                                        <small><i class="ico-calendar2"></i> 2014-01-01</small>
+                                    </h5>
+                                </span>
+                                <!--/ meta -->
+                                <img data-toggle="unveil" src="/image/background/400x400/placeholder.jpg" data-src="/image/background/400x400/background9.jpg" alt="Photo" width="100%" />
+                            </div>
+                            <!--/ media -->
+                        </div>
+                        <!--/ thumbnail -->
+                    </div>
+                    <div class="col-md-3 shuffle" data-groups='["business", "creative"]' data-date-created="2014-02-01" data-title="background10">
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                        <a href="/image/background/background10.jpg" class="btn btn-default magnific" title="view picture"><i class="ico-search"></i></a>
+                                        <a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>
+                                    </div>
+                                </div>
+                                <!--/ toolbar overlay -->
+                                <!-- meta -->
+                                <span class="meta bottom darken">
+                                    <h5 class="nm semibold">
+                                        background10.jpg <br/>
+                                        <small><i class="ico-calendar2"></i> 2014-02-01</small>
+                                    </h5>
+                                </span>
+                                <!--/ meta -->
+                                <img data-toggle="unveil" src="/image/background/400x400/placeholder.jpg" data-src="/image/background/400x400/background10.jpg" alt="Photo" width="100%" />
+                            </div>
+                            <!--/ media -->
+                        </div>
+                        <!--/ thumbnail -->
+                    </div>
+                    <div class="col-md-3 shuffle" data-groups='["nature"]' data-date-created="2014-03-11" data-title="background11">
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                        <a href="/image/background/background11.jpg" class="btn btn-default magnific" title="view picture"><i class="ico-search"></i></a>
+                                        <a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>
+                                    </div>
+                                </div>
+                                <!--/ toolbar overlay -->
+                                <!-- meta -->
+                                <span class="meta bottom darken">
+                                    <h5 class="nm semibold">
+                                        background11.jpg <br/>
+                                        <small><i class="ico-calendar4"></i> 2014-03-11</small>
+                                    </h5>
+                                </span>
+                                <!--/ meta -->
+                                <img data-toggle="unveil" src="/image/background/400x400/placeholder.jpg" data-src="/image/background/400x400/background11.jpg" alt="Photo" width="100%" />
+                            </div>
+                            <!--/ media -->
+                        </div>
+                        <!--/ thumbnail -->
+                    </div>
+                    <div class="col-md-3 shuffle" data-groups='["nature", "creative"]' data-date-created="2014-02-11" data-title="background12">
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <!-- media -->
+                            <div class="media">
+                                <!-- indicator -->
+                                <div class="indicator"><span class="spinner"></span></div>
+                                <!--/ indicator -->
+                                <!-- toolbar overlay -->
+                                <div class="overlay">
+                                    <div class="toolbar">
+                                        <a href="/image/background/background12.jpg" class="btn btn-default magnific" title="view picture"><i class="ico-search"></i></a>
+                                        <a href="#" class="btn btn-default" title="love this picture"><i class="ico-heart6"></i></a>
+                                    </div>
+                                </div>
+                                <!--/ toolbar overlay -->
+                                <!-- meta -->
+                                <span class="meta bottom darken">
+                                    <h5 class="nm semibold">
+                                        background11.jpg <br/>
+                                        <small><i class="ico-calendar4"></i> 2014-02-11</small>
+                                    </h5>
+                                </span>
+                                <!--/ meta -->
+                                <img data-toggle="unveil" src="/image/background/400x400/placeholder.jpg" data-src="/image/background/400x400/background12.jpg" alt="Photo" width="100%" />
+                            </div>
+                            <!--/ media -->
+                        </div>
+                        <!--/ thumbnail -->
+                    </div>
                 </div>
+                <!--/ END row -->
             </div>
             <!--/ END Template Container -->
 
@@ -1371,14 +1927,9 @@
 
         <!-- Plugins and page level script : optional -->
         <script type="text/javascript" src="/javascript/pace.min.js"></script>
-        <script type="text/javascript" src="/plugins/selectize/js/selectize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.resize.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.categories.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.time.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.tooltip.js"></script>
-        <script type="text/javascript" src="/plugins/flot/js/jquery.flot.spline.js"></script>
-        <script type="text/javascript" src="/javascript/backend/pages/dashboard-v1.js"></script>
+        <script type="text/javascript" src="/plugins/magnific/js/jquery.magnific-popup.js"></script>
+        <script type="text/javascript" src="/plugins/shuffle/js/jquery.shuffle.js"></script>
+        <script type="text/javascript" src="/javascript/backend/pages/media-gallery.js"></script>
         <!--/ Plugins and page level script : optional -->
         <!--/ END JAVASCRIPT SECTION -->
     </body>
