@@ -51,7 +51,7 @@ Lander.v2 - Bootstrap WebApp & Dashboard
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                        {{ $faker->paragraph() }}
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +65,7 @@ Lander.v2 - Bootstrap WebApp & Dashboard
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                        {{ $faker->paragraph() }}
                                     </div>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@ Lander.v2 - Bootstrap WebApp & Dashboard
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                        {{ $faker->paragraph(10) }}
                                     </div>
                                 </div>
                             </div>
@@ -105,7 +105,7 @@ Lander.v2 - Bootstrap WebApp & Dashboard
                                 </div>
                                 <div id="collapseOne1" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                        {{ $faker->paragraph(10) }}
                                     </div>
                                 </div>
                             </div>
@@ -119,7 +119,7 @@ Lander.v2 - Bootstrap WebApp & Dashboard
                                 </div>
                                 <div id="collapseTwo2" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                        {{ $faker->paragraph(10) }}
                                     </div>
                                 </div>
                             </div>
@@ -133,7 +133,7 @@ Lander.v2 - Bootstrap WebApp & Dashboard
                                 </div>
                                 <div id="collapseThree3" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                        {{ $faker->paragraph(10) }}
                                     </div>
                                 </div>
                             </div>
@@ -268,15 +268,15 @@ Lander.v2 - Bootstrap WebApp & Dashboard
                         <div class="tab-content panel">
                             <div class="tab-pane active" id="tabone1">
                                 <h4 class="text-primary mt0">Safari and responsive justified navs</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>{{ $faker->paragraph(10) }}</p>
                             </div>
                             <div class="tab-pane" id="tabtwo1">
                                 <h4 class="text-primary mt0">jQuery required</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>{{ $faker->paragraph(10) }}</p>
                             </div>
                             <div class="tab-pane" id="tabthree1">
                                 <h4 class="text-primary mt0">Nested headings</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>{{ $faker->paragraph(10) }}</p>
                             </div>
                         </div>
                         <!--/ tab content -->
