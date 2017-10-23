@@ -17,7 +17,6 @@
     <!-- START STYLESHEETS -->
     <!-- Plugins stylesheet : optional -->
     @yield('asset_css')
-
     <!--/ Plugins stylesheet : optional -->
 
     <!-- Application stylesheet : mandatory -->

@@ -108,15 +108,15 @@
                     show: false,
                     tension: 0.4,
                     lineWidth: 2,
-                    fill: 0.8
+                    fill: 0.2
                 },
                 points: {
                     show: true,
-                    radius: 4
+                    radius: 5
                 }
             },
             grid: {
-                borderColor: 'rgba(0, 0, 0, 0.05)',
+                borderColor: 'rgba(0, 0, 0, 0.1)',
                 borderWidth: 1,
                 hoverable: true,
                 backgroundColor: 'transparent'
@@ -127,11 +127,11 @@
                 defaultTheme: false
             },
             xaxis: {
-                tickColor: 'rgba(0, 0, 0, 0.05)',
+                tickColor: 'rgba(0, 0, 0, 0.15)',
                 mode: 'categories'
             },
             yaxis: {
-                tickColor: 'rgba(0, 0, 0, 0.05)'
+                tickColor: 'rgba(0, 0, 0, 0.15)'
             },
             shadowSize: 0
         });

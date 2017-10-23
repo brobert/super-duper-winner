@@ -7,14 +7,9 @@ use App\Http\Controllers\Controller;
 
 class LayoutController extends Controller
 {
-    /**
-     *
-     * @method __construct
-     * LayoutController
-     * @param Request $request
-     */
-    public function __construct(Request $request)
+    public function default()
     {
-        parent::__construct($request);
+        return $this->_respond('landerv2.layout.default');
     }
+
 }

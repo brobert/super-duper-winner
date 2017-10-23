@@ -7,14 +7,44 @@ use App\Http\Controllers\Controller;
 
 class FormController extends Controller
 {
-    /**
-     *
-     * @method __construct
-     * FormController
-     * @param Request $request
-     */
-    public function __construct(Request $request)
+    public function validation()
     {
-        parent::__construct($request);
+        return $this->_respond('landerv2.form.validation');
     }
+
+    public function wysiwyg()
+    {
+        return $this->_respond('landerv2.form.wysiwyg');
+    }
+
+    public function wizard()
+    {
+        return $this->_respond('landerv2.form.wizard');
+    }
+
+    public function imagecrop()
+    {
+        return $this->_respond('landerv2.form.imagecrop');
+    }
+
+    public function element()
+    {
+        return $this->_respond('landerv2.form.element');
+    }
+
+    public function xeditable()
+    {
+        return $this->_respond('landerv2.form.xeditable');
+    }
+
+    public function layout()
+    {
+        return $this->_respond('landerv2.form.layout');
+    }
+
+    public function fileupload()
+    {
+        return $this->_respond('landerv2.form.fileupload');
+    }
+
 }

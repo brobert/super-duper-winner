@@ -1,7 +1,7 @@
 @extends('landerv2.layouts.admin')
 
 @section('page_title')
-Lander.v2 - Bootstrap WebApp & Dashboard
+Lander.v2 - Component/Panel
 @endsection
 
 @section('asset_css')
