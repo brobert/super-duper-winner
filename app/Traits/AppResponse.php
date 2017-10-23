@@ -2,6 +2,7 @@
 
 namespace App\Traits;
 
+use Faker;
 use Log;
 
 trait AppResponse {
@@ -14,6 +15,7 @@ trait AppResponse {
     {
         $this->stash['view'] = $view;
         $this->stash['request'] = $this->request;
+        $this->stash['faker'] = Faker\Factory::create();
 
         Log::debug("RENDER::VIEW: $view");
 
