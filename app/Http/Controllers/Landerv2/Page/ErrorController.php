@@ -7,17 +7,17 @@ use App\Http\Controllers\Controller;
 
 class ErrorController extends Controller
 {
-    public function 500()
+    public function error_500()
     {
         return $this->_respond('landerv2.page.error.500');
     }
 
-    public function 403()
+    public function error_403()
     {
         return $this->_respond('landerv2.page.error.403');
     }
 
-    public function 404()
+    public function error_404()
     {
         return $this->_respond('landerv2.page.error.404');
     }

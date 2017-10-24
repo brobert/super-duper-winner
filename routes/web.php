@@ -71,9 +71,11 @@ Route::get('/page/message/rich.html', 'Landerv2\Page\MessageController@rich');
 Route::get('/page/invoice/printable.html', 'Landerv2\Page\InvoiceController@printable');
 Route::get('/page/login/returned.html', 'Landerv2\Page\LoginController@returned');
 Route::get('/page/timeline/v2.html', 'Landerv2\Page\TimelineController@v2');
-Route::get('/page/error/500.html', 'Landerv2\Page\ErrorController@500');
-Route::get('/page/error/403.html', 'Landerv2\Page\ErrorController@403');
-Route::get('/page/error/404.html', 'Landerv2\Page\ErrorController@404');
+
+Route::get('/page/error/500.html', 'Landerv2\Page\ErrorController@error_500');
+Route::get('/page/error/403.html', 'Landerv2\Page\ErrorController@error_403');
+Route::get('/page/error/404.html', 'Landerv2\Page\ErrorController@error_404');
+
 Route::get('/page/email/view.html', 'Landerv2\Page\EmailController@view');
 Route::get('/page/email/inbox.html', 'Landerv2\Page\EmailController@inbox');
 Route::get('/page/media/gallery.html', 'Landerv2\Page\MediaController@gallery');
@@ -85,6 +87,7 @@ Route::get('/page/blog/single.html', 'Landerv2\Page\BlogController@single');
 
 
 Route::get('/api/flot.php', 'DataController@flot');
+Route::get('/api/flot/{type}', 'DataController@flot');
 
 Route::get('api/datatable.php', 'DataController@datatable');
 

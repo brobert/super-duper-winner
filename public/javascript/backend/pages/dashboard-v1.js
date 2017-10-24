@@ -22,6 +22,36 @@
     }
 }(function () {
 
+    // flot demo main function
+    // ================================
+    var flotDemo = function (element, url) {
+        this.element = element;
+        this.url     = '../'+url; // change this to your server url
+    };
+
+    flotDemo.prototype = {
+        // load remote data
+        // ================================
+        remoteData: function (option, color) {
+            var self = this;
+
+            // jquery ajax setup
+            $.ajax({
+                url: self.url,
+                cache: false,
+                type: 'GET',
+                dataType: 'json',
+            }).done(function (data) {
+                // init flot
+                console.info('>>>>>>>>>>>>>>> ', data );
+                $.plot($(self.element), data, option);
+
+                // hide indicator
+                $(self.element).parents('.panel').find('.indicator').removeClass('show');
+            });
+        }
+    };
+    
     $(function () {
 	
 		// Stats
@@ -62,10 +92,13 @@
         $('#selectize-customselect').selectize();
 		
 		// Stats #1
-        $.plot('#stats1', [{
-            color: '#DC554F',
-            data: [ ['Mon', 5], ['Tue', 8], ['Wed', 15], ['Thu', 6], ['Fri', 10] ]
-        }], option);
+//        $.plot('#stats1', [{
+//            color: '#DC554F',
+//            data: [ ['Mon', 5], ['Tue', 8], ['Wed', 15], ['Thu', 6], ['Fri', 10] ]
+//        }], option);
+        
+        let stats1 = new flotDemo('#stats1', '/api/flot/today_income');
+        stats1.remoteData(option)
          
         // Sparkline
         // ================================
@@ -75,31 +108,9 @@
         
         // Area Chart - Spline
         // ================================
-        $.plot('#chart-audience', [{
-            label: 'Visit (All)',
-            color: '#DC554F',
-            data: [
-                ['Jan', 47],
-                ['Feb', 84],
-                ['Mar', 60],
-                ['Apr', 143],
-                ['May', 39],
-                ['Jun', 86],
-                ['Jul', 87]
-            ]
-        }, {
-            label: 'Visit (Mobile)',
-            color: '#9365B8',
-            data: [
-                ['Jan', 83],
-                ['Feb', 32],
-                ['Mar', 16],
-                ['Apr', 47],
-                ['May', 98],
-                ['Jun', 84],
-                ['Jul', 18]
-            ]
-        }], {
+        let chart_audience = new flotDemo('#chart-audience', "/api/flot.php?type=audience" );
+
+        let ca_options = {
             series: {
                 lines: {
                     show: true
@@ -134,6 +145,8 @@
                 tickColor: 'rgba(0, 0, 0, 0.15)'
             },
             shadowSize: 0
-        });
+        };
+        
+        chart_audience.remoteData(ca_options);
     });
 }));
