@@ -32,7 +32,7 @@
                     <li >
                         <a href="/layout/reveal/header.html">
                             <span class="text">Reveal header</span>
-                            <span class="number"><span class="label label-success">N</span></span>
+                            <span class="number"><span class="label label-danger">N</span></span>
                         </a>
                     </li>
                     <li >
@@ -435,6 +435,8 @@
                 <!--/ END 2nd Level Menu -->
             </li>
         </ul>
+
+        @include('landerv2/layouts/partials/menu_level', [ 'parent' => false, 'children' => $main_menu ])
         <!--/ END Template Navigation/Menu -->
         <!-- START Sidebar summary -->
         @include('landerv2/layouts/partials/sidebar_left_summary_charts')
