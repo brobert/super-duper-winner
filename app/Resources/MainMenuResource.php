@@ -22,36 +22,34 @@ class MainMenuResource extends Resource
                 'icon'      => 'ico-grid',
                 'children'  => [
                     [
-                        'path'      => '/layout/basic.html',
+                        'path'      => '/layout/default.html',
                         'is_url'    => true,
-                        'name'      => 'basic',
+                        'name'      => 'default',
                     ],
                     [
-                        'path'      => '/layout/sticky.html',
+                        'path'      => '/layout/with/footer.html',
                         'is_url'    => true,
-                        'name'      => 'sticky',
+                        'name'      => 'with_footer',
                     ],
                     [
-                        'path'      => '/layout/footer.html',
+                        'path'      => '/layout/reveal/header.html',
                         'is_url'    => false,
-                        'name'      => 'footer',
-                        'children'  => [
-                            [
-                                'path'      => '/layout/footer/base.html',
-                                'is_url'    => true,
-                                'name'      => 'base',
-                            ],
-                            [
-                                'path'      => '/layout/footer/simple.html',
-                                'is_url'    => true,
-                                'name'      => 'simple',
-                            ],
-                            [
-                                'path'      => '/layout/footer/extend.html',
-                                'is_url'    => true,
-                                'name'      => 'extend',
-                            ]
-                        ]
+                        'name'      => 'reveal_header',
+                    ],
+                    [
+                        'path'      => '/layout/fixed/header.html',
+                        'is_url'    => true,
+                        'name'      => 'fixed_header',
+                    ],
+                    [
+                        'path'      => '/layout/fixed/sidebar.html',
+                        'is_url'    => true,
+                        'name'      => 'fixed_sidebar',
+                    ],
+                    [
+                        'path'      => '/layout/navbar/collapse.html',
+                        'is_url'    => true,
+                        'name'      => 'navbar_collapse',
                     ]
                 ],
             ],
@@ -60,7 +58,85 @@ class MainMenuResource extends Resource
                 'is_url'    => true,
                 'name'      => 'widget',
                 'icon'      => 'ico-tasks',
-            ]
+            ],
+            [
+                    'path'      => '/component',
+                    'is_url'    => false,
+                    'name'      => 'component',
+                    'icon'      => 'ico-screen4',
+                    'children'  => [
+                            [
+                                    'path'      => '/component/animation.html',
+                                    'is_url'    => true,
+                                    'name'      => 'animation',
+                            ],
+                            [
+                                    'path'      => '/component/button.html',
+                                    'is_url'    => true,
+                                    'name'      => 'button',
+                            ],
+                            [
+                                    'path'      => '/component/carousel.html',
+                                    'is_url'    => false,
+                                    'name'      => 'carousel',
+                            ],
+                            [
+                                    'path'      => '/component/grid.html',
+                                    'is_url'    => true,
+                                    'name'      => 'grid',
+                            ],
+                            [
+                                    'path'      => '/component/icon.html',
+                                    'is_url'    => true,
+                                    'name'      => 'icon',
+                            ],
+                            [
+                                    'path'      => '/component/loading.html',
+                                    'is_url'    => true,
+                                    'name'      => 'loading',
+                            ],
+                            [
+                                    'path'      => '/component/notification.html',
+                                    'is_url'    => true,
+                                    'name'      => 'notification',
+                            ],
+                            [
+                                    'path'      => '/component/panel.html',
+                                    'is_url'    => true,
+                                    'name'      => 'panel',
+                            ],
+                            [
+                                    'path'      => '/component/pricing.html',
+                                    'is_url'    => false,
+                                    'name'      => 'pricing',
+                            ],
+                            [
+                                    'path'      => '/component/slider.html',
+                                    'is_url'    => true,
+                                    'name'      => 'slider',
+                            ],
+                            [
+                                    'path'      => '/component/sortable.html',
+                                    'is_url'    => true,
+                                    'name'      => 'sortable',
+                            ],
+                            [
+                                    'path'      => '/component/tabsaccordion.html',
+                                    'is_url'    => true,
+                                    'name'      => 'tabsaccordion',
+                            ],
+                            [
+                                    'path'      => '/component/typography.html',
+                                    'is_url'    => true,
+                                    'name'      => 'typography',
+                            ],
+                            [
+                                    'path'      => '/component/others.html',
+                                    'is_url'    => true,
+                                    'name'      => 'others',
+                            ],
+                    ],
+            ],
         ];
 
         return $menu;

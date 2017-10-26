@@ -2,148 +2,10 @@
     <!-- START Sidebar Content -->
     <section class="content slimscroll">
         <!-- START Template Navigation/Menu -->
+
+        @include('landerv2/layouts/partials/menu_level', [ 'parent' => false, 'children' => $main_menu ])
+
         <ul class="topmenu topmenu-responsive" data-toggle="menu">
-            <li>
-                <a href="/" data-target="#dashboard" data-parent=".topmenu">
-                    <span class="figure"><i class="ico-home2"></i></span>
-                    <span class="text">Dashboard</span>
-                </a>
-            </li>
-            <li >
-                <a href="javascript:void(0);" data-toggle="submenu" data-target="#layout" data-parent=".topmenu">
-                    <span class="figure"><i class="ico-grid"></i></span>
-                    <span class="text">Layouts</span>
-                    <span class="arrow"></span>
-                </a>
-                <!-- START 2nd Level Menu -->
-                <ul id="layout" class="submenu collapse ">
-                    <li class="submenu-header ellipsis">Page Layout</li>
-                    <li >
-                        <a href="/layout/default.html">
-                            <span class="text">Default</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/layout/with/footer.html">
-                            <span class="text">With footer</span>
-                            <span class="number"><span class="label label-success">N</span></span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/layout/reveal/header.html">
-                            <span class="text">Reveal header</span>
-                            <span class="number"><span class="label label-danger">N</span></span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/layout/fixed/header.html">
-                            <span class="text">Fixed header</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/layout/fixed/sidebar.html">
-                            <span class="text">Fixed sidebar</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/layout/navbar/collapse.html">
-                            <span class="text">Navbar Collapse</span>
-                        </a>
-                    </li>
-                </ul>
-                <!--/ END 2nd Level Menu -->
-            </li>
-            <li>
-                <a href="/widget.html" data-parent=".topmenu">
-                    <span class="figure"><i class="ico-tasks"></i></span>
-                    <span class="text">Stats & Widgets</span>
-                    <span class="number"><span class="label label-danger">6</span></span>
-                </a>
-            </li>
-            <li >
-                <a href="javascript:void(0);" data-target="#components" data-toggle="submenu" data-parent=".topmenu">
-                    <span class="figure"><i class="ico-screen4"></i></span>
-                    <span class="text">UI Elements</span>
-                    <span class="arrow"></span>
-                </a>
-                <!-- START 2nd Level Menu -->
-                <ul id="components" class="submenu collapse ">
-                    <li class="submenu-header ellipsis">Components</li>
-                    <li >
-                        <a href="/component/animation.html">
-                            <span class="text">Animation</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/component/button.html">
-                            <span class="text">Button</span>
-                            <span class="number"><span class="label label-info">U</span></span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/component/carousel.html">
-                            <span class="text">Carousel</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/component/grid.html">
-                            <span class="text">Grid</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/component/icon.html">
-                            <span class="text">Icon</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/component/loading.html">
-                            <span class="text">Loading indicator</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/component/notification.html">
-                            <span class="text">Notification</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/component/panel.html">
-                            <span class="text">Panel</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/component/pricing.html">
-                            <span class="text">Pricing table / box</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/component/slider.html">
-                            <span class="text">Slider</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/component/sortable.html">
-                            <span class="text">Sortable</span>
-                            <span class="number"><span class="label label-success">N</span></span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/component/tabsaccordion.html">
-                            <span class="text">Tabs &amp; accordion</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/component/typography.html">
-                            <span class="text">Typography</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="/component/others.html">
-                            <span class="text">Miscelleneous</span>
-                        </a>
-                    </li>
-                </ul>
-                <!--/ END 2nd Level Menu -->
-            </li>
             <li >
                 <a href="javascript:void(0);" data-toggle="submenu" data-target="#form" data-parent=".topmenu">
                     <span class="figure"><i class="ico-file"></i></span>
@@ -436,7 +298,7 @@
             </li>
         </ul>
 
-        @include('landerv2/layouts/partials/menu_level', [ 'parent' => false, 'children' => $main_menu ])
+
         <!--/ END Template Navigation/Menu -->
         <!-- START Sidebar summary -->
         @include('landerv2/layouts/partials/sidebar_left_summary_charts')
