@@ -43,7 +43,7 @@ Lander.v2 - Dashboard
                         <!--/ Website States -->
 
                         <!-- Browser Breakpoint -->
-                            @include('landerv2/partials/browser_breakpoints')
+                            @include('landerv2/partials/dahsboard_browser_breakpoints')
                         <!-- Browser Breakpoint -->
                     </div>
                     <!--/ END Left Side -->
@@ -51,7 +51,7 @@ Lander.v2 - Dashboard
                     <!-- START Right Side -->
                     <div class="col-md-3">
                         <div class="panel panel-minimal">
-                            @include('landerv2/partials/today_income')
+                            @include('landerv2/partials/dahsboard_today_income')
 
                             @include('landerv2/partials/dahsboard_weather')
 

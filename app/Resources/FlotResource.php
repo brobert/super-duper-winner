@@ -5,7 +5,7 @@ use Carbon\Carbon;
 use Faker\Factory as Faker;
 
 class FlotResource {
-
+    
     /**
      *
      * @method get_data_by_type
@@ -15,17 +15,17 @@ class FlotResource {
      */
     public function get_data_by_type( $type )
     {
-
+        
         $action = "flot_$type";
-
+        
         if ( method_exists( $this, $action ) )
         {
             return $this->$action();
         }
-
+        
         return null;
     }
-
+    
     /**
      *
      * @method get_serie_data
@@ -38,7 +38,7 @@ class FlotResource {
     private function get_serie_data($around=50, $scope=30, $months = 12)
     {
         $faker = Faker::create();
-
+        
         $data = [];
         for ($m_id = 1; $m_id <=$months; $m_id ++)
         {
@@ -47,7 +47,7 @@ class FlotResource {
         }
         return $data;
     }
-
+    
     /**
      *
      * @method flot_bar
@@ -60,7 +60,7 @@ class FlotResource {
             [ "label" => "Population", "color" => "#00A1E1", "data" => $this->get_serie_data(), ]
         ];
     }
-
+    
     /**
      *
      * @method flot_barstacked
@@ -74,7 +74,7 @@ class FlotResource {
             [ "label" => "Twitter",  "color" => "#55acee", "data" =>  $this->get_serie_data(50,15), ],
         ];
     }
-
+    
     /**
      *
      * @method flot_area
@@ -88,7 +88,7 @@ class FlotResource {
             ["label" => "Hit",      "color" => "#46C8C8","data" => $this->get_serie_data(30,15)],
         ];
     }
-
+    
     /**
      *
      * @method flot_areaspline
@@ -103,7 +103,7 @@ class FlotResource {
             ["label" => "Hit",      "color" => "#46C8C8","data" => $this->get_serie_data(90,15)],
         ];
     }
-
+    
     /**
      *
      * @method flot_line
@@ -117,7 +117,7 @@ class FlotResource {
             ["label" => "Hit",      "color" => "#46C8C8","data" => $this->get_serie_data(40,15)],
         ];
     }
-
+    
     /**
      *
      * @method flot_linespline
@@ -139,7 +139,7 @@ class FlotResource {
                     $this->get_serie_data(190,15),
                     $this->get_serie_data(190,15),
                     $this->get_serie_data(190,15)
-                ),
+                    ),
             ],
             [
                 "label" => "Visits",
@@ -171,24 +171,24 @@ class FlotResource {
             ]
         ];
     }
-
+    
     public function flot_pie()
     {
         $faker = Faker::create();
-
+        
         $scope = 0;
-
+        
         return [
-            ["label" => $faker->countryCode(), "color" => "#00B1E1","data" => $faker->numberBetween($scope,$scope + 30)],
-            ["label" => $faker->countryCode(), "color" => "#91C854","data" => $faker->numberBetween($scope,$scope + 30)],
-            ["label" => $faker->countryCode(), "color" => "#63D3E9","data" => $faker->numberBetween($scope,$scope + 30)],
-            ["label" => $faker->countryCode(), "color" => "#FFD66A","data" => $faker->numberBetween($scope,$scope + 30)],
-            ["label" => $faker->countryCode(), "color" => "#ED5466","data" => $faker->numberBetween($scope,$scope + 30)],
-            ["label" => $faker->countryCode(), "color" => "#6BCCB4","data" => $faker->numberBetween($scope,$scope + 30)]
+            ["label" => $faker->countryCode(), "color" => "#00B1E1", "data" => $faker->numberBetween($scope,$scope + 30)],
+            ["label" => $faker->countryCode(), "color" => "#91C854", "data" => $faker->numberBetween($scope,$scope + 30)],
+            ["label" => $faker->countryCode(), "color" => "#63D3E9", "data" => $faker->numberBetween($scope,$scope + 30)],
+            ["label" => $faker->countryCode(), "color" => "#FFD66A", "data" => $faker->numberBetween($scope,$scope + 30)],
+            ["label" => $faker->countryCode(), "color" => "#ED5466", "data" => $faker->numberBetween($scope,$scope + 30)],
+            ["label" => $faker->countryCode(), "color" => "#6BCCB4", "data" => $faker->numberBetween($scope,$scope + 30)]
         ];
-
+        
     }
-
+    
     public function flot_audience()
     {
         return [
@@ -196,11 +196,22 @@ class FlotResource {
             [ "label" => "Twitter",  "color" => "#55acee", "data" =>  $this->get_serie_data(50,50), ],
         ];
     }
-
+    
     public function flot_today_income()
     {
+        $faker = Faker::create();
+        $max = 15;
         return [
-            [ 'color' => '#DC554F', 'data' => [ ['Mon', 5], ['Tue', 8], ['Wed', 15], ['Thu', 6], ['Fri', 10] ] ]
+            [
+                'color' => '#DC554F',
+                'data' => [
+                    ['Mon', $faker->numberBetween(0, $max)],
+                    ['Tue', $faker->numberBetween(0, $max)],
+                    ['Wed', $faker->numberBetween(0, $max)],
+                    ['Thu', $faker->numberBetween(0, $max)],
+                    ['Fri', $faker->numberBetween(0, $max)]
+                ]
+            ]
         ];
     }
 }

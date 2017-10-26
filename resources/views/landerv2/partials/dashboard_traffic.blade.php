@@ -18,7 +18,7 @@
             @foreach($traffic['sources'] as $source )
             <p class="mb5 clearfix">
                 <i class="ico-circle mr5 text-success"></i>{{ $source['name'] }}
-                <span class="pull-right semibold">{{number_format($source['value'])}}</span>
+                <span class="pull-right semibold">{{number_format($source['visits'])}}</span>
             </p>
             @endforeach
         </li>
