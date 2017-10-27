@@ -8,137 +8,296 @@ class MainMenuResource extends Resource
 {
     static public function get_menu_structure()
     {
-        $menu = [
+        $n_menu = [
+//             [
+//                 'name' => 'home',
+//                 'icon' => 'ico-home2',
+//             ],
             [
-                'path'      => '/',
-                'is_url'    => true,
-                'name'      => 'home',
-                'icon'      => 'ico-home2',
-            ],
-            [
-                'path'      => '/layout',
-                'is_url'    => false,
-                'name'      => 'layouts',
-                'icon'      => 'ico-grid',
-                'children'  => [
+                'name' => 'layout',
+                'icon' => 'ico-grid',
+                'children' => [
                     [
-                        'path'      => '/layout/default.html',
-                        'is_url'    => true,
-                        'name'      => 'default',
+                        'name' => 'layout.default',
+                        'icon' => '',
                     ],
                     [
-                        'path'      => '/layout/with/footer.html',
-                        'is_url'    => true,
-                        'name'      => 'with_footer',
+                        'name' => 'layout.navbar_collapse',
+                        'icon' => '',
                     ],
                     [
-                        'path'      => '/layout/reveal/header.html',
-                        'is_url'    => false,
-                        'name'      => 'reveal_header',
+                        'name' => 'layout.fixed_sidebar',
+                        'icon' => '',
                     ],
                     [
-                        'path'      => '/layout/fixed/header.html',
-                        'is_url'    => true,
-                        'name'      => 'fixed_header',
+                        'name' => 'layout.reveal_header',
+                        'icon' => '',
                     ],
                     [
-                        'path'      => '/layout/fixed/sidebar.html',
-                        'is_url'    => true,
-                        'name'      => 'fixed_sidebar',
+                        'name' => 'layout.with_footer',
+                        'icon' => '',
                     ],
                     [
-                        'path'      => '/layout/navbar/collapse.html',
-                        'is_url'    => true,
-                        'name'      => 'navbar_collapse',
-                    ]
+                        'name' => 'layout.fixed_header',
+                        'icon' => '',
+                    ],
                 ],
             ],
             [
-                'path'      => '/widget.html',
-                'is_url'    => true,
-                'name'      => 'widget',
-                'icon'      => 'ico-tasks',
+                'name' => 'widget',
+                'icon' => 'ico-tasks',
             ],
             [
-                    'path'      => '/component',
-                    'is_url'    => false,
-                    'name'      => 'component',
-                    'icon'      => 'ico-screen4',
-                    'children'  => [
-                            [
-                                    'path'      => '/component/animation.html',
-                                    'is_url'    => true,
-                                    'name'      => 'animation',
-                            ],
-                            [
-                                    'path'      => '/component/button.html',
-                                    'is_url'    => true,
-                                    'name'      => 'button',
-                            ],
-                            [
-                                    'path'      => '/component/carousel.html',
-                                    'is_url'    => false,
-                                    'name'      => 'carousel',
-                            ],
-                            [
-                                    'path'      => '/component/grid.html',
-                                    'is_url'    => true,
-                                    'name'      => 'grid',
-                            ],
-                            [
-                                    'path'      => '/component/icon.html',
-                                    'is_url'    => true,
-                                    'name'      => 'icon',
-                            ],
-                            [
-                                    'path'      => '/component/loading.html',
-                                    'is_url'    => true,
-                                    'name'      => 'loading',
-                            ],
-                            [
-                                    'path'      => '/component/notification.html',
-                                    'is_url'    => true,
-                                    'name'      => 'notification',
-                            ],
-                            [
-                                    'path'      => '/component/panel.html',
-                                    'is_url'    => true,
-                                    'name'      => 'panel',
-                            ],
-                            [
-                                    'path'      => '/component/pricing.html',
-                                    'is_url'    => false,
-                                    'name'      => 'pricing',
-                            ],
-                            [
-                                    'path'      => '/component/slider.html',
-                                    'is_url'    => true,
-                                    'name'      => 'slider',
-                            ],
-                            [
-                                    'path'      => '/component/sortable.html',
-                                    'is_url'    => true,
-                                    'name'      => 'sortable',
-                            ],
-                            [
-                                    'path'      => '/component/tabsaccordion.html',
-                                    'is_url'    => true,
-                                    'name'      => 'tabsaccordion',
-                            ],
-                            [
-                                    'path'      => '/component/typography.html',
-                                    'is_url'    => true,
-                                    'name'      => 'typography',
-                            ],
-                            [
-                                    'path'      => '/component/others.html',
-                                    'is_url'    => true,
-                                    'name'      => 'others',
-                            ],
+                'name' => 'component',
+                'icon' => 'ico-screen4',
+                'children' => [
+                    [
+                        'name' => 'component.loading',
+                        'icon' => '',
                     ],
+                    [
+                        'name' => 'component.sortable',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'component.notification',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'component.button',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'component.typography',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'component.tabsaccordion',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'component.slider',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'component.animation',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'component.grid',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'component.pricing',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'component.carousel',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'component.others',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'component.panel',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'component.icon',
+                        'icon' => '',
+                    ],
+                ],
             ],
-        ];
+            [
+                'name' => 'form',
+                'icon' => 'ico-file',
+                'children' => [
+                    [
+                        'name' => 'form.fileupload',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'form.layout',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'form.wizard',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'form.imagecrop',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'form.element',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'form.wysiwyg',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'form.xeditable',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'form.validation',
+                        'icon' => '',
+                    ],
+                ],
+            ],
+            [
+                'name' => 'table',
+                'icon' => 'ico-table22',
+                'children' => [
+                    [
+                        'name' => 'table.default',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'table.datatable',
+                        'icon' => '',
+                    ],
+                ],
+            ],
 
-        return $menu;
+            [
+                'name' => 'page',
+                'icon' => 'ico-copy4',
+                'children' => [
+                    [
+                        'name' => 'page.profile',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'page.register',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'page.media',
+                        'icon' => '',
+                        'children' => [
+                            [
+                                'name' => 'page.media.album',
+                                'icon' => '',
+                            ],
+                            [
+                                'name' => 'page.media.gallery',
+                                'icon' => '',
+                            ],
+                        ],
+                    ],
+                    [
+                        'name' => 'page.faq',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'page.blog',
+                        'icon' => '',
+                        'children' => [
+                            [
+                                'name' => 'page.blog.default',
+                                'icon' => '',
+                            ],
+                            [
+                                'name' => 'page.blog.single',
+                                'icon' => '',
+                            ],
+                            [
+                                'name' => 'page.blog.grid',
+                                'icon' => '',
+                            ],
+                        ],
+                    ],
+                    [
+                        'name' => 'page.invoice_printable',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'page.login_returned',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'page.invoice',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'page.error',
+                        'icon' => '',
+                        'children' => [
+                            [
+                                'name' => 'page.error.404',
+                                'icon' => '',
+                            ],
+                            [
+                                'name' => 'page.error.403',
+                                'icon' => '',
+                            ],
+                            [
+                                'name' => 'page.error.500',
+                                'icon' => '',
+                            ],
+                        ],
+                    ],
+                    [
+                        'name' => 'page.login',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'page.calendar',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'page.email',
+                        'icon' => '',
+                        'children' => [
+                            [
+                                'name' => 'page.email.inbox',
+                                'icon' => '',
+                            ],
+                            [
+                                'name' => 'page.email.view',
+                                'icon' => '',
+                            ],
+                        ],
+                    ],
+                    [
+                        'name' => 'page.starter',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'page.timeline_v2',
+                        'icon' => '',
+                    ],
+                ],
+            ],
+            [
+                'name' => 'chart',
+                'icon' => 'ico-stats-up',
+                'children' => [
+                    [
+                        'name' => 'chart.flot',
+                        'icon' => '',
+                    ],
+                ],
+            ],
+            [
+                'name' => 'maps',
+                'icon' => 'ico-map3',
+                'children' => [
+                    [
+                        'name' => 'maps.vector',
+                        'icon' => '',
+                    ],
+                    [
+                        'name' => 'maps.google',
+                        'icon' => '',
+                    ],
+                ],
+            ],
+
+        ];
+        return $n_menu;
     }
 }

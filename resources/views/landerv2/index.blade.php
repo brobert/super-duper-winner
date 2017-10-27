@@ -29,7 +29,7 @@ Lander.v2 - Dashboard
                 <!-- Page Header -->
                 <div class="page-header page-header-block">
                     <div class="page-header-section">
-                        <h4 class="title semibold"><span class="figure"><i class="ico-home2"></i></span> Dashboards</h4>
+                        <h4 class="title semibold"><span class="figure"><i class="ico-home2"></i></span> Dashboards {{ snake_case('ala.ma.kota')}}</h4>
                     </div>
                 </div>
                 <!-- Page Header -->

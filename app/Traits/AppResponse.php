@@ -21,7 +21,7 @@ trait AppResponse {
 
             $this->stash['faker'] = Faker\Factory::create();
 
-//             $this->stash['request'] = $this->request;
+            $this->stash['request'] = $this->request;
 
             return view($view, $this->stash);
         }

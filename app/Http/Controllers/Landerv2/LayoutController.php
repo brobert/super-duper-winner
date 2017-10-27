@@ -12,4 +12,28 @@ class LayoutController extends Controller
         return $this->_respond('landerv2.layout.default');
     }
 
+    public function fixed_sidebar()
+    {
+        return $this->_respond('landerv2.layout.fixed.sidebar');
+    }
+
+    public function fixed_header()
+    {
+        return $this->_respond('landerv2.layout.fixed.header');
+    }
+
+    public function navbar_collapse()
+    {
+        return $this->_respond('landerv2.layout.navbar.collapse');
+    }
+
+    public function reveal_header()
+    {
+        return $this->_respond('landerv2.layout.reveal.header');
+    }
+
+    public function with_footer()
+    {
+        return $this->_respond('landerv2.layout.with.footer');
+    }
 }

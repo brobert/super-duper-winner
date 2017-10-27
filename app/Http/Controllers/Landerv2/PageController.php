@@ -42,4 +42,19 @@ class PageController extends Controller
         return $this->_respond('landerv2.page.invoice');
     }
 
+    public function invoice_printable()
+    {
+        return $this->_respond('landerv2.page.invoice.printable');
+    }
+
+    public function login_returned()
+    {
+        return $this->_respond('landerv2.page.login.returned');
+    }
+
+    public function timeline_v2()
+    {
+        return $this->_respond('landerv2.page.timeline.v2');
+    }
+
 }
