@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{URL::asset('/stylesheet/bootstrap.css')}}">
     <link rel="stylesheet" href="{{URL::asset('/stylesheet/layout.css')}}">
     <link rel="stylesheet" href="{{URL::asset('/stylesheet/uielement.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('/plugins/nprogress/nprogress.css')}}">
     <!--/ Application stylesheet -->
 
     <!-- Theme stylesheet -->
@@ -31,6 +32,7 @@
 
     <!-- modernizr script -->
     <script type="text/javascript" src="{{URL::asset('/plugins/modernizr/js/modernizr.js')}}"></script>
+    <script type="text/javascript" src="{{URL::asset('/plugins/nprogress/nprogress.js')}}"></script>
     <!--/ modernizr script -->
     <!-- END STYLESHEETS -->
 </head>

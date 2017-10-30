@@ -19,7 +19,7 @@
     $(function () {
         // Login form function
         // ================================
-        var $form    = $('form[name=form-login]');
+        var $form    = $('form[name=form-log_in]');
 
         // On button submit click
         $form.on('click', 'button[type=submit]', function (e) {

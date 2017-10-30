@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html class="backend">
     <!-- START Head -->
-        @include('landerv2.layouts.partials.html_head')
+        @include('layouts.partials.html_head')
     <!--/ END Head -->
 
     <!-- START Body -->
     <body>
         <!-- START Template Header -->
-        @include('landerv2/layouts/partials/header')
+        @include('layouts/partials/header')
         <!--/ END Template Header -->
 
         <!-- START Template Sidebar (Left) -->
-        @include('landerv2/layouts/partials/sidebar_left')
+        @include('layouts/partials/sidebar_left')
         <!--/ END Template Sidebar (Left) -->
 
         <!-- START Template Sidebar (right) -->
-        @include('landerv2/layouts/partials/sidebar_right')
+        @include('layouts/partials/sidebar_right')
         <!--/ END Template Sidebar (right) -->
 
         <!-- START Template Main -->

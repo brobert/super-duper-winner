@@ -30,7 +30,7 @@
         </a>
 
         @if( array_get($child, 'children', false) && $child['children'] )
-            @include('landerv2/layouts/partials/menu_level', [ 'parent' => $child, 'children' => $child['children'] ])
+            @include('layouts/partials/menu_level', [ 'parent' => $child, 'children' => $child['children'] ])
         @endif
     </li>
     @endforeach

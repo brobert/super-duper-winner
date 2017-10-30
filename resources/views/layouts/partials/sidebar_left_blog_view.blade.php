@@ -1,9 +1,9 @@
 <aside class="sidebar sidebar-left sidebar-menu">
-    <!-- START Sidebar Content -->
+            <!-- START Sidebar Content -->
     <section class="content slimscroll">
         <!-- START Template Navigation/Menu -->
         <ul class="topmenu topmenu-responsive" data-toggle="menu">
-            <li class="active">
+            <li>
                 <a href="/" data-target="#dashboard" data-parent=".topmenu">
                     <span class="figure"><i class="ico-home2"></i></span>
                     <span class="text">Dashboard</span>
@@ -221,14 +221,14 @@
                 </ul>
                 <!--/ END 2nd Level Menu -->
             </li>
-            <li >
+            <li class="active open" >
                 <a href="javascript:void(0);" data-toggle="submenu" data-target="#page" data-parent=".topmenu">
                     <span class="figure"><i class="ico-copy4"></i></span>
                     <span class="text">Miscelleneous</span>
                     <span class="arrow"></span>
                 </a>
                 <!-- START 2nd Level Menu -->
-                <ul id="page" class="submenu collapse ">
+                <ul id="page" class="submenu collapse in">
                     <li class="submenu-header ellipsis">Miscelleneous</li>
                     <li >
                         <a href="/page/starter.html">
@@ -254,22 +254,22 @@
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-                    <li >
+                    <li>
                         <a href="/page/calendar.html">
                             <span class="text">Calendar</span>
                         </a>
                     </li>
-                    <li >
+                    <li class="active open">
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#email" data-parent="#page">
                             <span class="text">Email</span>
                             <span class="arrow"></span>
                         </a>
                         <!-- START 2nd Level Menu -->
-                        <ul id="email" class="submenu collapse ">
-                            <li >
+                        <ul id="email" class="submenu collapse in">
+                            <li>
                                 <a href="/page/email/inbox.html"><span class="text">Inbox</span></a>
                             </li>
-                            <li >
+                            <li class="active" >
                                 <a href="/page/email/view.html"><span class="text">View</span></a>
                             </li>
                         </ul>
@@ -437,7 +437,7 @@
         </ul>
         <!--/ END Template Navigation/Menu -->
         <!-- START Sidebar summary -->
-        @include('landerv2/layouts/partials/sidebar_left_charts')
+        @include('layouts/partials/sidebar_left_charts')
         <!--/ END Sidebar summary -->
     </section>
     <!--/ END Sidebar Container -->

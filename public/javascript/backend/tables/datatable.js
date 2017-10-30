@@ -24,7 +24,7 @@
         // ajax source
         $('#ajax-source').dataTable({
             'bProcessing': true,
-            'sAjaxSource': '../api/datatable.php',
+            'sAjaxSource': '../api/datatable',
             'sServerMethod': 'GET'
         });
 

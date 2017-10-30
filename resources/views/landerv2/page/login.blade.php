@@ -1,13 +1,7 @@
-@extends('landerv2.layouts.admin')
+@extends('landerv2.layouts.blank')
 
 @section('page_title')
-Lander.v2 - Bootstrap WebApp & Dashboard
-@endsection
-
-@section('asset_css')
-@endsection
-
-@section('asset_css_theme')
+Lander.v2 - Login Page
 @endsection
 
 @section('asset_js')
@@ -20,7 +14,7 @@ Lander.v2 - Bootstrap WebApp & Dashboard
             <section class="container">
                 <!-- START row -->
                 <div class="row">
-                    <div class="col-lg-4 col-lg-offset-4">
+                    <div class="col-lg-6 col-lg-offset-3">
                         <!-- Brand -->
                         <div class="text-center" style="margin-bottom:40px;">
                             <span class="logo-figure inverse"></span>
@@ -30,35 +24,41 @@ Lander.v2 - Bootstrap WebApp & Dashboard
                         <!--/ Brand -->
 
                         <!-- Social button -->
-                        <ul class="list-table">
-                            <li><button type="button" class="btn btn-block btn-facebook">Connect with <i class="ico-facebook2 ml5"></i></button></li>
-                            <li><button type="button" class="btn btn-block btn-twitter">Connect with <i class="ico-twitter2 ml5"></i></button></li>
-                        </ul>
+<!--                         <ul class="list-table"> -->
+<!--                             <li><button type="button" class="btn btn-block btn-facebook">Connect with <i class="ico-facebook2 ml5"></i></button></li> -->
+<!--                             <li><button type="button" class="btn btn-block btn-twitter">Connect with <i class="ico-twitter2 ml5"></i></button></li> -->
+<!--                         </ul> -->
                         <!-- Social button -->
 
                         <hr><!-- horizontal line -->
 
                         <!-- Login form -->
-                        <form class="panel" name="form-login" action="">
+                        <form class="panel" name="form-login" method="POST" action="{{ route('login') }}">
+                            {{ csrf_field() }}
                             <div class="panel-body">
                                 <div class="form-group">
-                                    <select class="form-control" name="lang">
-                                        <option value="0">Select language</option>
-                                        <option value="en">English</option>
-                                        <option value="da">Danish - Dansk</option>
-                                        <option value="nl">Dutch - Nederlands</option>
-                                        <option value="en-gb">English - UK</option>
-                                        <option value="fr">French - français</option>
-                                        <option value="de">German - Deutsch</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
                                     <div class="form-stack has-icon pull-left">
-                                        <input name="username" type="text" class="form-control input-lg" placeholder="Username / email" data-parsley-errors-container="#error-container" data-parsley-error-message="Please fill in your username / email" data-parsley-required>
+                                        <input
+                                            name="email"
+                                            type="text"
+                                            class="form-control input-lg"
+                                            placeholder="Username / email"
+                                            data-parsley-errors-container="#error-container"
+                                            data-parsley-error-message="Please fill in your username / email"
+                                            data-parsley-required
+                                        />
                                         <i class="ico-user2 form-control-icon"></i>
                                     </div>
                                     <div class="form-stack has-icon pull-left">
-                                        <input name="password" type="password" class="form-control input-lg" placeholder="Password" data-parsley-errors-container="#error-container" data-parsley-error-message="Please fill in your password" data-parsley-required>
+                                        <input
+                                            name="password"
+                                            type="password"
+                                            class="form-control input-lg"
+                                            placeholder="Password"
+                                            data-parsley-errors-container="#error-container"
+                                            data-parsley-error-message="Please fill in your password"
+                                            data-parsley-required
+                                        />
                                         <i class="ico-lock2 form-control-icon"></i>
                                     </div>
                                 </div>
@@ -96,6 +96,4 @@ Lander.v2 - Bootstrap WebApp & Dashboard
             </section>
 @endsection
 
-@section('footer')
-@endsection
 

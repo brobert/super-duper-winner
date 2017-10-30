@@ -1,4 +1,4 @@
-@extends('landerv2.layouts.admin')
+@extends('layouts.admin')
 
 @section('page_title')
 Lander.v2 - Bootstrap WebApp & Dashboard

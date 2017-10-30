@@ -3,6 +3,7 @@
 namespace App\Traits;
 
 use App\Resources\MainMenuResource;
+use Auth;
 use Faker;
 use Log;
 
@@ -18,6 +19,9 @@ trait AppResponse {
         {
             $this->stash['view'] = $view;
             $this->stash['main_menu'] = MainMenuResource::get_menu_structure();
+            if ( Auth::check() ) {
+                $this->stash['user'] = Auth::user();
+            }
 
             $this->stash['faker'] = Faker\Factory::create();
 
