@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="backend">
     <!-- START Head -->
-        @include('landerv2.layouts.partials.html_head')
+        @include('layouts.partials.html_head')
     <!--/ END Head -->
 
     <!-- START Body -->

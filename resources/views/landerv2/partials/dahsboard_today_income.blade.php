@@ -6,7 +6,7 @@
             <span data-toggle="counterup">{{number_format(abs($today_income))}}</span>
         </h2>
         <!-- chart -->
-        <div class="chart" style="height:120px;" id="stats1"></div>
+        <div class="chart" style="height:120px;" id="stats1" data-url="{{ route('api.flot', ['today_income'])}}"></div>
         <!--/ chart -->
     </div>
 </div>

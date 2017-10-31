@@ -11,7 +11,7 @@
             <!--/ panel-toolbar -->
             <!-- panel-body -->
             <div class="panel-body pt0">
-                <div class="chart mt10" id="chart-audience" style="height:250px;" data-url="/api/flot/audience"></div>
+                <div class="chart mt10" id="chart-audience" style="height:250px;" data-url="{{ route('api.flot', ['audience'])}}"></div>
             </div>
             <!--/ panel-body -->
             <!-- panel-footer -->

@@ -61,7 +61,7 @@ Lander.v2 - Charts
                         <!-- Loading indicator -->
                         <div class="indicator show"><span class="spinner"></span></div>
                         <!--/ Loading indicator -->
-                        <div class="chart mt10" id="chart-bar" style="height:250px;"></div>
+                        <div class="chart mt10" id="chart-bar" style="height:250px;" data-url="{{ route('api.flot', ['bar'])}}" ></div>
                     </div>
                 </div>
                 <!--/ panel body with collapse capabale -->
@@ -92,7 +92,7 @@ Lander.v2 - Charts
                         <!-- Loading indicator -->
                         <div class="indicator show"><span class="spinner"></span></div>
                         <!--/ Loading indicator -->
-                        <div class="chart mt10" id="chart-bar-stacked" style="height:250px;"></div>
+                        <div class="chart mt10" id="chart-bar-stacked" style="height:250px;" data-url="{{ route('api.flot', ['barstacked'])}}" ></div>
                     </div>
                 </div>
                 <!--/ panel body with collapse capabale -->
@@ -127,7 +127,7 @@ Lander.v2 - Charts
                         <!-- Loading indicator -->
                         <div class="indicator show"><span class="spinner"></span></div>
                         <!--/ Loading indicator -->
-                        <div class="chart mt10" id="chart-area" style="height:250px;"></div>
+                        <div class="chart mt10" id="chart-area" style="height:250px;"  data-url="{{ route('api.flot', ['area'])}}"></div>
                     </div>
                 </div>
                 <!--/ panel body with collapse capabale -->
@@ -158,7 +158,7 @@ Lander.v2 - Charts
                         <!-- Loading indicator -->
                         <div class="indicator show"><span class="spinner"></span></div>
                         <!--/ Loading indicator -->
-                        <div class="chart mt10" id="chart-line" style="height:250px;"></div>
+                        <div class="chart mt10" id="chart-line" style="height:250px;" data-url="{{ route('api.flot', ['line'])}}"></div>
                     </div>
                 </div>
                 <!--/ panel body with collapse capabale -->
@@ -193,7 +193,7 @@ Lander.v2 - Charts
                         <!-- Loading indicator -->
                         <div class="indicator show"><span class="spinner"></span></div>
                         <!--/ Loading indicator -->
-                        <div class="chart mt10" id="chart-area-spline" style="height:250px;"></div>
+                        <div class="chart mt10" id="chart-area-spline" style="height:250px;" data-url="{{ route('api.flot', ['areaspline'])}}"></div>
                     </div>
                 </div>
                 <!--/ panel body with collapse capabale -->
@@ -223,7 +223,7 @@ Lander.v2 - Charts
                         <!-- Loading indicator -->
                         <div class="indicator show"><span class="spinner"></span></div>
                         <!--/ Loading indicator -->
-                        <div class="chart mt10" id="chart-line-spline" style="height:250px;"></div>
+                        <div class="chart mt10" id="chart-line-spline" style="height:250px;" data-url="{{ route('api.flot', ['linespline'])}}"></div>
                     </div>
                 </div>
                 <!--/ panel body with collapse capabale -->
@@ -251,7 +251,7 @@ Lander.v2 - Charts
                 <!--/ panel heading/header -->
                 <!-- panel body -->
                 <div class="panel-body">
-                    <div class="chart mt10" id="chart-fillbetween" style="height:250px;"></div>
+                    <div class="chart mt10" id="chart-fillbetween" style="height:250px;" data-url="{{ route('api.flot', ['areaspline'])}}"></div>
                 </div>
                 <!--/ panel body -->
             </div>
@@ -281,7 +281,7 @@ Lander.v2 - Charts
                     <!-- Loading indicator -->
                     <div class="indicator show"><span class="spinner"></span></div>
                     <!--/ Loading indicator -->
-                    <div class="chart mt10" id="chart-pie1" style="height:200px;"></div>
+                    <div class="chart mt10" id="chart-pie1" style="height:200px;"  data-url="{{ route('api.flot', ['pie'])}}"></div>
                 </div>
                 <!--/ panel body -->
             </div>
@@ -306,7 +306,7 @@ Lander.v2 - Charts
                     <!-- Loading indicator -->
                     <div class="indicator show"><span class="spinner"></span></div>
                     <!--/ Loading indicator -->
-                    <div class="chart mt10" id="chart-pie2" style="height:200px;"></div>
+                    <div class="chart mt10" id="chart-pie2" style="height:200px;"  data-url="{{ route('api.flot', ['pie'])}}"></div>
                 </div>
                 <!--/ panel body -->
             </div>

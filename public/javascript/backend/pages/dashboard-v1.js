@@ -26,7 +26,12 @@
     // ================================
     var flotDemo = function (element, url) {
         this.element = element;
-        this.url     = '../'+url; // change this to your server url
+        
+        if ( $(element).data('url') ) {
+            this.url = $(element).data('url')
+        } else {
+            this.url     = '../'+url; // change this to your server url
+        }
     };
 
     flotDemo.prototype = {

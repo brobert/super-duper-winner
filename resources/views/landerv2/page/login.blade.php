@@ -1,4 +1,4 @@
-@extends('landerv2.layouts.blank')
+@extends('layouts.blank')
 
 @section('page_title')
 Lander.v2 - Login Page

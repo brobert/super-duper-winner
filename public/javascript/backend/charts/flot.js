@@ -27,7 +27,12 @@
     // ================================
     var flotDemo = function (element, url) {
         this.element = element;
-        this.url     = '../'+url; // change this to your server url
+        
+        if ( $(element).data('url') ) {
+            this.url = $(element).data('url')
+        } else {
+            this.url     = '../'+url; // change this to your server url
+        }
     };
 
     flotDemo.prototype = {
@@ -57,7 +62,7 @@
     $(function() {
         if($('#chart-bar').length !== 0) {
             // Chart option/setting
-            var chart  = new flotDemo('#chart-bar', 'api/flot.php?type=bar'),
+            var chart  = new flotDemo('#chart-bar'),
                 panel  = $('#chart-bar').parents('.panel'),
                 option = {
                     series: {
@@ -102,7 +107,7 @@
     $(function() {
         if($('#chart-bar-stacked').length !== 0) {
             // Chart option/setting
-            var chart  = new flotDemo('#chart-bar-stacked', 'api/flot.php?type=barstacked'),
+            var chart  = new flotDemo('#chart-bar-stacked'),
                 option = {
                     series: {
                         stack: true,
@@ -147,7 +152,7 @@
     $(function() {
         if($('#chart-area').length !== 0) {
             // Chart option/setting
-            var chart  = new flotDemo('#chart-area', 'api/flot.php?type=area'),
+            var chart  = new flotDemo('#chart-area'),
                 option = {
                     series: {
                         lines: {
@@ -195,7 +200,7 @@
     $(function() {
         if($('#chart-area-spline').length !== 0) {
             // Chart option/setting
-            var chart  = new flotDemo('#chart-area-spline', 'api/flot.php?type=areaspline'),
+            var chart  = new flotDemo('#chart-area-spline'),
                 option = {
                     series: {
                         lines: { show: false },
@@ -246,7 +251,7 @@
     $(function() {
         if($('#chart-line').length !== 0) {
             // Chart option/setting
-            var chart  = new flotDemo('#chart-line', 'api/flot.php?type=line'),
+            var chart  = new flotDemo('#chart-line'),
                 option = {
                     series: {
                         lines: {
@@ -291,40 +296,40 @@
     $(function() {
         if($('#chart-line-spline').length !== 0) {
             // Chart option/setting
-            var chart  = new flotDemo('#chart-line-spline', 'api/flot.php?type=linespline'),
-                option = {
-                    series: {
-                        lines: { show: false },
-                        splines: {
-                            show: true,
-                            tension: 0.4,
-                            lineWidth: 2,
-                            fill: 0
-                        },
-                        points: { 
-                            show: true,
-                            radius: 4
-                        }
+            var chart  = new flotDemo('#chart-line-spline'),
+            option = {
+                series: {
+                    lines: { show: false },
+                    splines: {
+                        show: true,
+                        tension: 0.4,
+                        lineWidth: 2,
+                        fill: 0
                     },
-                    grid: {
-                        borderColor: '#eee',
-                        borderWidth: 1, 
-                        hoverable: true,
-                        backgroundColor: '#fcfcfc'
-                    },
-                    tooltip: true,
-                    tooltipOpts: {
-                        content: '%x : %y'
-                    },
-                    xaxis: {
-                        tickColor: '#eee',
-                        mode: 'categories' 
-                    },
-                    yaxis: {
-                        tickColor: '#eee'
-                    },
-                    shadowSize: 0
-                };
+                    points: { 
+                        show: true,
+                        radius: 4
+                    }
+                },
+                grid: {
+                    borderColor: '#eee',
+                    borderWidth: 1, 
+                    hoverable: true,
+                    backgroundColor: '#fcfcfc'
+                },
+                tooltip: true,
+                tooltipOpts: {
+                    content: '%x : %y'
+                },
+                xaxis: {
+                    tickColor: '#eee',
+                    mode: 'categories' 
+                },
+                yaxis: {
+                    tickColor: '#eee'
+                },
+                shadowSize: 0
+            };
 
             // Load chart data
             chart.remoteData(option);
@@ -389,7 +394,7 @@
     $(function() {
         if($('#chart-pie1').length !== 0) {
             // Chart option/setting
-            var chart  = new flotDemo('#chart-pie1', 'api/flot.php?type=pie'),
+            var chart  = new flotDemo('#chart-pie1'),
                 option = {
                     series: {
                         pie: { 
@@ -409,7 +414,7 @@
     $(function() {
         if($('#chart-pie2').length !== 0) {
             // Chart option/setting
-            var chart  = new flotDemo('#chart-pie2', 'api/flot.php?type=pie'),
+            var chart  = new flotDemo('#chart-pie2'),
                 option = {
                     series: {
                         pie: { 
