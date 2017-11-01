@@ -13,23 +13,7 @@ Lander.v2 - Bootstrap WebApp & Dashboard
 
 @section('content')
             <div class="container-fluid">
-                <!-- Page Header -->
-                <div class="page-header page-header-block">
-                    <div class="page-header-section">
-                        <h4 class="title semibold">Grid</h4>
-                    </div>
-                    <div class="page-header-section">
-                        <!-- Toolbar -->
-                        <div class="toolbar">
-                            <ol class="breadcrumb breadcrumb-transparent nm">
-                                <li><a href="javascript:void(0);">UI Elements</a></li>
-                                <li class="active">Grid</li>
-                            </ol>
-                        </div>
-                        <!--/ Toolbar -->
-                    </div>
-                </div>
-                <!-- Page Header -->
+
 
                 <!-- START row -->
                 <div class="row">

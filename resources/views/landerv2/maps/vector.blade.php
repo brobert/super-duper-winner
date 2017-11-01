@@ -19,23 +19,6 @@ Lander.v2 - Bootstrap WebApp & Dashboard
 
 @section('content')
             <div class="container-fluid">
-                <!-- Page Header -->
-                <div class="page-header page-header-block">
-                    <div class="page-header-section">
-                        <h4 class="title semibold">Vector Maps</h4>
-                    </div>
-                    <div class="page-header-section">
-                        <!-- Toolbar -->
-                        <div class="toolbar">
-                            <ol class="breadcrumb breadcrumb-transparent nm">
-                                <li><a href="#">Maps</a></li>
-                                <li class="active">Vector</li>
-                            </ol>
-                        </div>
-                        <!--/ Toolbar -->
-                    </div>
-                </div>
-                <!-- Page Header -->
 
                 <!-- START row -->
                 <div class="row">

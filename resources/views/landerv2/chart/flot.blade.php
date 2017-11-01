@@ -26,15 +26,6 @@ Lander.v2 - Charts
 @section('content')
 <!-- START Template Container -->
 <div class="container-fluid">
-    <!-- Page Header -->
-    <div class="page-header page-header-block">
-        <div class="page-header-section">
-            <h4 class="title semibold">Flot chart </h4>
-            <!-- {{$view}} | {{$request->path()}} -->
-        </div>
-    </div>
-    <!-- Page Header -->
-
     <!-- START row -->
     <div class="row">
         <div class="col-lg-6">

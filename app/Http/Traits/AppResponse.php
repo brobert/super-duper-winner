@@ -1,16 +1,20 @@
 <?php
 
-namespace App\Traits;
+namespace App\Http\Traits;
 
 use App\Resources\MainMenuResource;
 use Auth;
 use Faker;
-use Log;
+
 
 trait AppResponse {
 
     protected $stash = [
         'user_name' => 'Jan Nowak'
+    ];
+
+    private $bread_crumbs = [
+        ['name' => 'home']
     ];
 
     protected function _respond($view = false)
@@ -27,10 +31,17 @@ trait AppResponse {
 
             $this->stash['request'] = $this->request;
 
+            $this->stash['bread_crumbs'] = $this->bread_crumbs;
+
             return view($view, $this->stash);
         }
 
         return [];
 
+    }
+
+    protected function add_crumb( $crumb )
+    {
+        $this->bread_crumbs[] = $crumb;
     }
 }

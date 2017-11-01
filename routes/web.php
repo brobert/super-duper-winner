@@ -19,6 +19,7 @@ Route::middleware(['auth'])->group(function () {
 
     Route::prefix('landerv2')->group(function () {
 
+        Route::get('/',                                 'Landerv2\HomeController@index')->name('landerv2');
         Route::get('/widget',                           'Landerv2\HomeController@widget')->name('widget');
 
         Route::get('/layout/default',                   'Landerv2\LayoutController@default')->name('layout.default');

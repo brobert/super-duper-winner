@@ -20,7 +20,11 @@
 
         <!-- START Template Main -->
         <section id="main" role="main">
-
+            <div class="container-fluid">
+                <!-- Page Header -->
+                @include('layouts/partials/breadcrumbs')
+                <!-- Page Header -->
+            </div>
             @yield('content')
 
             <!-- START To Top Scroller -->

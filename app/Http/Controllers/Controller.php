@@ -9,7 +9,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 use Illuminate\Http\Request;
 
-use App\Traits\AppResponse;
+use App\Http\Traits\AppResponse;
 
 class Controller extends BaseController
 {

@@ -15,27 +15,8 @@ Lander.v2 - Bootstrap WebApp & Dashboard
 @endsection
 
 @section('content')
-            <div class="container-fluid">
-                <!-- Page Header -->
-                <div class="page-header page-header-block">
-                    <div class="page-header-section">
-                        <h4 class="title semibold">Layout Default</h4>
-                    </div>
-                    <div class="page-header-section">
-                        <!-- Toolbar -->
-                        <div class="toolbar">
-                            <ol class="breadcrumb breadcrumb-transparent nm">
-                                <li><a href="#">Layout</a></li>
-                                <li class="active">With Default</li>
-                            </ol>
-                        </div>
-                        <!--/ Toolbar -->
-                    </div>
-                </div>
-                <!-- Page Header -->
-
-
-            </div>
+<div class="container-fluid">
+</div>
 @endsection
 
 @section('footer')
