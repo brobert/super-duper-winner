@@ -20,14 +20,14 @@
     <!--/ Plugins stylesheet : optional -->
 
     <!-- Application stylesheet : mandatory -->
-    <link rel="stylesheet" href="{{URL::asset('/stylesheet/bootstrap.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/stylesheet/layout.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/stylesheet/uielement.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('/css/layout.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('/css/uielement.css')}}">
     <link rel="stylesheet" href="{{URL::asset('/plugins/nprogress/nprogress.css')}}">
     <!--/ Application stylesheet -->
 
     <!-- Theme stylesheet -->
-    <link rel="stylesheet" href="{{URL::asset('/stylesheet/themes/theme.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('/css/themes/theme.css')}}">
     <!--/ Theme stylesheet -->
 
     <!-- modernizr script -->

@@ -14,6 +14,7 @@ use App\Resources\StatsResource;
 use App\Resources\IncomeResource;
 use App\Resources\TrafficResource;
 use App\Resources\BrowserBreakpoints;
+use App\Resources\MessageResource;
 
 use App\Http\Traits\AppResponse;
 
@@ -23,9 +24,11 @@ class Controller extends BaseController
 
     protected $request;
 
-    public function __construct(Request $request)
+    public function __construct(Request $request )
     {
         $this->request = $request;
+        $this->load_messages( new MessageResource() );
+
 
     }
 
@@ -48,5 +51,10 @@ class Controller extends BaseController
         $this->stash['breakpoints']     = $breakpoints->get_list();
 
         return $this->_respond();
+    }
+
+    private function load_messages( MessageResource $message_res )
+    {
+        $this->stash['messages'] = $message_res->get_messages();
     }
 }

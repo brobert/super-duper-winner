@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.blank')
 
 @section('page_title')
 Lander.v2 - Dashboard
@@ -28,7 +28,7 @@ Lander.v2 - Dashboard
             <div class="container-fluid">
                 <div class="row">
 
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <!-- START Panel pricing -->
                         <div class="panel panel-default">
                             <a href="{{route('landerv2')}}">
@@ -49,7 +49,7 @@ Lander.v2 - Dashboard
                         <!--/ END Panel pricing -->
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <!-- START Panel pricing -->
                         <div class="panel panel-default">
                             <a href="{{route('npk')}}">

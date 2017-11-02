@@ -8,7 +8,7 @@ Lander.v2 - Bootstrap WebApp & Dashboard
 @endsection
 
 @section('asset_css_theme')
-        <link rel="stylesheet" href="/stylesheet/themes/layouts/fixed-header.css">
+        <link rel="stylesheet" href="/css/themes/layouts/fixed-header.css">
 @endsection
 
 @section('asset_js')

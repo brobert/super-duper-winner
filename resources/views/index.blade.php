@@ -1,4 +1,4 @@
-extends('layouts.admin')
+extends('layouts.blank')
 
 @section('page_title')
 Lander.v2 - Dashboard

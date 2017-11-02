@@ -8,8 +8,8 @@ Lander.v2 - Bootstrap WebApp & Dashboard
 @endsection
 
 @section('asset_css_theme')
-        <link rel="stylesheet" href="/stylesheet/themes/theme.css">
-        <link rel="stylesheet" href="/stylesheet/themes/layouts/reveal-header.css">
+        <link rel="stylesheet" href="/css/themes/theme.css">
+        <link rel="stylesheet" href="/css/themes/layouts/reveal-header.css">
 @endsection
 
 @section('asset_js')
