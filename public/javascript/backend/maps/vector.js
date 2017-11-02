@@ -23,8 +23,8 @@
         // World map
         // ================================
         $.when(
-            $.getScript('../plugins/jqvmap/js/data/jquery.vmap.sampledata.js'),
-            $.getScript('../plugins/jqvmap/js/maps/jquery.vmap.world.js'),
+            $.getScript('/plugins/jqvmap/js/data/jquery.vmap.sampledata.js'),
+            $.getScript('/plugins/jqvmap/js/maps/jquery.vmap.world.js'),
             $.Deferred(function (deferred) {
                 $(deferred.resolve);
             })
@@ -78,7 +78,7 @@
         // Continents - asia
         // ================================
         $.when(
-            $.getScript('../plugins/jqvmap/js/maps/continents/jquery.vmap.asia.js'),
+            $.getScript('/plugins/jqvmap/js/maps/continents/jquery.vmap.asia.js'),
             $.Deferred(function (deferred) {
                 $(deferred.resolve);
             })
@@ -101,7 +101,7 @@
         // Continents - europe
         // ================================
         $.when(
-            $.getScript('../plugins/jqvmap/js/maps/continents/jquery.vmap.europe.js'),
+            $.getScript('/plugins/jqvmap/js/maps/continents/jquery.vmap.europe.js'),
             $.Deferred(function (deferred) {
                 $(deferred.resolve);
             })
@@ -124,7 +124,7 @@
         // Continents - Australia
         // ================================
         $.when(
-            $.getScript('../plugins/jqvmap/js/maps/continents/jquery.vmap.australia.js'),
+            $.getScript('/plugins/jqvmap/js/maps/continents/jquery.vmap.australia.js'),
             $.Deferred(function (deferred) {
                 $(deferred.resolve);
             })
@@ -147,7 +147,7 @@
         // Continents - Africa
         // ================================
         $.when(
-            $.getScript('../plugins/jqvmap/js/maps/continents/jquery.vmap.africa.js'),
+            $.getScript('/plugins/jqvmap/js/maps/continents/jquery.vmap.africa.js'),
             $.Deferred(function (deferred) {
                 $(deferred.resolve);
             })
@@ -170,7 +170,7 @@
         // Continents - North America
         // ================================
         $.when(
-            $.getScript('../plugins/jqvmap/js/maps/continents/jquery.vmap.north-america.js'),
+            $.getScript('/plugins/jqvmap/js/maps/continents/jquery.vmap.north-america.js'),
             $.Deferred(function (deferred) {
                 $(deferred.resolve);
             })
@@ -193,7 +193,7 @@
         // Continents - South America
         // ================================
         $.when(
-            $.getScript('../plugins/jqvmap/js/maps/continents/jquery.vmap.south-america.js'),
+            $.getScript('/plugins/jqvmap/js/maps/continents/jquery.vmap.south-america.js'),
             $.Deferred(function (deferred) {
                 $(deferred.resolve);
             })

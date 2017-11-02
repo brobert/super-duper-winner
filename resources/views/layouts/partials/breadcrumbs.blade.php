@@ -1,6 +1,6 @@
 <div class="page-header page-header-block">
     <div class="page-header-section">
-        <h4 class="title semibold"><span class="figure"><i class="ico-tasks"></i></span> Stats & Widgets</h4>
+        <h4 class="title semibold"><span class="figure"><i class="{{ $title_icon or ''}}"></i></span> {{$title or config('app.name') }} </h4>
     </div>
     <div class="page-header-section">
         <!-- Toolbar -->

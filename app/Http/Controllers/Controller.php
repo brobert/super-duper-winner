@@ -9,6 +9,12 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 use Illuminate\Http\Request;
 
+use App\Resources\WeatherResource;
+use App\Resources\StatsResource;
+use App\Resources\IncomeResource;
+use App\Resources\TrafficResource;
+use App\Resources\BrowserBreakpoints;
+
 use App\Http\Traits\AppResponse;
 
 class Controller extends BaseController
@@ -21,5 +27,26 @@ class Controller extends BaseController
     {
         $this->request = $request;
 
+    }
+
+    public function home(
+        WeatherResource $weather,
+        StatsResource   $stats,
+        IncomeResource  $income,
+        TrafficResource $traffic,
+        BrowserBreakpoints $breakpoints
+        )
+    {
+        $this->stash['stats'] = [
+            'token' => 'pages.home.stats.title',
+            'data' => $stats->get_stats_by_type(),
+        ];
+
+        $this->stash['traffic']         = $traffic->get_by('day');
+        $this->stash['today_income']    = $income->get_by('day');
+        $this->stash['weather']         = $weather->get();
+        $this->stash['breakpoints']     = $breakpoints->get_list();
+
+        return $this->_respond();
     }
 }

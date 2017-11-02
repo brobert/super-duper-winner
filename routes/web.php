@@ -13,9 +13,10 @@
 
 Auth::routes();
 
+Route::get('/',                                 'Controller@home')->name('home');
+
 Route::middleware(['auth'])->group(function () {
 
-    Route::get('/',                                 'Landerv2\HomeController@index')->name('home');
 
     Route::prefix('landerv2')->group(function () {
 

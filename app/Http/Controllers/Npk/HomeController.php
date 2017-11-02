@@ -18,6 +18,9 @@ class HomeController extends NpkController
 
     public function index()
     {
+        $this->stash['title'] = 'Krasnal';
+        $this->stash['title_icon'] = 'ico-home';
+
         return $this->_respond('npk.index');
     }
 }

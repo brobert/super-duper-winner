@@ -6,7 +6,9 @@
         <!--/ END Template Navigation/Menu -->
 
         <!-- START Sidebar summary -->
-        @include('layouts/partials/sidebar_left_summary_charts')
+        @if(0)
+            @include('layouts/partials/sidebar_left_summary_charts')
+        @endif
         <!--/ END Sidebar summary -->
     </section>
     <!--/ END Sidebar Container -->

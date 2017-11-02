@@ -33,7 +33,7 @@
         $('#table-tools').dataTable({
             'dom': '<"row"<"col-sm-4"T><"col-sm-4"l><"col-sm-4"f>><"table-responsive"rt><"row"<"col-sm-6"p><"col-sm-6"i>>',
             'tableTools': {
-                'sSwfPath': '../plugins/datatables/tabletools/swf/copy_csv_xls_pdf.swf',
+                'sSwfPath': '/plugins/datatables/tabletools/swf/copy_csv_xls_pdf.swf',
                 'aButtons': [
                     'copy',
                     'print',
