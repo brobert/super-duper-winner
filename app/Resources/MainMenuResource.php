@@ -244,7 +244,16 @@ class MainMenuResource extends Resource
             ],
             [
                 'name' => 'npk',
-                'icon'  => 'ico-home'
+                'icon'  => 'ico-home',
+                'children' => [
+                    [
+                        'name' => 'npk.admin',
+                        'roles' => 'owner',
+                    ],
+                    [
+                        'name' => 'npk.payments',
+                    ],
+                ],
             ]
         ];
         return $n_menu;

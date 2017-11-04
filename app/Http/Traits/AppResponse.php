@@ -35,8 +35,6 @@ trait AppResponse {
 
             $this->stash['bread_crumbs'] = $this->bread_crumbs;
 
-
-
             return view($this->get_view($view), $this->stash);
         }
 

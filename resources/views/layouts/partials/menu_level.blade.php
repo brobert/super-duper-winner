@@ -8,31 +8,34 @@
     @if( $parent )
     <li class="submenu-header ellipsis">{{ trans('menu.' . $parent['name'])}}</li>
     @endif
+
     @foreach( $children as $child)
-    <li>
-        <a
-                href="{{ array_get($child, 'children', false)? 'javascript:void(0);': route($child['name'])}}"
-                data-target="#{{ str_replace('.','-', $child['name']) }}"
-                data-parent="{{ $parent? '#'.$parent['name']: '.topmenu'}}"
-                @if( array_get($child, 'children', false) )
-                    data-toggle="submenu"
+        @if( !isset($child['roles']) or $user->hasRole($child['roles']))
+        <li>
+            <a
+                    href="{{ array_get($child, 'children', false)? 'javascript:void(0);': route($child['name'])}}"
+                    data-target="#{{ str_replace('.','-', $child['name']) }}"
+                    data-parent="{{ $parent? '#'.$parent['name']: '.topmenu'}}"
+                    @if( array_get($child, 'children', false) )
+                        data-toggle="submenu"
+                    @endif
+            >
+                @if( array_get($child, 'icon', false) )
+                    <span class="figure"><i class="{{ $child['icon']}}"></i></span>
                 @endif
-        >
-            @if( array_get($child, 'icon', false) )
-                <span class="figure"><i class="{{ $child['icon']}}"></i></span>
+
+                <span class="text">{{ trans('menu.' . $child['name'])}}</span>
+
+                @if( array_get($child, 'children', false) )
+                    <span class="arrow"></span>
+                @endif
+            </a>
+
+            @if( array_get($child, 'children', false) && $child['children'] )
+                @include('layouts/partials/menu_level', [ 'parent' => $child, 'children' => $child['children'] ])
             @endif
-
-            <span class="text">{{ trans('menu.' . $child['name'])}}</span>
-
-            @if( array_get($child, 'children', false) )
-                <span class="arrow"></span>
-            @endif
-        </a>
-
-        @if( array_get($child, 'children', false) && $child['children'] )
-            @include('layouts/partials/menu_level', [ 'parent' => $child, 'children' => $child['children'] ])
+        </li>
         @endif
-    </li>
     @endforeach
 </ul>
 

@@ -101,6 +101,8 @@ Route::middleware(['auth'])->group(function () {
 
     Route::prefix('npk')->group(function () {
 
-        Route::get('/',                           'Npk\HomeController@index')->name('npk');
+        Route::get('/',                                 'Npk\HomeController@index')->name('npk');
+        Route::get('/admin',                            'Npk\HomeController@index')->name('npk.admin');
+        Route::get('/payments',                         'Npk\HomeController@index')->name('npk.payments');
     });
 });
