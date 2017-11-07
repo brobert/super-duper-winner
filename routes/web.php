@@ -81,6 +81,7 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/page/message/bubble',              'Landerv2\Page\MessageController@bubble')->name('page.message.bubble');
         Route::get('/page/message/rich',                'Landerv2\Page\MessageController@rich')->name('page.message.rich');
         Route::get('/page/profile',                     'Landerv2\PageController@profile')->name('page.profile');
+        Route::post('/page/profile',                    'Landerv2\PageController@update_profile')->name('page.update_profile');
         Route::get('/page/register',                    'Landerv2\PageController@register')->name('page.register');
         Route::get('/page/starter',                     'Landerv2\PageController@starter')->name('page.starter');
         Route::get('/page/timeline_v2',                 'Landerv2\PageController@timeline_v2')->name('page.timeline_v2');

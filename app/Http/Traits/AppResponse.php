@@ -35,6 +35,8 @@ trait AppResponse {
 
             $this->stash['bread_crumbs'] = $this->bread_crumbs;
 
+//             dump(Auth::user()->toArray());
+
             return view($this->get_view($view), $this->stash);
         }
 

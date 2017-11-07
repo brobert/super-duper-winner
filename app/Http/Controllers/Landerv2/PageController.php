@@ -3,10 +3,24 @@
 namespace App\Http\Controllers\Landerv2;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Landerv2\Landerv2Controller;
 
-class PageController extends Controller
+class PageController extends Landerv2Controller
 {
+
+    /**
+     *
+     * @param Request $request
+     */
+    public function __construct(Request $request)
+    {
+        parent::__construct($request);
+    }
+
+    /**
+     *
+     * @return unknown
+     */
     public function calendar()
     {
         return $this->_respond('landerv2.page.calendar');
@@ -17,8 +31,14 @@ class PageController extends Controller
         return $this->_respond('landerv2.page.starter');
     }
 
+    public function update_profile( Request $request )
+    {
+
+    }
+
     public function profile()
     {
+        $this->add_crumb(['name' => 'page.profile']);
         return $this->_respond('landerv2.page.profile');
     }
 
