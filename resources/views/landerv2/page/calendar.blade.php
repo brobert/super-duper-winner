@@ -170,14 +170,6 @@ Lander.v2 - Bootstrap WebApp & Dashboard
         <script type="text/javascript" src="/javascript/backend/app.js"></script>
         <!--/ Application and vendor script : mandatory -->
 
-        <!-- Plugins and page level script : optional -->
-        <script type="text/javascript" src="/javascript/pace.min.js"></script>
-        <script type="text/javascript" src="/plugins/jquery-ui/js/jquery-ui.js"></script>
-        <script type="text/javascript" src="/plugins/jquery-ui/js/jquery-ui-touch.js"></script>
-        <script type="text/javascript" src="/plugins/parsley/js/parsley.js"></script>
-        <script type="text/javascript" src="/plugins/fullcalendar/js/fullcalendar.js"></script>
-        <script type="text/javascript" src="/javascript/backend/pages/calendar.js"></script>
-        <!--/ Plugins and page level script : optional -->
         <!--/ END JAVASCRIPT SECTION -->
     </body>
     <!--/ END Body -->

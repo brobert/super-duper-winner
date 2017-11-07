@@ -10,7 +10,7 @@
     @endif
 
     @foreach( $children as $child)
-        @if( !isset($child['roles']) or $user->hasRole($child['roles']))
+        @if( !isset($child['roles']) or $user->hasRole(explode(',',$child['roles'])))
         <li>
             <a
                     href="{{ array_get($child, 'children', false)? 'javascript:void(0);': route($child['name'])}}"

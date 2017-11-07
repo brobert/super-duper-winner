@@ -2,7 +2,6 @@
 
 namespace App\Http\Traits;
 
-use App\Resources\MainMenuResource;
 use Illuminate\Support\Facades\View;
 use Auth;
 use Faker;
@@ -23,7 +22,7 @@ trait AppResponse {
         if ( $this->request->format() === 'html')
         {
             $this->stash['view'] = $view;
-            $this->stash['main_menu'] = MainMenuResource::get_menu_structure();
+            $this->stash['main_menu'] = config('menu');
 
             if ( Auth::check() ) {
                 $this->stash['user'] = Auth::user();
@@ -52,7 +51,7 @@ trait AppResponse {
     private function get_view( String $view_path = '' )
     {
 
-        if ( !$view_path || 1 ) {
+        if ( !$view_path) {
             $caller = debug_backtrace()[2];
             $view_path_parts = array_slice( explode( '\\', $caller['class']), 3 );
             $last = preg_replace( [ '/^Home/', '/Controller$/' ], '', array_pop($view_path_parts) );

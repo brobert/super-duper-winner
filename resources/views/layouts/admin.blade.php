@@ -15,16 +15,21 @@
         <!--/ END Template Sidebar (Left) -->
 
         <!-- START Template Sidebar (right) -->
-        @include('layouts/partials/sidebar_right')
+        @if( config('custom.sidebar_right') )
+            @include('layouts/partials/sidebar_right')
+        @endif
         <!--/ END Template Sidebar (right) -->
 
         <!-- START Template Main -->
         <section id="main" role="main">
+            @if( config('custom.breadcrumb') )
             <div class="container-fluid">
                 <!-- Page Header -->
                 @include('layouts/partials/breadcrumbs')
                 <!-- Page Header -->
             </div>
+            @endif
+
             @yield('content')
 
             <!-- START To Top Scroller -->

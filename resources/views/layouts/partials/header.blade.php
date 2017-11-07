@@ -91,6 +91,8 @@
                 </ul>
             </li>
             <!-- Profile dropdown -->
+
+            @if( config('custom.sidebar_right') )
             <!-- Offcanvas right This menu will take position at the top of template header (mobile only). Make sure that only #header have the `position: relative`, or it may cause unwanted behavior -->
             <li class="navbar-main">
                 <a href="javascript:void(0);" data-toggle="sidebar" data-direction="rtl" rel="tooltip" title="Feed / contact sidebar">
@@ -100,6 +102,7 @@
                 </a>
             </li>
             <!--/ Offcanvas right -->
+            @endif
 
         </ul>
         <!--/ END Right nav -->

@@ -17,7 +17,6 @@ Lander.v2 - Bootstrap WebApp & Dashboard
 
 @section('content')
             <div class="container-fluid" style="min-height:1024px;"><!-- add min-height to simulate scrolling -->
-
             </div>
 @endsection
 
