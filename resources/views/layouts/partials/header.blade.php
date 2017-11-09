@@ -73,7 +73,7 @@
                     </span>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="javascript:void(0);"><span class="icon"><i class="ico-user-plus2"></i></span> My Accounts</a></li>
+                    <li><a href="{{route('account.edit')}}"><span class="icon"><i class="ico-user-plus2"></i></span> My Accounts</a></li>
                     <li><a href="javascript:void(0);"><span class="icon"><i class="ico-cog4"></i></span> Profile Setting</a></li>
                     <li><a href="javascript:void(0);"><span class="icon"><i class="ico-question"></i></span> Help</a></li>
                     <li class="divider"></li>

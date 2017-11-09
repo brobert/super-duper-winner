@@ -31,4 +31,14 @@ class User extends Authenticatable
     public function full_name() {
         return sprintf("%s %s", $this->name, $this->last_name );
     }
+
+
+    /**
+     * Mutators
+     */
+
+    public function setPasswordAttribute($password)
+    {
+        $this->attributes['password'] = bcrypt($password);
+    }
 }

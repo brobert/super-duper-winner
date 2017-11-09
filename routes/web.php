@@ -11,12 +11,30 @@
 |
 */
 
-Auth::routes();
+// Authentication Routes...
+$this->get('login', 'Auth\LoginController@showLoginForm')->name('login');
+$this->post('login', 'Auth\LoginController@login');
+$this->post('logout', 'Auth\LoginController@logout')->name('logout');
 
-Route::get('/',                                 'Controller@home')->name('home');
+// Registration Routes...
+// $this->get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+// $this->post('register', 'Auth\RegisterController@register');
+
+// Password Reset Routes...
+$this->get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+$this->post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+$this->get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
+$this->post('password/reset', 'Auth\ResetPasswordController@reset');
 
 Route::middleware(['auth'])->group(function () {
 
+    Route::get('/',                                 'HomeController@index')->name('npk');
+
+    Route::get('/account',                          'AccountController@edit')->name('account.edit');
+    Route::put('/account/update',                  'AccountController@update')->name('account.update');
+
+    Route::get('/admin',                            'HomeController@index')->name('npk.admin');
+    Route::get('/payments',                         'HomeController@index')->name('npk.payments');
 
     Route::prefix('landerv2')->group(function () {
 
@@ -90,20 +108,6 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/api/flot.php',                     'DataController@flot');
         Route::get('/api/datatable',                    'DataController@datatable')->name('api.datatable');
 
-//     // handling all not existed urls (for react)
-//     Route::get(
-//         '/{any}{format?}',
-//         function ($any) {
-//             // any other url, subfolders also
-//             return View::make("landerv2/$any");
-//         }
-//     )->where('any', '.*');
     });
 
-    Route::prefix('npk')->group(function () {
-
-        Route::get('/',                                 'Npk\HomeController@index')->name('npk');
-        Route::get('/admin',                            'Npk\HomeController@index')->name('npk.admin');
-        Route::get('/payments',                         'Npk\HomeController@index')->name('npk.payments');
-    });
 });

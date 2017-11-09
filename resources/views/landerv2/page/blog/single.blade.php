@@ -254,7 +254,7 @@ Lander.v2 - Bootstrap WebApp & Dashboard
                                     <div class="form-group">
                                         <label class="col-sm-3 control-label">Website</label>
                                         <div class="col-sm-9">
-                                            <input type="email" name="website" class="form-control">
+                                            <input type="text" name="website" class="form-control">
                                         </div>
                                     </div>
                                     <div class="form-group">

@@ -5,12 +5,15 @@ namespace App\Http\Traits;
 use Illuminate\Support\Facades\View;
 use Auth;
 use Faker;
+use Log;
+
+use App\Resources\MessageResource;
 
 
 trait AppResponse {
 
     protected $stash = [
-        'user_name' => 'Jan Nowak'
+
     ];
 
     private $bread_crumbs = [
@@ -19,6 +22,7 @@ trait AppResponse {
 
     protected function _respond($view = '')
     {
+        Log::debug("AppResponse::_respond::request: " . $this->request->path() .'::'.$this->request->format());
         if ( $this->request->format() === 'html')
         {
             $this->stash['view'] = $view;
@@ -26,6 +30,7 @@ trait AppResponse {
 
             if ( Auth::check() ) {
                 $this->stash['user'] = Auth::user();
+                $this->load_messages( new MessageResource() );
             }
 
             $this->stash['faker'] = Faker\Factory::create();
@@ -39,10 +44,14 @@ trait AppResponse {
             return view($this->get_view($view), $this->stash);
         }
 
-        return [];
+        return $this->stash;
 
     }
 
+    protected function _bad_request()
+    {
+
+    }
     protected function add_crumb( $crumb )
     {
         $this->bread_crumbs[] = $crumb;
@@ -71,6 +80,7 @@ trait AppResponse {
             $view_path = $view_path_tmp;
         }
 
+        Log::debug("AppResponse::get_view: $view_path");
         if( View::exists($view_path))
         {
             return $view_path;

@@ -27,7 +27,7 @@ class Controller extends BaseController
     public function __construct(Request $request )
     {
         $this->request = $request;
-        $this->load_messages( new MessageResource() );
+
 
 
     }

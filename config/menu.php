@@ -1,11 +1,20 @@
 <?php
 
+
 return [
+    [
+        'name'  => 'npk.admin',
+        'roles' => 'owner',
+        'icon'  => 'ico-wrench3',
+    ],
+    [
+        'name'  => 'npk.payments',
+        'icon'  => 'ico-money',
+    ],
     [
         'name' => 'landerv2',
         'icon'  => 'ico-sitemap',
         'children' => [
-
             [
                 'name' => 'layout',
                 'icon' => 'ico-grid',
@@ -234,18 +243,5 @@ return [
             ],
         ]
     ],
-    [
-        'name'  => 'npk',
-        'icon'  => 'ico-home',
-        'roles' => 'owner',
-        'children' => [
-            [
-                'name' => 'npk.admin',
-                'roles' => 'owner',
-            ],
-            [
-                'name' => 'npk.payments',
-            ],
-        ],
-    ]
+
 ];
