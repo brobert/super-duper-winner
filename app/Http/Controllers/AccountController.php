@@ -63,6 +63,8 @@ class AccountController extends Controller
      */
     public function update(Request $request, User $user)
     {
+
+        // Store all fields value except password
         $request->flashExcept('password');
 
         $validation_rules = [];

@@ -70,17 +70,9 @@ trait AppResponse {
             array_push( $view_path_parts, $caller['function']);
             $view_path_tmp= strtolower( implode('.', $view_path_parts));
 
-//             dump( [
-//                 'caller'            => $caller,
-//                 'view_path_parts'   => $view_path_parts,
-//                 'view_path_tmp'     => $view_path_tmp,
-//                 'view_path'         => $view_path
-//             ]);
-
             $view_path = $view_path_tmp;
         }
 
-        Log::debug("AppResponse::get_view: $view_path");
         if( View::exists($view_path))
         {
             return $view_path;

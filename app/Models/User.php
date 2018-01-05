@@ -28,6 +28,12 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    /**
+     *
+     * @method full_name
+     * User
+     * @return string
+     */
     public function full_name() {
         return sprintf("%s %s", $this->name, $this->last_name );
     }
@@ -37,7 +43,13 @@ class User extends Authenticatable
      * Mutators
      */
 
-    public function setPasswordAttribute($password)
+    /**
+     *
+     * @method setPasswordAttribute
+     * User
+     * @param unknown $password
+     */
+    protected function setPasswordAttribute($password)
     {
         $this->attributes['password'] = bcrypt($password);
     }
