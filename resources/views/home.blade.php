@@ -16,10 +16,10 @@ Lander.v2 - Dashboard
 @section('content')
 <section id="main" role="main">
     <div class="container-fluid">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
 
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <!-- START Panel pricing -->
                     <div class="panel panel-default">
                         <a href="{{route('landerv2')}}">
@@ -40,7 +40,7 @@ Lander.v2 - Dashboard
                     <!--/ END Panel pricing -->
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <!-- START Panel pricing -->
                     <div class="panel panel-default">
                         <a href="{{route('npk')}}">
@@ -54,6 +54,26 @@ Lander.v2 - Dashboard
                             <!-- panel body -->
                             <div class="panel-body text-center" style="margin-top:-50px;">
                                 <img class="img-circle img-bordered" src="/image/logo/npk.png" alt="" width="75px" height="75px">
+                            </div>
+                            <!--/ panel body -->
+                        </a>
+                    </div>
+                    <!--/ END Panel pricing -->
+                </div>
+                <div class="col-md-4">
+                    <!-- START Panel pricing -->
+                    <div class="panel panel-default">
+                        <a href="{{route('hrm')}}">
+                            <!-- panel heading -->
+                            <div class="panel-heading text-center pa15" style="min-height:100px;">
+                                <h4 class="semibold mt0">
+                                    Hrm
+                                </h4>
+                            </div>
+                            <!-- panel heading -->
+                            <!-- panel body -->
+                            <div class="panel-body text-center" style="margin-top:-50px;">
+                                <img class="img-circle img-bordered" src="/image/logo/hrm.jpg" alt="" width="75px" height="75px">
                             </div>
                             <!--/ panel body -->
                         </a>
