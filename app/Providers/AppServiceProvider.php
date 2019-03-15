@@ -5,8 +5,10 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 
+
 class AppServiceProvider extends ServiceProvider
 {
+
     /**
      * Bootstrap any application services.
      *
@@ -14,8 +16,17 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
         // https://laravel-news.com/laravel-5-4-key-too-long-error
         Schema::defaultStringLength(191);
+
+        $mainPath = database_path('migrations');
+        $directories = glob($mainPath . '/*', GLOB_ONLYDIR);
+        $paths = array_merge([
+            $mainPath
+        ], $directories);
+
+        $this->loadMigrationsFrom($paths);
     }
 
     /**
@@ -25,6 +36,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+
         //
     }
 }

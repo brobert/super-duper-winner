@@ -1,16 +1,15 @@
 <?php
-
 return [
 
     /*
-    |--------------------------------------------------------------------------
-    | Application Name
-    |--------------------------------------------------------------------------
-    |
-    | This value is the name of your application. This value is used when the
-    | framework needs to place the application's name in a notification or
-    | any other location as required by the application or its packages.
-    */
+     * |--------------------------------------------------------------------------
+     * | Application Name
+     * |--------------------------------------------------------------------------
+     * |
+     * | This value is the name of your application. This value is used when the
+     * | framework needs to place the application's name in a notification or
+     * | any other location as required by the application or its packages.
+     */
 
     'name' => env('APP_NAME', 'Laravel xx'),
 
@@ -126,6 +125,16 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Admin user name
+    |--------------------------------------------------------------------------
+    */
+
+    'adm_name' => env('ADMIN_USER_NAME'),
+    'adm_mail' => env('ADMIN_USER_EMAIL'),
+    'adm_pass' => env('ADMIN_USER_PASS'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Autoloaded Service Providers
     |--------------------------------------------------------------------------
     |
@@ -178,7 +187,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Zizaco\Entrust\EntrustServiceProvider::class,
-        Collective\Html\HtmlServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class
 
     ],
 
@@ -229,9 +238,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
+        'Entrust' => Zizaco\Entrust\EntrustFacade::class,
         'Form' => Collective\Html\FormFacade::class,
-        'Html' => Collective\Html\HtmlFacade::class,
-    ],
+        'Html' => Collective\Html\HtmlFacade::class
+    ]
 
 ];

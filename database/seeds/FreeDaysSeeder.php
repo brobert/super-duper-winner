@@ -2,7 +2,7 @@
 use Illuminate\Database\Seeder;
 
 
-class DatabaseSeeder extends Seeder
+class FreeDaysSeeder extends Seeder
 {
 
     /**
@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
-        $this->call(UserSeeder::class);
-        $this->call(FreeDaysSeeder::class);
+        //
+        factory(App\Models\Hrm\FreeDay::class, 30)->create();
     }
 }

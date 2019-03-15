@@ -56,10 +56,11 @@ trait AppResponse {
     private function get_view(String $view_path = '')
     {
 
-        if (!$view_path || 1)
+        if (!$view_path)
         {
             $caller = debug_backtrace() [2];
             $view_path_parts = array_slice(explode('\\', $caller ['class']), 3);
+
             $last = preg_replace([
                 '/^Home/',
                 '/Controller$/'
@@ -71,7 +72,7 @@ trait AppResponse {
             array_push($view_path_parts, $caller ['function']);
             $view_path_tmp = strtolower(implode('.', $view_path_parts));
 
-            // dump( [
+            // dump([
             // 'caller' => $caller,
             // 'view_path_parts' => $view_path_parts,
             // 'view_path_tmp' => $view_path_tmp,
@@ -83,9 +84,15 @@ trait AppResponse {
 
         if (View::exists($view_path))
         {
+            // dump([
+            // 'view_exist' => $view_path
+            // ]);
             return $view_path;
         } else
         {
+            // dump([
+            // 'view_NOT_exist' => $view_path
+            // ]);
             return 'landerv2.page.error.404';
         }
     }

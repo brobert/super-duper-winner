@@ -154,6 +154,10 @@ return [
             'database' => 0
         ]
 
-    ]
+    ],
+
+    'adm_name' => env('ADMIN_USER_NAME'),
+    'adm_mail' => env('ADMIN_USER_EMAIL'),
+    'adm_pass' => env('ADMIN_USER_PASS')
 
 ];

@@ -260,7 +260,17 @@ class MainMenuResource extends Resource
             ],
             'hrm' => [
                 'name' => 'hrm',
-                'icon' => 'ico-home'
+                'icon' => 'ico-home',
+                'children' => [
+                    [
+                        'name' => 'hrm.worklog',
+                        'icon' => 'ico-calendar'
+                    ],
+                    [
+                        'name' => 'hrm.settings',
+                        'icon' => 'ico-cog'
+                    ]
+                ]
             ]
         ];
         return [

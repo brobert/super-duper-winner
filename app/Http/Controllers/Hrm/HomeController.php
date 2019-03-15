@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers\Hrm;
 
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Http\Request;
 use App\Models\Hrm\WorkLogModel;
 use App\Models\Hrm\CalendarModel;
+use App\Models\Hrm\FreeDay;
 use Carbon\Carbon;
 
 
@@ -13,49 +15,38 @@ use Carbon\Carbon;
 class HomeController extends HrmController
 {
 
+    public function __construct(Request $request)
+    {
+
+        parent::__construct($request);
+
+        $freeDays = new FreeDay();
+        $this->stash ['freeDays'] = $freeDays->freeDays(2019)->toArray();
+    }
+
     public function index()
     {
 
+        Log::info('Hrm\HomeController::index');
         $this->stash ['title'] = 'Hrm';
         $this->stash ['title_icon'] = 'ico-home';
-        $this->stash ['worklog'] = CalendarModel::with('workLog')->orderBy('date', 'asc')->get()->groupBy(function ($res)
-        {
-            return Carbon::parse($res->date)->format('Y-m'); // grouping by years
-                                                                 // return Carbon::parse($date->created_at)->format('m'); // grouping by months
-        });
-        $this->stash ['calendars'] = CalendarModel::whereMonth('date', '03')->whereYear('date', 2019)->orderBy('date', 'desc')->get()->toArray();
 
-        $this->stash ['worklogColumns'] = Schema::connection('hrm')->getColumnListing('work_logs'); // users table
-        $this->stash ['worklogMonths'] = $this->months(12); // users table
+        $this->stash ['yearRange'] = $this->getYearRanges(2);
+        $this->stash ['yearRange'] = $this->getYearRanges(2);
 
         return $this->_respond('hrm.index');
     }
 
-    public static function months($lastMonths = 12)
+    public function show()
     {
 
-        $monthDays = [];
-        for($i = 0; $i < $lastMonths; $i++)
-        {
-            $now = date("Y-m-d", strtotime("-$i months"));
-            $now = Carbon::parse($now);
-            $monthDays [$now->format('Y-m')] = Carbon::parse($now->format('Y-m-d'))->daysInMonth;
-        }
+        Log::info('Hrm\HomeController::show');
 
-        return $monthDays;
+        $this->stash ['title'] = 'Hrm';
+        $this->stash ['title_icon'] = 'ico-home';
 
-        // $start = (new DateTime($now->format('Y-m-d')))->modify('first day of this month');
-        // $end = (new DateTime(($now->addMonths($futureM))->format('Y-m-d')))->modify('first day of next month');
-        // $interval = DateInterval::createFromDateString('1 month');
-        // $period = new DatePeriod($start, $interval, $end);
-        // $months = array();
-        // foreach ( $period as $dt )
-        // {
-        // array_push($months, array(
-        // 'month' => $dt->format("F/Y"),
-        // 'days' => []
-        // ));
-        // }
-        // return $months;
+        $this->stash ['yearRange'] = $this->getYearRanges(2);
+
+        return $this->_respond('hrm.index');
     }
 }

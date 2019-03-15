@@ -66,7 +66,6 @@
             </div>
             <!--/ END Tab-content -->
             <pre>{{print_r($yearRange, true)}}</pre>
-            <pre>{{print_r($freeDays, true)}}</pre>
 
         </div>
         <!--/ Left / Bottom Side -->

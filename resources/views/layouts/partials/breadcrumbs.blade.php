@@ -1,6 +1,11 @@
 <div class="page-header page-header-block">
     <div class="page-header-section">
-        <h4 class="title semibold"><span class="figure"><i class="{{ $title_icon or ''}}"></i></span> {{$title or config('app.name') }} </h4>
+        <h4 class="title semibold">
+            <span class="figure">
+                <i class="{{ isset($title_icon) ? $title_icon : ''}}"></i>
+            </span>
+            {{isset($title) ? $title : config('app.name') }}
+        </h4>
     </div>
     <div class="page-header-section">
         <!-- Toolbar -->

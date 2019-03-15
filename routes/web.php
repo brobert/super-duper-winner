@@ -113,5 +113,7 @@ Route::middleware([
     Route::prefix('hrm')->group(function ()
     {
         Route::get('/', 'Hrm\HomeController@index')->name('hrm');
+        Route::get('/worklog/{year?}/{month?}', 'Hrm\HomeController@show')->name('hrm.worklog');
+        Route::get('/settings/{scope?}', 'Hrm\SettingController@index')->name('hrm.settings');
     });
 });
