@@ -2,13 +2,8 @@
 
 namespace App\Http\Controllers\Hrm;
 
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Http\Request;
-use App\Models\Hrm\WorkLogModel;
-use App\Models\Hrm\CalendarModel;
 use App\Models\Hrm\FreeDay;
-use Carbon\Carbon;
+use Illuminate\Http\Request;
 
 
 class SettingController extends HrmController
@@ -16,16 +11,14 @@ class SettingController extends HrmController
 
     public function __construct(Request $request)
     {
+        parent::__construct ( $request );
 
-        parent::__construct($request);
-
-        $this->stash ['freeDays'] = FreeDay::freeDays(2019)->toArray();
+        $this->stash ['freeDays'] = FreeDay::freeDays ( 2019 );
     }
 
     public function index()
     {
-
-        return $this->_respond('hrm.setting.index');
+        return $this->_respond ( 'hrm.setting.index' );
     }
 
     /**
