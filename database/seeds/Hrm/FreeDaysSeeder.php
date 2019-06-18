@@ -1,13 +1,14 @@
 <?php
 
+namespace Database\Seeds\Hrm;
 
 use Illuminate\Database\Seeder;
-
-use App\Models\Hrm\FreeDay;
+use App\Models\Hrm\FreeDayModel as FreeDayModel;
 
 
 class FreeDaysSeeder extends Seeder
 {
+
     private $freeDays = [
         [
             'name' => 'Nowy Rok',
@@ -156,9 +157,10 @@ class FreeDaysSeeder extends Seeder
      */
     public function run()
     {
+
         foreach ( $this->freeDays as $fd )
         {
-            factory ( App\Models\Hrm\FreeDay::class )->create ( $fd );
+            factory(FreeDayModel::class)->create($fd);
         }
     }
 }

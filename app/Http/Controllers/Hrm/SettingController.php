@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Hrm;
 
-use App\Models\Hrm\FreeDay;
+use App\Models\Hrm\FreeDayModel;
 use Illuminate\Http\Request;
 
 
@@ -13,7 +13,7 @@ class SettingController extends HrmController
     {
         parent::__construct ( $request );
 
-        $this->stash ['freeDays'] = FreeDay::freeDays ( 2019 );
+        $this->stash ['freeDays'] = FreeDayModel::freeDays ( 2019 );
     }
 
     public function index()

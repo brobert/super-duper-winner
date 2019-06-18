@@ -12,8 +12,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call ( UserSeeder::class );
-        $this->call ( Hrm\FreeDaysSeeder::class );
-        $this->call ( Hrm\SettingsSeeder::class );
+
+        $this->call(PermissionRoleSeeder::class);
+        $this->call(UserSeeder::class);
+        $this->call(Database\Seeds\Hrm\FreeDaysSeeder::class);
+        $this->call(Database\Seeds\Hrm\SettingsSeeder::class);
     }
 }

@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use App\Models\Role;
 use Illuminate\Support\Facades\Log;
 
 
@@ -26,8 +27,23 @@ class UserSeeder extends Seeder
                 'email' => env('ADMIN_USER_EMAIL'),
                 'password' => bcrypt(env('ADMIN_USER_PASS'))
             ));
+
+            $user = User::where([
+                'email' => env('ADMIN_USER_EMAIL')
+            ])->first();
+
+            if ($user && env('ADMIN_USER_ROLES'))
+            {
+                foreach ( explode(',', env('ADMIN_USER_ROLES')) as $roleName )
+                {
+                    $role = Role::where([
+                        'name' => $roleName
+                    ])->first();
+                    $user->attachRole($role);
+                }
+            }
         }
 
-        factory(App\Models\User::class, 10)->create();
+        factory(App\Models\User::class, 20)->create();
     }
 }

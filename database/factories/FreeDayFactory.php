@@ -1,7 +1,7 @@
 <?php
 use Faker\Generator as Faker;
 
-$factory->define(App\Models\Hrm\FreeDay::class, function (Faker $faker)
+$factory->define(App\Models\Hrm\FreeDayModel::class, function (Faker $faker)
 {
     return [
         'name' => $faker->sentence(2),

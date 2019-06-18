@@ -67,6 +67,7 @@
             <!--/ END Tab-content -->
             <pre>{{print_r($yearRange, true)}}</pre>
             <pre>{{print_r($freeDays, true)}}</pre>
+            <pre>{{print_r($configs, true)}}</pre>
 
         </div>
         <!--/ Left / Bottom Side -->

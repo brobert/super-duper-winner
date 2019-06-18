@@ -106,8 +106,8 @@ Route::middleware([
     {
 
         Route::get('/', 'Npk\HomeController@index')->name('npk');
-        Route::get('/admin', 'Npk\HomeController@index')->name('npk.admin');
-        Route::get('/payments', 'Npk\HomeController@index')->name('npk.payments');
+        Route::get('/admin', 'Npk\AdminController@index')->name('npk.admin');
+        Route::get('/payments', 'Npk\PaymentController@index')->name('npk.payments');
     });
 
     Route::prefix('hrm')->group(function ()

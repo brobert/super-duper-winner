@@ -4,7 +4,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 
-class Worklog extends Migration
+class NpkWorklog extends Migration
 {
 
     /**
@@ -17,18 +17,17 @@ class Worklog extends Migration
 
         $this->down();
 
-        Schema::connection('hrm')->create('configs', function (Blueprint $table)
+        Schema::connection('npk')->create('configs', function (Blueprint $table)
         {
             $table->charset = 'utf8';
             $table->collation = 'utf8_unicode_ci';
 
-            $table->string('attr');
-            $table->string('value');
+            $table->string('attr')->primary();
+            $table->string('value_json', 255)->nullable();
             $table->timestamps();
-            $table->primary('attr');
         });
 
-        Schema::connection('hrm')->create('free_days', function (Blueprint $table)
+        Schema::connection('npk')->create('free_days', function (Blueprint $table)
         {
             $table->charset = 'utf8';
             $table->collation = 'utf8_unicode_ci';
@@ -41,7 +40,7 @@ class Worklog extends Migration
             $table->timestamps();
         });
 
-        Schema::connection('hrm')->create('work_types', function (Blueprint $table)
+        Schema::connection('npk')->create('work_types', function (Blueprint $table)
         {
             $table->charset = 'utf8';
             $table->collation = 'utf8_unicode_ci';
@@ -51,7 +50,7 @@ class Worklog extends Migration
             $table->timestamps();
         });
 
-        Schema::connection('hrm')->create('work_logs', function (Blueprint $table)
+        Schema::connection('npk')->create('work_logs', function (Blueprint $table)
         {
             $table->charset = 'utf8';
             $table->collation = 'utf8_unicode_ci';
@@ -76,10 +75,10 @@ class Worklog extends Migration
     public function down()
     {
 
-        Schema::connection('hrm')->dropIfExists('work_logs');
-        Schema::connection('hrm')->dropIfExists('work_types');
-        Schema::connection('hrm')->dropIfExists('free_days');
-        Schema::connection('hrm')->dropIfExists('configs');
+        Schema::connection('npk')->dropIfExists('work_logs');
+        Schema::connection('npk')->dropIfExists('work_types');
+        Schema::connection('npk')->dropIfExists('free_days');
+        Schema::connection('npk')->dropIfExists('configs');
         //
     }
 }

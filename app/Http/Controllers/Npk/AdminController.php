@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Npk\NpkController;
 
 
-class HomeController extends NpkController
+class AdminController extends NpkController
 {
 
     public function __construct(Request $request)
@@ -21,6 +21,6 @@ class HomeController extends NpkController
         $this->stash ['title'] = 'Krasnal';
         $this->stash ['title_icon'] = 'ico-home';
 
-        return $this->_respond('npk.index');
+        return $this->_respond('npk.admin.index');
     }
 }

@@ -7,7 +7,8 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Http\Request;
 use App\Models\Hrm\WorkLogModel;
 use App\Models\Hrm\CalendarModel;
-use App\Models\Hrm\FreeDay;
+use App\Models\Hrm\FreeDayModel;
+use App\Models\Hrm\ConfigModel;
 use Carbon\Carbon;
 
 
@@ -20,8 +21,10 @@ class HomeController extends HrmController
 
         parent::__construct($request);
 
-        $freeDays = new FreeDay();
+        $freeDays = new FreeDayModel();
+        $configModel = new ConfigModel();
         $this->stash ['freeDays'] = $freeDays->freeDays(2019)->toArray();
+        $this->stash ['configs'] = $configModel->get()->toArray();
     }
 
     public function index()

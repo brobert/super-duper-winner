@@ -2,18 +2,32 @@
 
 namespace App\Models\Hrm;
 
+use Illuminate\Support\Facades\Log;
+
 
 class ConfigModel extends HrmModel
 {
+
     protected $table = 'configs';
 
-    public function setValueAttribute($value)
+    protected $primaryKey = 'attr';
+
+    public $incrementing = false;
+
+    protected $fillable = [
+        'attr',
+        'value'
+    ];
+
+    public function setValueJsonAttribute($value)
     {
-        return json_encode ( $value );
+
+        $this->attributes ['value_json'] = json_encode($value);
     }
 
-    public function getValueAttribute($value)
+    public function getValueJsonAttribute($value)
     {
-        return json_decode ( $this->value );
+
+        return $value ? json_decode($value) : [];
     }
 }
